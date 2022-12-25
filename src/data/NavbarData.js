@@ -28,6 +28,15 @@ export const navbarData = [
     to: "events",
   },
   {
+    text: "Gallery",
+    spy: true,
+    duration: 500,
+    smooth: true,
+    exact: "true",
+    offset: -80,
+    // to: "event",
+  },
+  {
     text: "About Us",
     spy: true,
     duration: 500,

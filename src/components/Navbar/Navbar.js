@@ -15,16 +15,22 @@ import {
 import { animateScroll as scroll } from "react-scroll";
 import { websiteName } from "../../data/GlobalData";
 import { navbarData } from "../../data/NavbarData";
+import { useHistory } from "react-router-dom";
 
 const Navbar = ({ hide }) => {
   const [show, setShow] = useState(false);
+
+  const navigate = useHistory;
+  const gallery = () => {
+    navigate.push("/gallery");
+  };
 
   return (
     <Nav hide={hide}>
       <NavbarContainer>
         <NavLogo to="/" onClick={scroll.scrollToTop}>
           <NavIcon src="./assets/final white.png" alt="" />
-          {websiteName}
+          {/* {websiteName} */}
         </NavLogo>
 
         {!hide && (
@@ -43,7 +49,10 @@ const Navbar = ({ hide }) => {
                     smooth={true}
                     exact="true"
                     offset={-79}
-                    onClick={() => setShow(false)}
+                    onClick={
+                      /*{ el.text } = "Gallery"? { gallery }  :*/ () =>
+                        setShow(false)
+                    }
                     to={el.to}
                   >
                     {el.text}
