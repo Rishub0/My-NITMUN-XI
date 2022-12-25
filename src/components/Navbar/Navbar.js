@@ -17,7 +17,7 @@ import { websiteName } from "../../data/GlobalData";
 import { navbarData } from "../../data/NavbarData";
 
 const Navbar = ({ hide }) => {
-  const [show, setShow] = useState(false);
+  const [show, setShow] = useState(true);
 
   return (
     <Nav hide={hide}>

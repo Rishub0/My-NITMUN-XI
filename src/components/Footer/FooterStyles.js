@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { dark } from '../../data/GlobalData';
 
 export const FooterContainer = styled.div`
+    height: 100vh;
 	background-color: ${dark};
 	padding: 4rem 0 2rem 0;
 	display: flex;
@@ -39,6 +40,7 @@ export const FooterLinkItems = styled.div`
 	width: 160px;
 	box-sizing: border-box;
 	color: #fff;
+	
 
 	@media screen and (max-width: 420px) {
 		margin: 0;
@@ -90,6 +92,11 @@ export const SocialLogo = styled(Link)`
 	display: flex;
 	align-items: center;
 	margin-bottom: 16px;
+
+	&:hover {
+		color: #0467fb;
+		transition: 0.3s ease-out;
+	}
 `;
 
 export const SocialIcon = styled.img`

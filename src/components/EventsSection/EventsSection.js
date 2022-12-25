@@ -70,7 +70,7 @@ const EventsSection = () => {
 					perspiciatis hic debitis eveniet porro, culpa autem ducimus atque numquam quos.
 				</Subtitle>
 
-				<ContentButton inverse>Buy Tickets</ContentButton>
+				<ContentButton inverse>Register</ContentButton>
 			</Modal>
 		</>
 	);
