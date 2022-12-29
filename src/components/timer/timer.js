@@ -2,7 +2,7 @@ import * as React from "react";
 import * as ReactDOM from "react-dom";
 import "./timer.css"
 
-export const Apps = () => {
+const Apps = () => {
   return (
     
       <div className="timer-container">
@@ -68,3 +68,4 @@ const Timer = () => {
   );
 };
 
+export default Apps;

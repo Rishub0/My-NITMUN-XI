@@ -35,16 +35,16 @@ export const InfoColumn = styled.div`
   }
 `;
 
-// export const Image = styled.div`
-//   height: 600px;
-//   background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(2, 3, 5, 0.5)),
-//     url("");
-//   background-size: cover;
-//   display: flex;
-//   align-items: top;
-//   object-fit: contain;
-//   vertical-align: top;
-// `;
+export const Image = styled.div`
+  height: 600px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(2, 3, 5, 0.5)),
+    url("");
+  background-size: cover;
+  display: flex;
+  align-items: top;
+  object-fit: contain;
+  vertical-align: top;
+`;
 
 export const InfoHeading = styled.h2`
   margin: 1rem 0 2rem;
@@ -97,5 +97,5 @@ export const InfoNumber = styled.div`
 export const InfoText = styled.div`
   font-weight: 500;
   margin-top: 0.4rem;
-  color: #b02929;
+  color: #5A5A5A;
 `;

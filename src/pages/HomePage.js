@@ -2,6 +2,8 @@ import React from "react";
 import Content from "../components/Content/Content";
 import EventsSection from "../components/EventsSection/EventsSection";
 import Features from "../components/Features/Features";
+import Footer from "../components/Footer/Footer";
+//import Footer1 from "../components/Footer/Footer1";
 import Hero from "../components/Hero/Hero";
 import Info from "../components/Info/Info";
 import Modal from "../components/Modal/Modal";
@@ -20,7 +22,7 @@ const HomePage = () => {
 				))}
 				<EventsSection />
 			</div> */}
-    
+      <Footer />
     </>
   );
 };
