@@ -228,8 +228,8 @@ a {
     width: 100%;
     margin: auto;
     margin-top: 5%;
-    max-width: 525px;
-    min-height: 670px;
+    max-width: 825px;
+    min-height: 1270px;
     position: relative;
     box-shadow: 0 12px 15px 0 rgba(0, 0, 0, .24), 0 17px 50px 0 rgba(0, 0, 0, .19);
 }
@@ -282,7 +282,7 @@ a {
 
 .login-container .sign-in:checked+.item,
 .login-container .sign-up:checked+.item {
-    color: #fff;
+    color: rgb(175, 139, 110);
     border-color: #DF00FF;
 }
 
@@ -301,7 +301,7 @@ a {
 .login-form .group .input,
 .login-form .group .button {
     width: 100%;
-    color: #fff;
+    color: rgb(17, 16, 16);
     display: block;
 }
 
@@ -313,14 +313,14 @@ a {
 .login-form .group .button {
     border: none;
     padding: 15px 20px;
-    border-radius: 25px;
-    background: rgba(255, 255, 255, .1);
+    border-radius: 10px;
+    background: rgba(139, 136, 136, 0.931);
 }
 
-.login-form .group input[data-type="password"] {
+/* .login-form .group input[data-type="password"] {
     text-security: circle;
     -webkit-text-security: circle;
-}
+} */
 
 .login-form .group .label {
     color: #aaa;
@@ -328,7 +328,7 @@ a {
 }
 
 .login-form .group .button {
-    background: #DF00FF;
+    background: #6a5315;
 }
 
 .login-form .group .check:checked+label {
@@ -343,12 +343,3 @@ a {
     transform: rotate(0);
 }
 
-.hr {
-    height: 2px;
-    margin: 60px 0 50px 0;
-    background: rgba(255, 255, 255, .2);
-}
-
-.footer {
-    text-align: center;
-}
