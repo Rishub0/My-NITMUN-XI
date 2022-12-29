@@ -18,7 +18,7 @@ function App() {
         <Route path="/aboutNitmun" component={AboutNitmun} />
         <Route path="/gallery" component={Gallery} />
       </Switch>
-      <Footer1 />
+      <Footer />
     </Router>
   );
 }
