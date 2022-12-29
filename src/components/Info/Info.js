@@ -25,8 +25,8 @@ const Info = ({ id }) => {
         </InfoColumn> */}
         <InfoColumn>
           <InfoWrapper>
-            <InfoHeading>{headline}</InfoHeading>
-            <InfoDesc>{description}</InfoDesc>
+            {/* <InfoHeading>{headline}</InfoHeading>
+            <InfoDesc>{description}</InfoDesc> */}
 
             <BottomLine>
               {bottomLine.map((el, index) => (

@@ -60,13 +60,13 @@ const Content = ({
 					<ContentRow reverse={reverse}>
 						<ContentColumn>
 							<TextWrapper>
-								<TopLine
+								{/* <TopLine
 									initial={initial}
 									transition={{ ...transition, delay: 0.5 }}
 									animate={animation}
 								>
 									{topLine.text}
-								</TopLine>
+								</TopLine> */}
 								<ContentHeading
 									initial={initial}
 									transition={transition}
@@ -84,6 +84,18 @@ const Content = ({
 									{description}
 								</Subtitle>
 
+								<ContentButton
+									initial={initial}
+									transition={{ ...transition, delay: 1 }}
+									animate={animation}
+									inverse={inverse}
+									primary={primary}
+									onClick={() => {
+										setShowModal(true);
+									}}
+								>
+									{buttonLabel}
+								</ContentButton>
 								<ContentButton
 									initial={initial}
 									transition={{ ...transition, delay: 1 }}

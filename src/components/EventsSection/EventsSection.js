@@ -97,7 +97,7 @@ const EventsSection = () => {
           no unique text.
         </Subtitle>
 
-        {/* <ContentButton inverse>Buy Tickets</ContentButton> */}
+        <ContentButton inverse>Buy Tickets</ContentButton>
       </Modal>
     </>
   );

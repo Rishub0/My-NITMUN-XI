@@ -31,8 +31,13 @@
   }
   .timer-container{
     margin-left: 435px; 
-    margin-bottom: 17px;
-    
-    
+    margin-bottom: 17px; 
+  }
+
+  @media screen and (max-width: 768px){
+     .clock{
+      height: 80px;
+      width: 260px;
+     }
   }
   

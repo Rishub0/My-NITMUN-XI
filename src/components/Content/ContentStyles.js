@@ -80,7 +80,7 @@ export const ContentButton = styled(motion.button)`
 	overflow: hidden;
 
 	&:before {
-		background: #aa0000;
+		background: #808080;
 		content: '';
 		position: absolute;
 		top: 50%;
@@ -107,7 +107,7 @@ export const ImgWrapper = styled(motion.div)`
 	max-height: 700px;
 	justify-content: center;
 	position: relative;
-	background-color: #aa0000;
+	background-color: #7393B3;
 	padding: 4px 0;
 	max-height: 40%;
 `;
@@ -119,7 +119,7 @@ export const TopLine = styled(motion.span)`
 	letter-spacing: 1.4px;
 	margin-bottom: 0.8rem;
 
-	background-color: #aa0000;
+	background-color: #5A5A5A;
 	color: #fff;
 	padding: 5px 10px;
 	border-radius: 5px;
@@ -157,3 +157,4 @@ export const Subtitle = styled(motion.p)`
 	color: ${({ inverse }) => (inverse ? '#6a6a6a' : 'white')};
 	font-size: clamp(0.8rem, 2vw, 1rem);
 `;
+

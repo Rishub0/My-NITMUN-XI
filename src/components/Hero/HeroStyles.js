@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const HeroSection = styled.section`
   height: 100vh;
-  background: url("./assets/NITMUN XI logo.jpeg");
+  background: url("./assets/bgw.jpg");
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
@@ -15,10 +15,11 @@ export const HeroSection = styled.section`
 export const HeroText = styled.p`
   margin-bottom: 35px;
   font-size: clamp(0.9rem, 1.5vw, 1.3rem);
+  font-weight: 10px;
   line-height: 24px;
   text-align: center;
   letter-spacing: 2px;
-  color: white;
+  color: brown;
 `;
 
 export const ButtonWrapper = styled.div`
