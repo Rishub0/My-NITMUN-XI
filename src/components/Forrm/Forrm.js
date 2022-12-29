@@ -1,14 +1,14 @@
 import React from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
-import axios from "axios";
+//import axios from "axios";
 import "./Forrmc.css";
 
 const Formc = () => {
   const phoneRegExp =
     /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
-	
-	const formik = useFormik({
+
+  const formik = useFormik({
     initialValues: {
       Name: "",
       email: "",
@@ -29,12 +29,9 @@ const Formc = () => {
       experience: Yup.string().required("Required"),
     }),
     onSubmit: (values) => {
-	  
       alert(JSON.stringify(values, null, 2));
     },
-	
   });
-  
 
   return (
     <div>
@@ -52,9 +49,9 @@ const Formc = () => {
                 onBlur={formik.handleBlur}
                 value={formik.values.Name}
               />
-			  {formik.touched.Name && formik.errors.Name ? (
-				<div>{formik.errors.Name}</div>
-			  ): null}
+              {formik.touched.Name && formik.errors.Name ? (
+                <div>{formik.errors.Name}</div>
+              ) : null}
             </div>
 
             <div class="form-item form-item1">
@@ -65,11 +62,11 @@ const Formc = () => {
                 name="email"
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
-				value={formik.values.email}
+                value={formik.values.email}
               />
-			  {formik.touched.email && formik.errors.email ? (
-				<div>{formik.errors.email}</div>
-			  ): null}
+              {formik.touched.email && formik.errors.email ? (
+                <div>{formik.errors.email}</div>
+              ) : null}
             </div>
 
             <div class="form-item form-item2">
@@ -80,11 +77,11 @@ const Formc = () => {
                 name="phone"
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
-				value={formik.values.phone}
+                value={formik.values.phone}
               />
-			  {formik.touched.phone && formik.errors.phone ? (
-				<div>{formik.errors.phone}</div>
-			  ): null}
+              {formik.touched.phone && formik.errors.phone ? (
+                <div>{formik.errors.phone}</div>
+              ) : null}
             </div>
 
             <div class="form-item form-item2">
@@ -93,7 +90,7 @@ const Formc = () => {
                 name="institution"
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
-				value={formik.values.institution}
+                value={formik.values.institution}
               >
                 <option value="week-1">NIT DURGAPUR</option>
                 <option value="week-2">IIT Kharagpur</option>
@@ -105,10 +102,12 @@ const Formc = () => {
 
             <div class="form-item form-item3">
               <label for="Committee">Committee</label>
-              <select name="Committee"
-			  onChange={ formik.handleChange}
-			  onBlur={ formik.handleBlur}
-			  value={formik.values.Committee}>
+              <select
+                name="Committee"
+                onChange={formik.handleChange}
+                onBlur={formik.handleBlur}
+                value={formik.values.Committee}
+              >
                 <option value="week-1">UNGA-DISEC</option>
                 <option value="week-2">UNGA_SPECPOL</option>
                 <option value="week-3">AIPPM</option>
@@ -117,10 +116,12 @@ const Formc = () => {
 
             <div class="form-item form-item3">
               <label for="has website">Country</label>
-              <select name="Country"
-			  onChange={ formik.handleChange}
-			  onBlur={ formik.handleBlur}
-			  value={formik.values.Country}>
+              <select
+                name="Country"
+                onChange={formik.handleChange}
+                onBlur={formik.handleBlur}
+                value={formik.values.Country}
+              >
                 <option value="form-no">India</option>
                 <option value="form-yes">USA</option>
                 <option value="form-yes">China</option>
@@ -132,11 +133,12 @@ const Formc = () => {
 
             <div class="form-item form-item4">
               <label for="time frame">Committee</label>
-              <select name="committee2"
-			  onChange={ formik.handleChange}
-			  onBlur={ formik.handleBlur}
-			  value={formik.values.committee2}>
-			  
+              <select
+                name="committee2"
+                onChange={formik.handleChange}
+                onBlur={formik.handleBlur}
+                value={formik.values.committee2}
+              >
                 <option value="week-1">UNGA-DISEC</option>
                 <option value="week-2">UNGA_SPECPOL</option>
                 <option value="week-3">AIPPM</option>
@@ -145,11 +147,12 @@ const Formc = () => {
 
             <div class="form-item form-item4">
               <label for="has website">Country</label>
-              <select name="country2"
-			  onChange={ formik.handleChange}
-			  onBlur={ formik.handleBlur}
-			  value={formik.values.country2}
-			  >
+              <select
+                name="country2"
+                onChange={formik.handleChange}
+                onBlur={formik.handleBlur}
+                value={formik.values.country2}
+              >
                 <option value="form-no">India</option>
                 <option value="form-yes">USA</option>
                 <option value="form-yes">China</option>
@@ -166,14 +169,13 @@ const Formc = () => {
                 type="text"
                 name="experience"
                 placeholder="Tell us about your experience"
-				onChange={ formik.handleChange}
-				onBlur={ formik.handleBlur}
-				value={formik.values.experience}
-
+                onChange={formik.handleChange}
+                onBlur={formik.handleBlur}
+                value={formik.values.experience}
               ></textarea>
-			  {formik.touched.experience && formik.errors.experience ? (
-				<div>{formik.errors.experience}</div>
-			  ): null}
+              {formik.touched.experience && formik.errors.experience ? (
+                <div>{formik.errors.experience}</div>
+              ) : null}
             </div>
             <div class="btn-container">
               <input
@@ -188,10 +190,7 @@ const Formc = () => {
         </form>
       </section>
     </div>
-	
   );
 };
-
-
 
 export default Formc;

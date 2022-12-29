@@ -49,8 +49,26 @@ const EventsSection = () => {
             transition={{ duration: 0.4 }}
             animate={animation}
           >
-            Find More Events
+            Glimpses of NITMUN
           </EventHeading>
+          <MasonryGrid ref={ref}>
+            {eventsData.map((item, index) => (
+              <EventImageWrapper
+                animate={animation}
+                initial={{
+                  opacity: 0,
+                  scale: 0.3,
+                }}
+                transition={{ duration: 0.8 }}
+                className={item.class}
+                key={index}
+                onClick={() => handleClick(index)}
+              >
+                <Image src={item.img}></Image>
+              </EventImageWrapper>
+            ))}
+          </MasonryGrid>
+
           <MasonryGrid ref={ref}>
             {eventsData.map((item, index) => (
               <EventImageWrapper
@@ -76,10 +94,7 @@ const EventsSection = () => {
           <Img src={eventsData[selectedImage].img} alt="image" />
         </ImgWrapper>
         <Subtitle mt inverse>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
-          omnis corrupti officia commodi distinctio nesciunt ex quas quibusdam
-          ipsam perspiciatis hic debitis eveniet porro, culpa autem ducimus
-          atque numquam quos.
+          no unique text.
         </Subtitle>
 
         {/* <ContentButton inverse>Buy Tickets</ContentButton> */}
