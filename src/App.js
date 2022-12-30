@@ -20,7 +20,7 @@ function App() {
         <Route path="/gallery" component={Gallery} />
         <Route path="/AboutUs" component={AboutUs}/>
       </Switch>
-      
+      <Footer1 />
     </Router>
   );
 }
