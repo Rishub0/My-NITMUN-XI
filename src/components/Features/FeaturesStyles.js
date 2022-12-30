@@ -5,7 +5,7 @@ export const FeatureSection = styled.div`
 	padding: 140px;
 	position: relative;
 	margin: 0 auto;
-	background-color: ${({ inverse }) => (inverse ? 'white' : '#020305')};
+	background-color: ${({ inverse }) => (inverse ? 'white' : '#5A5A5A')};
 
 	@media screen and (max-width: 768px) {
 		padding: 50px 10px;
@@ -60,6 +60,7 @@ export const FeatureImageWrapper = styled.div`
 	border-radius: 50%;
 	background-color: #111111;
 	padding: 30px;
+	
 `;
 
 export const FeatureImage = styled.img`

@@ -1,13 +1,14 @@
 export const navbarData = [
   {
     text: "About NITMUN",
+    href:"/aboutNitmun",
     id: "about",
     spy: true,
     duration: 500,
     smooth: true,
     exact: "true",
     offset: -80,
-    to: "about",
+    to: "/aboutNitmun",
   },
   {
     text: "Register",

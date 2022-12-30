@@ -22,6 +22,7 @@ const HomePage = () => {
 				))}
 				<EventsSection />
 			</div> */}
+      <Features />
       <Footer />
     </>
   );

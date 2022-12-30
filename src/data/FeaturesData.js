@@ -5,7 +5,7 @@ import { TiGroupOutline } from 'react-icons/ti';
 const iconStyle = (Icon) => <Icon size="3rem" color="red" />;
 
 export const featuresData = {
-	title: 'Our Programs',
+	title: 'Our Sponsers',
 	text: "We're a fast-growing event company in Europe and North America. Now in its 11-th year. Ezent has grown to over 2,000 events annually, which makes it one of the most famous event advertising platforms",
 	content: [
 		{

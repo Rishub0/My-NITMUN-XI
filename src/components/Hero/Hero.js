@@ -63,7 +63,7 @@ const Hero = () => {
     <>
       <HeroSection ref={ref} id="hero">
         <Container>
-          <Apps />
+          {/* <Apps /> */}
           {/* <Clock
             timerDays={timerDays}
             timerHours={timerHours}

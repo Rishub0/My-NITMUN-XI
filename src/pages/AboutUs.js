@@ -1,7 +1,6 @@
 import React from "react";
+import "./AboutUs.css"
 import { CgInfo } from "react-icons/cg";
-import About from "../components/About/About";
-import Carrds from "../components/Cards/Cards";
 import Content from "../components/Content/Content";
 import EventsSection from "../components/EventsSection/EventsSection";
 import Features from "../components/Features/Features";
@@ -9,23 +8,17 @@ import Footer from "../components/Footer/Footer";
 import Info from "../components/Info/Info";
 import Navbar from "../components/Navbar/Navbar";
 import { heroData } from "../data/HeroData";
-const AboutNitmun = () => {
+import About from "../components/About/About";
+const AboutUs = () => {
   return (
     <>
       <Navbar />
-      {/* <Info id="about" /> */}
-      <About />
-      <div id="events">
-        {heroData.map((contentData, index) => (
-          <Content {...contentData} key={index} />
-        ))}
-        <Features />
-        <Carrds />
-      </div>
+      
+        <About />
 
       <Footer />
     </>
   );
 };
 
-export default AboutNitmun;
+export default AboutUs;

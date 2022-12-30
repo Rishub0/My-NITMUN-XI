@@ -14,7 +14,7 @@ export const MasonryGrid = styled.div`
 		justify-content: center;
 
 		> a > img {
-			max-height: 300px;
+			max-height: 500px;
 			object-position: center;
 		}
 	}
