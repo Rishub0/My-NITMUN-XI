@@ -1,16 +1,66 @@
-import React from "react";
+import React, { useState } from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
-//import axios from "axios";
+import axios from "axios";
 import "./Forrmc.css";
 
 const Formc = () => {
+  const [name,setName]=useState("");
+  const [email,setEmail]=useState("");
+  const [phoneNumber,setPhoneNumber]=useState("");
+  const [institute,setInstitute]=useState("");
+  const [committee1,setComittee1]=useState("");
+  const [preference1,setPreferences1]=useState("");
+  const [committee2,setComittee2]=useState("");
+  const [preference2,setPreferences2]=useState("");
+  const [committee3,setComittee3]=useState("");
+  const [preference3,setPreferences3]=useState("");
+  const [experience,setExperience]=useState("");
+
+
+  // let Name, value;
+
+  // const handleInputs = (e) => {
+  //   console.log(e);
+  //   Name = e.target.name;
+  //   value = e.target.value;
+
+  //   setuser({ ...user, [Name]: value });
+  // };
+
+  const postData = async (e) => {
+    e.preventDefault();
+    
+    await axios.post("/api/register", {
+      
+      // headers: {
+      //   'Content-Type': 'application/json'
+      // },
+      
+      name: name,
+      email: email,
+      phoneNumber: phoneNumber,
+      institute: institute,
+      committee1: committee1,
+      preference1: preference1,
+      committee2: committee2,
+      preference2: preference2,
+      committee3: committee3,
+      preference3: preference3,
+      experience: experience
+    });
+
+    // const data= await res.json();
+
+    
+  };
+
   const phoneRegExp =
     /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
 
   const formik = useFormik({
     initialValues: {
-      Name: "",
+      name: "",
       email: "",
       phone: "",
       institution: "NIT",
@@ -45,41 +95,50 @@ const Formc = () => {
           IP
         </label>
         <div class="login-form">
-          <form class="sign-in-htm">
+          <form class="sign-in-htm" method="post">
             <div class="group">
-              <label for="firstname">Name</label>
+              <label for="lastname">Name</label>
               <input
-                placeholder="Name"
-                name="Name"
-                id="Name"
+                placeholder="Email"
+                value={name}
+                name="name"
+                id="pass"
+                onChange={(e) => {
+                  setName(e.target.value);
+                }}
                 type="text"
                 class="input"
+                data-type="text"
               />
-              {formik.touched.Name && formik.errors.Name ? (
-                <div>{formik.errors.Name}</div>
-              ) : null}
             </div>
             <div class="group">
-              <label for="lastname">E-mail</label>
+              <label for="lastname">Email</label>
               <input
                 placeholder="Email"
                 name="email"
-                onChange={formik.handleChange}
-                onBlur={formik.handleBlur}
-                value={formik.values.email}
+                value={email}
+                onChange={(e) => {
+                  setEmail(e.target.value);
+                }}
+                id="pass"
+                type="text"
+                class="input"
+                data-type="text"
               />
-              {formik.touched.email && formik.errors.email ? (
-                <div>{formik.errors.email}</div>
-              ) : null}
             </div>
             <div class="group">
               <label for="lastname">Phone Number</label>
               <input
                 placeholder="Phone"
-                name="phone"
-                onChange={formik.handleChange}
-                onBlur={formik.handleBlur}
-                value={formik.values.phone}
+                name="phoneNumber"
+                value={phoneNumber}
+                id="pass"
+                onChange={(e) => {
+                  setPhoneNumber(e.target.value);
+                }}
+                type="tel"
+                class="input"
+                data-type="password"
               />
               {formik.touched.phone && formik.errors.phone ? (
                 <div>{formik.errors.phone}</div>
@@ -90,10 +149,12 @@ const Formc = () => {
               <select
                 placeholder="Institution"
                 className="input"
-                name="institution"
-                onChange={formik.handleChange}
+                value={institute}
+                name="institute"
+                onChange={(e) => {
+                  setInstitute(e.target.value);
+                }}
                 onBlur={formik.handleBlur}
-                value={formik.values.institution}
               >
                 <option value="week-1">NIT DURGAPUR</option>
                 <option value="week-2">IIT Kharagpur</option>
@@ -106,13 +167,16 @@ const Formc = () => {
             <h2>Preferances 1:</h2>
             <br></br>
 
-            <div class="form-item form-item3">
-              <label for="Committee">Committee</label>
+            <div className="group">
+              <label for="lastname">Committee</label>
               <select
-                name="Committee"
-                onChange={formik.handleChange}
+                className="input"
+                name="committee1"
+                value={committee1}
+                onChange={(e) => {
+                  setComittee1(e.target.value);
+                }}
                 onBlur={formik.handleBlur}
-                value={formik.values.Committee}
               >
                 <option value="week-1">UNGA-DISEC</option>
                 <option value="week-2">UNGA_SPECPOL</option>
@@ -120,13 +184,16 @@ const Formc = () => {
               </select>
             </div>
 
-            <div class="form-item form-item3">
-              <label for="has website">Country</label>
+            <div class="group">
+              <label for="lastname">Country</label>
               <select
-                name="Country"
-                onChange={formik.handleChange}
+                className="input"
+                name="preference1"
+                value={preference1}
+                onChange={(e) => {
+                  setPreferences1(e.target.value);
+                }}
                 onBlur={formik.handleBlur}
-                value={formik.values.Country}
               >
                 <option value="form-no">India</option>
                 <option value="form-yes">USA</option>
@@ -136,28 +203,73 @@ const Formc = () => {
                 <option value="form-yes">France</option>
               </select>
             </div>
-
-            <div class="form-item form-item4">
-              <label for="time frame">Committee</label>
+            <br></br>
+            <h2>Preferances 2:</h2>
+            <br></br>
+            <div className="group">
+              <label for="lastname">Committee</label>
               <select
+                className="input"
                 name="committee2"
-                onChange={formik.handleChange}
+                value={committee2}
+                onChange={(e) => {
+                  setComittee2(e.target.value);
+                }}
                 onBlur={formik.handleBlur}
-                value={formik.values.committee2}
               >
                 <option value="week-1">UNGA-DISEC</option>
                 <option value="week-2">UNGA_SPECPOL</option>
                 <option value="week-3">AIPPM</option>
               </select>
             </div>
-
-            <div class="form-item form-item4">
-              <label for="has website">Country</label>
+            <div class="group">
+              <label for="lastname">Country</label>
               <select
-                name="country2"
-                onChange={formik.handleChange}
+                className="input"
+                name="preference2"
+                value={preference2}
+                onChange={(e) => {
+                  setPreferences2(e.target.value);
+                }}
                 onBlur={formik.handleBlur}
-                value={formik.values.country2}
+              >
+                <option value="form-no">India</option>
+                <option value="form-yes">USA</option>
+                <option value="form-yes">China</option>
+                <option value="form-yes">UK</option>
+                <option value="form-yes">Germany</option>
+                <option value="form-yes">France</option>
+              </select>
+            </div>
+            <br></br>
+            <h2>Preferances 3:</h2>
+            <br></br>
+            <div className="group">
+              <label for="lastname">Committee</label>
+              <select
+                className="input"
+                name="committee3"
+                value={committee3}
+                onChange={(e) => {
+                  setComittee3(e.target.value);
+                }}
+                onBlur={formik.handleBlur}
+              >
+                <option value="week-1">UNGA-DISEC</option>
+                <option value="week-2">UNGA_SPECPOL</option>
+                <option value="week-3">AIPPM</option>
+              </select>
+            </div>
+            <div class="group">
+              <label for="lastname">Country</label>
+              <select
+                className="input"
+                name="preference2"
+                value={preference3}
+                onChange={(e) => {
+                  setPreferences3(e.target.value);
+                }}
+                onBlur={formik.handleBlur}
               >
                 <option value="form-no">India</option>
                 <option value="form-yes">USA</option>
@@ -174,14 +286,35 @@ const Formc = () => {
                 id="message"
                 type="text"
                 name="experience"
+                value={experience}
                 placeholder="Tell us about your experience"
-                onChange={formik.handleChange}
+                onChange={(e) => {
+                  setExperience(e.target.value);
+                }}
                 onBlur={formik.handleBlur}
-                value={formik.values.experience}
               ></textarea>
-              {formik.touched.experience && formik.errors.experience ? (
-                <div>{formik.errors.experience}</div>
-              ) : null}
+            </div>
+
+            <div class="group">
+              <input
+                type="submit"
+                class="button"
+                value="Register"
+                onClick={postData}
+              />
+            </div>
+          </form>
+          <form class="sign-up-htm">
+            <div class="group">
+              <label for="lastname">Name</label>
+              <input
+                placeholder="Email"
+                name="name"
+                id="pass"
+                type="password"
+                class="input"
+                data-type="password"
+              />
             </div>
             <div class="group">
               <label for="lastname">Email</label>
