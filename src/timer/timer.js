@@ -1,17 +1,13 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
-import "./timer.css"
+import "./timer.css";
 
 const Apps = () => {
   return (
-    
-      <div className="timer-container">
-        <h1 className="timer-header">
-          goes live in
-        </h1>
-        <Timer />
-      </div>
-    
+    <div className="timer-container">
+      <h1 className="timer-header">goes live in</h1>
+      <Timer />
+    </div>
   );
 };
 
@@ -24,7 +20,7 @@ const Timer = () => {
   const deadline = "December, 31, 2022";
 
   const getTime = () => {
-    const time = Date.parse(deadline) - Date.now();    
+    const time = Date.parse(deadline) - Date.now();
 
     setDays(Math.floor(time / (1000 * 60 * 60 * 24)));
     setHours(Math.floor((time / (1000 * 60 * 60)) % 24));

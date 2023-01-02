@@ -5,6 +5,7 @@ import EventsSection from "../components/EventsSection/EventsSection";
 import Footer from "../components/Footer/Footer";
 import Info from "../components/Info/Info";
 import Navbar from "../components/Navbar/Navbar";
+import { Secretariat } from "../components/secretariat/Secretariat";
 import { heroData } from "../data/HeroData";
 const AboutNitmun = () => {
   return (
@@ -16,7 +17,7 @@ const AboutNitmun = () => {
           <Content {...contentData} key={index} />
         ))}
       </div>
-      <Footer />
+      <Secretariat />
     </>
   );
 };
