@@ -27,6 +27,7 @@ const Content = ({
 	inverse,
 	reverse,
 	bigImage,
+	buttonLabel1
 }) => {
 	const [showModal, setShowModal] = useState(false);
 	const initial = { opacity: 0, scale: 0.3 };
@@ -94,7 +95,7 @@ const Content = ({
 										setShowModal(true);
 									}}
 								>
-									{buttonLabel}
+									{buttonLabel1}
 								</ContentButton>
 								<ContentButton
 									initial={initial}
@@ -136,7 +137,7 @@ const Content = ({
 				</ImgWrapper>
 				<Subtitle inverse={inverse}>{description}</Subtitle>
 				<ContentButton inverse={inverse} primary={primary}>
-					Buy Tickets
+					Register
 				</ContentButton>
 			</Modal>
 		</>

@@ -13,11 +13,11 @@ export const MasonryGrid = styled.div`
     flex-direction: column;
     justify-content: center;
 
-    > a > img {
-      max-height: 300px;
-      object-position: center;
-    }
-  }
+		> a > img {
+			max-height: 300px;
+			object-position: center;
+		}
+	}
 `;
 export const EventImageWrapper = styled(motion.div)`
   display: flex;
