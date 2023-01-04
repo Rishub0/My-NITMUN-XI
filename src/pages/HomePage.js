@@ -8,6 +8,8 @@ import Hero from "../components/Hero/Hero";
 import Info from "../components/Info/Info";
 import Modal from "../components/Modal/Modal";
 import { heroData } from "../data/HeroData";
+import sample from "../asset/Videos/sample.mp4";
+import LandVid from "../components/bgVideo/LandVid";
 
 const HomePage = () => {
   return (
@@ -22,6 +24,7 @@ const HomePage = () => {
 				))}
 				<EventsSection />
 			</div> */}
+      
       <Footer />
     </>
   );
