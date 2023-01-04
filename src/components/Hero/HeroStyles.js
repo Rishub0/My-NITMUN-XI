@@ -14,8 +14,8 @@ export const HeroSection = styled.section`
 
 export const HeroText = styled.p`
   margin-bottom: 35px;
-  font-size: clamp(1rem, 2.5vw, 2.3rem);
-  font-weight: 20px;
+  font-size: clamp(0.9rem, 1.5vw, 1.3rem);
+  font-weight: 10px;
   line-height: 24px;
   text-align: center;
   letter-spacing: 2px;
@@ -27,5 +27,5 @@ export const ButtonWrapper = styled.div`
   display: flex;
   justify-content: center;
   flex-flow: wrap;
-  gap: 0.4rem;
+  gap: 0.5rem;
 `;
