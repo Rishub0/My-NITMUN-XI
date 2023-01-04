@@ -23,6 +23,7 @@ const Content = ({
 	headline,
 	description,
 	buttonLabel,
+	buttonLabel1,
 	img,
 	alt,
 	inverse,
@@ -107,7 +108,7 @@ const Content = ({
 										setShowModal(true);
 									}}
 								>
-									{buttonLabel}
+									{buttonLabel1}
 								</ContentButton>
 							</TextWrapper>
 						</ContentColumn>

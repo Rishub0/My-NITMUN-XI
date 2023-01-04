@@ -9,12 +9,17 @@
 }
 
 .card__collection{
-  margin: 50px;
+  
+  margin-right: 50px;
+  
+  padding-top: 50px;
+  padding-bottom: 50px;
   align-content: center;
   
 }
 .clear-fix:after {
   display: block;
+  justify-content: center;
   align-content: center;
   clear: both;
   
@@ -37,12 +42,15 @@ $color-box-6 : #9b1308;
 $color-box-7 : #3ede56;
 
 .card__collection {
+  top:0;
+  height: 100%;
+  width: 100%;
     position: relative;
     display: block;
     align-content: center;
     background:#D5CEA3;
     padding-bottom: 30px;
-    padding-left: 150px;
+    padding-left: 190px;
     font-family: 'Do Hyeon', sans-serif;
     overflow: hidden;
     
@@ -156,10 +164,19 @@ $color-box-7 : #3ede56;
   .cards--two {
       position: relative;
       backface-visibility: hidden;
-      
+      .two{
+        position: absolute;
+        top: 89%;
+        left: -100%;
+        text-transform: capitalize;
+        color: #fff;
+        font-size: 15px;
+        z-index: 8;
+        transition: all .6s ease;
+      }
       p {
         position: absolute;
-        top: 83%;
+        top: 80%;
         left: -100%;
         text-transform: capitalize;
         color: #fff;
@@ -170,7 +187,7 @@ $color-box-7 : #3ede56;
       &:hover {
         
         p {
-          left: 8%;
+          left: 6%;
         }
         
         img {
@@ -478,4 +495,11 @@ $color-box-7 : #3ede56;
     }
   }
  
+}
+@media only screen and (max-width: 700px){
+
+  .card__collection{
+    
+    padding: auto;
+  }
 }
