@@ -117,7 +117,7 @@ export const ContentButton1 = styled(motion.button)`
 	padding: ${({ big }) => (big ? '12px 64px' : '10px 20px')};
 	font-size: ${({ fontBig }) => (fontBig ? '20px' : '16px')};
 	outline: none;
-	border: 2px solid #5A5A5A.;
+	border: 2px solid #aa0000;
 	cursor: pointer;
 	position: relative;
 	overflow: hidden;

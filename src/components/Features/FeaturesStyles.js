@@ -60,7 +60,6 @@ export const FeatureImageWrapper = styled.div`
 	border-radius: 50%;
 	background-color: #3C2A21;
 	padding: 30px;
-	
 `;
 
 export const FeatureImage = styled.img`
