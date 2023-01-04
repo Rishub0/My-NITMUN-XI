@@ -6,13 +6,15 @@ import { HeroSection, HeroText, ButtonWrapper } from "./HeroStyles";
 import { useInView } from "react-intersection-observer";
 import Clock from "../clock/Clock";
 import Apps from "../timer/timer"   
+import "./hero.css"
+import LandVid from "../bgVideo/LandVid";
 
 
 const Hero = () => {
-  // const [timerDays, setTimerDays] = useState();
-  // const [timerHours, setTimerHours] = useState();
-  // const [timerMinutes, setTimerMinutes] = useState();
-  // const [timerSeconds, setTimerSeconds] = useState();
+  const [timerDays, setTimerDays] = useState();
+  const [timerHours, setTimerHours] = useState();
+  const [timerMinutes, setTimerMinutes] = useState();
+  const [timerSeconds, setTimerSeconds] = useState();
 
    const navigate = useHistory();
 
@@ -62,7 +64,8 @@ const Hero = () => {
   return (
     <>
       <HeroSection ref={ref} id="hero">
-        <Container>
+        {/* <Container> */}
+        <LandVid />
           {/* <Apps /> */}
           {/* <Clock
             timerDays={timerDays}
@@ -70,18 +73,19 @@ const Hero = () => {
             timerMinutes={timerMinutes}
             timerSeconds={timerSeconds}
           /> */}
-          <HeroText>The Literary Circle</HeroText>
+          {/* <HeroText>NIMTUN XI</HeroText> */}
 
           <ButtonWrapper>
             <Link to="sign-up">
-              <Button big onClick={about}>
+              <Button big onClick={about} className="register">
                 Register
               </Button>
             </Link>
-          </ButtonWrapper>
-        </Container>
+          </ButtonWrapper> 
+        {/* </Container> */}
       </HeroSection>
-     <Navbar hide={inView} /> 
+      <Navbar hide={inView} /> 
+    
     </>
   );
 };
