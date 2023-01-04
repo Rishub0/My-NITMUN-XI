@@ -5,7 +5,7 @@ export const FeatureSection = styled.div`
 	padding: 140px;
 	position: relative;
 	margin: 0 auto;
-	background-color: ${({ inverse }) => (inverse ? 'white' : '#5A5A5A')};
+	background-color: ${({ inverse }) => (inverse ? '#D5CEA3' : '#D5CEA3')};
 
 	@media screen and (max-width: 768px) {
 		padding: 50px 10px;
@@ -19,7 +19,7 @@ export const FeatureTitle = styled.h2`
 	line-height: 1.06;
 	letter-spacing: 0.4rem;
 	margin: auto;
-	color: ${({ inverse }) => (inverse ? 'black' : 'white')};
+	color: ${({ inverse }) => (inverse ? '#3C2A21' : '#3C2A21')};
 `;
 
 export const FeatureMainText = styled.p`
@@ -27,14 +27,14 @@ export const FeatureMainText = styled.p`
 	font-size: clamp(1rem, 2vw, 1.2rem);
 	margin: 2rem auto 0;
 	width: 70%;
-	color: ${({ inverse }) => (inverse ? 'black' : 'white')};
+	color: ${({ inverse }) => (inverse ? '#3C2A21' : '#3C2A21')};
 `;
 
 export const FeatureTextWrapper = styled(motion.div)`
 	position: relative;
 	padding: 0 0 20px;
 	margin-bottom: 4rem;
-	color: ${({ inverse }) => (inverse ? 'black' : 'white')};
+	color: ${({ inverse }) => (inverse ? '#3C2A21' : '#3C2A21')};
 `;
 
 export const FeatureWrapper = styled.div`
@@ -58,7 +58,7 @@ export const FeatureColumn = styled(motion.div)`
 export const FeatureImageWrapper = styled.div`
 	margin-bottom: 1rem;
 	border-radius: 50%;
-	background-color: #111111;
+	background-color: #3C2A21;
 	padding: 30px;
 	
 `;
@@ -72,7 +72,7 @@ export const FeatureName = styled.h3`
 	font-weight: 600;
 	font-size: 1.3rem;
 	letter-spacing: 2px;
-	color: ${({ inverse }) => (inverse ? 'black' : 'white')};
+	color: ${({ inverse }) => (inverse ? '#3C2A21' : '#3C2A21')};
 
 	@media screen and (max-width: 768px) {
 		font-weight: 400;
@@ -86,8 +86,9 @@ export const FeatureText = styled.p`
 	font-size: 0.9rem;
 	line-height: 1.73;
 	letter-spacing: 0.5px;
+	font-family: inherit
 	color: #626881;
-	color: ${({ inverse }) => (inverse ? '#626881' : '#bcbcbc')};
+	color: ${({ inverse }) => (inverse ? '#3C2A21' : '#3C2A21')};
 
 	@media screen and (max-width: 768px) {
 		display: none;

@@ -7,6 +7,7 @@ import {
 	TopLine,
 	ContentHeading,
 	ContentButton,
+	ContentButton1,
 	Subtitle,
 	ImgWrapper,
 	Img,
@@ -85,7 +86,7 @@ const Content = ({
 									{description}
 								</Subtitle>
 
-								<ContentButton
+								<ContentButton1
 									initial={initial}
 									transition={{ ...transition, delay: 1 }}
 									animate={animation}
@@ -96,7 +97,7 @@ const Content = ({
 									}}
 								>
 									{buttonLabel1}
-								</ContentButton>
+								</ContentButton1>
 								<ContentButton
 									initial={initial}
 									transition={{ ...transition, delay: 1 }}

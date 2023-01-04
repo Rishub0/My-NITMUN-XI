@@ -1220,6 +1220,11 @@
   "resolved" "https://registry.npmjs.org/@emotion/unitless/-/unitless-0.7.5.tgz"
   "version" "0.7.5"
 
+"@fontsource/playfair-display@^4.5.12":
+  "integrity" "sha512-B7EUxMRW6EzE701WICRmpQM30hd6vHPMrfOzb7u8H0nEwrjK2PtJjGv7rbEl9Q02qoT54947yi630QgL9he5/A=="
+  "resolved" "https://registry.npmjs.org/@fontsource/playfair-display/-/playfair-display-4.5.12.tgz"
+  "version" "4.5.12"
+
 "@hapi/address@2.x.x":
   "integrity" "sha512-QD1PhQk+s31P1ixsX0H0Suoupp3VMXzIVMSwobR3F3MSUO2YCV0B7xqLcUw/Bh8yuvd3LhpyqLQWTNcRmp6IdQ=="
   "resolved" "https://registry.npmjs.org/@hapi/address/-/address-2.1.4.tgz"

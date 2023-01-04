@@ -8,7 +8,7 @@ const Formc = () => {
   const [name,setName]=useState("");
   const [email,setEmail]=useState("");
   const [phoneNumber,setPhoneNumber]=useState("");
-  const [institute,setInstitute]=useState("");
+  const [institute,setInstitute]=useState("NIT DURGAPUR");
   const [committee1,setComittee1]=useState("");
   const [preference1,setPreferences1]=useState("");
   const [committee2,setComittee2]=useState("");
@@ -16,22 +16,12 @@ const Formc = () => {
   const [committee3,setComittee3]=useState("");
   const [preference3,setPreferences3]=useState("");
   const [experience,setExperience]=useState("");
-
-
-  // let Name, value;
-
-  // const handleInputs = (e) => {
-  //   console.log(e);
-  //   Name = e.target.name;
-  //   value = e.target.value;
-
-  //   setuser({ ...user, [Name]: value });
-  // };
+  const [other,setOther]=useState("");
 
   const postData = async (e) => {
     e.preventDefault();
     
-    await axios.post("/api/register", {
+    await axios.post("http://localhost:5000/api/register", {
       
       // headers: {
       //   'Content-Type': 'application/json'
@@ -63,11 +53,13 @@ const Formc = () => {
       name: "",
       email: "",
       phone: "",
-      institution: "NIT",
-      Committee: "",
-      Country: "",
+      institution: "NIT DURGAPUR",
+      committee1: "",
+      preference1: "",
       committee2: "",
-      country2: "",
+      preference2: "",
+      committee3: "",
+      preference3: "",
       experience: "",
     },
     validationSchema: Yup.object({
@@ -95,7 +87,7 @@ const Formc = () => {
           IP
         </label>
         <div class="login-form">
-          <form class="sign-in-htm" method="post">
+          <form class="sign-in-htm" onSubmit={formik.handleSubmit}>
             <div class="group">
               <label for="lastname">Name</label>
               <input
@@ -146,8 +138,10 @@ const Formc = () => {
             </div>
             <div className="group">
               <label for="lastname">Institution</label>
+              
               <select
                 placeholder="Institution"
+                type="text"
                 className="input"
                 value={institute}
                 name="institute"
@@ -156,38 +150,57 @@ const Formc = () => {
                 }}
                 onBlur={formik.handleBlur}
               >
-                <option value="week-1">NIT DURGAPUR</option>
-                <option value="week-2">IIT Kharagpur</option>
-                <option value="week-3">Jadavpur University</option>
-                <option value="month-1">IEM</option>
-                <option value="month-3">St. Xaviers College</option>
+                <option value="NIT DURGAPUR">NIT DURGAPUR</option>
+                <option value={other}>Other Institutions</option>
               </select>
+
+              <div class="group" style={institute=="NIT DURGAPUR"? {display: "none"} : {display: "block"}}>
+              <label for="lastname">School/College</label>
+              <input
+                placeholder="Email"
+                name="email"
+                value={other}
+                onChange={(e) => {
+                  setOther(e.target.value);
+                }}
+                id="pass"
+                type="text"
+                class="input"
+                data-type="text"
+              />
+            </div>
             </div>
             <br></br>
-            <h2>Preferances 1:</h2>
+            <h2>Preferences 1:</h2>
             <br></br>
 
             <div className="group">
               <label for="lastname">Committee</label>
               <select
                 className="input"
+                type="text"
                 name="committee1"
                 value={committee1}
                 onChange={(e) => {
                   setComittee1(e.target.value);
                 }}
                 onBlur={formik.handleBlur}
-              >
-                <option value="week-1">UNGA-DISEC</option>
-                <option value="week-2">UNGA_SPECPOL</option>
-                <option value="week-3">AIPPM</option>
+              > 
+                <option defaultValue={"Select"}>Select</option>
+                <option value="UNGA-DISEC">UNGA-DISEC</option>
+                <option value="UNGA-SPECPOL">UNGA_SPECPOL</option>
+                <option value="AIPPM">AIPPM</option>
               </select>
             </div>
+            
+            <div class="group" style={committee1==""? {display: "none"} : {display: "block"}}>
 
-            <div class="group">
-              <label for="lastname">Country</label>
+              <label for="lastname">
+                {committee1=="AIPPM"? "Personality": "Country" }
+              </label>
               <select
                 className="input"
+                type="text"
                 name="preference1"
                 value={preference1}
                 onChange={(e) => {
@@ -195,21 +208,22 @@ const Formc = () => {
                 }}
                 onBlur={formik.handleBlur}
               >
-                <option value="form-no">India</option>
-                <option value="form-yes">USA</option>
-                <option value="form-yes">China</option>
-                <option value="form-yes">UK</option>
-                <option value="form-yes">Germany</option>
-                <option value="form-yes">France</option>
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="China">China</option>
+                <option value="UK">UK</option>
+                <option value="Germany">Germany</option>
+                <option value="France">France</option>
               </select>
             </div>
             <br></br>
-            <h2>Preferances 2:</h2>
+            <h2>Preferences 2:</h2>
             <br></br>
             <div className="group">
               <label for="lastname">Committee</label>
               <select
                 className="input"
+                type="text"
                 name="committee2"
                 value={committee2}
                 onChange={(e) => {
@@ -217,37 +231,40 @@ const Formc = () => {
                 }}
                 onBlur={formik.handleBlur}
               >
-                <option value="week-1">UNGA-DISEC</option>
-                <option value="week-2">UNGA_SPECPOL</option>
-                <option value="week-3">AIPPM</option>
+                <option defaultValue={"Select"}>Select</option>
+                <option value="UNGA-DISEC" style={committee1=="UNGA-DISEC"? {display: "none"} : {display: "block"}}>UNGA-DISEC</option>
+                <option value="UNGA-SPECPOL" style={committee1=="UNGA-SPECPOL"? {display: "none"} : {display: "block"}}>UNGA_SPECPOL</option>
+                <option value="AIPPM" style={committee1=="AIPPM"? {display: "none"} : {display: "block"}}>AIPPM</option>
               </select>
             </div>
-            <div class="group">
-              <label for="lastname">Country</label>
+            <div class="group" style={committee1==""? {display: "none"} : {display: "block"}}>
+              <label for="lastname">{committee2=="AIPPM"? "Personality": "Country" }</label>
               <select
                 className="input"
                 name="preference2"
+                type="text"
                 value={preference2}
                 onChange={(e) => {
                   setPreferences2(e.target.value);
                 }}
                 onBlur={formik.handleBlur}
               >
-                <option value="form-no">India</option>
-                <option value="form-yes">USA</option>
-                <option value="form-yes">China</option>
-                <option value="form-yes">UK</option>
-                <option value="form-yes">Germany</option>
-                <option value="form-yes">France</option>
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="China">China</option>
+                <option value="UK">UK</option>
+                <option value="Germany">Germany</option>
+                <option value="France">France</option>
               </select>
             </div>
             <br></br>
-            <h2>Preferances 3:</h2>
+            <h2>Preferences 3:</h2>
             <br></br>
             <div className="group">
               <label for="lastname">Committee</label>
               <select
                 className="input"
+                type="text"
                 name="committee3"
                 value={committee3}
                 onChange={(e) => {
@@ -255,28 +272,30 @@ const Formc = () => {
                 }}
                 onBlur={formik.handleBlur}
               >
-                <option value="week-1">UNGA-DISEC</option>
-                <option value="week-2">UNGA_SPECPOL</option>
-                <option value="week-3">AIPPM</option>
+                <option defaultValue={"Select"}>Select</option>
+                <option value="UNGA-DISEC" style={committee1=="UNGA-DISEC" || committee2=="UNGA-DISEC"? {display: "none"} : {display: "block"}}>UNGA-DISEC</option>
+                <option value="UNGA-SPECPOL" style={committee1=="UNGA-SPECPOL" || committee2=="UNGA-SPECPOL"? {display: "none"} : {display: "block"}}>UNGA_SPECPOL</option>
+                <option value="AIPPM" style={committee1=="AIPPM" || committee2=="AIPPM"? {display: "none"} : {display: "block"}}>AIPPM</option>
               </select>
             </div>
-            <div class="group">
-              <label for="lastname">Country</label>
+            <div class="group" style={committee1==""? {display: "none"} : {display: "block"}}>
+              <label for="lastname">{committee1=="AIPPM"? "Personality": "Country" }</label>
               <select
                 className="input"
                 name="preference2"
+                type="text"
                 value={preference3}
                 onChange={(e) => {
                   setPreferences3(e.target.value);
                 }}
                 onBlur={formik.handleBlur}
               >
-                <option value="form-no">India</option>
-                <option value="form-yes">USA</option>
-                <option value="form-yes">China</option>
-                <option value="form-yes">UK</option>
-                <option value="form-yes">Germany</option>
-                <option value="form-yes">France</option>
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="China">China</option>
+                <option value="UK">UK</option>
+                <option value="Germany">Germany</option>
+                <option value="France">France</option>
               </select>
             </div>
             <div className="group">
@@ -305,15 +324,19 @@ const Formc = () => {
             </div>
           </form>
           <form class="sign-up-htm">
-            <div class="group">
+          <div class="group">
               <label for="lastname">Name</label>
               <input
                 placeholder="Email"
+                value={name}
                 name="name"
                 id="pass"
-                type="password"
+                onChange={(e) => {
+                  setName(e.target.value);
+                }}
+                type="text"
                 class="input"
-                data-type="password"
+                data-type="text"
               />
             </div>
             <div class="group">
@@ -321,18 +344,26 @@ const Formc = () => {
               <input
                 placeholder="Email"
                 name="email"
+                value={email}
+                onChange={(e) => {
+                  setEmail(e.target.value);
+                }}
                 id="pass"
-                type="password"
+                type="text"
                 class="input"
-                data-type="password"
+                data-type="text"
               />
             </div>
             <div class="group">
               <label for="lastname">Phone Number</label>
               <input
                 placeholder="Phone"
-                name="phone"
+                name="phoneNumber"
+                value={phoneNumber}
                 id="pass"
+                onChange={(e) => {
+                  setPhoneNumber(e.target.value);
+                }}
                 type="tel"
                 class="input"
                 data-type="password"
@@ -343,20 +374,37 @@ const Formc = () => {
             </div>
             <div className="group">
               <label for="lastname">Institution</label>
+              
               <select
                 placeholder="Institution"
+                type="text"
                 className="input"
-                name="institution"
-                onChange={formik.handleChange}
+                value={institute}
+                name="institute"
+                onChange={(e) => {
+                  setInstitute(e.target.value);
+                }}
                 onBlur={formik.handleBlur}
-                value={formik.values.institution}
               >
-                <option value="week-1">NIT DURGAPUR</option>
-                <option value="week-2">IIT Kharagpur</option>
-                <option value="week-3">Jadavpur University</option>
-                <option value="month-1">IEM</option>
-                <option value="month-3">St. Xaviers College</option>
+                <option value="NIT DURGAPUR">NIT DURGAPUR</option>
+                <option value={other}>Other Institutions</option>
               </select>
+
+              <div class="group" style={institute=="NIT DURGAPUR"? {display: "none"} : {display: "block"}}>
+              <label for="lastname">School/College</label>
+              <input
+                placeholder="Email"
+                name="email"
+                value={other}
+                onChange={(e) => {
+                  setOther(e.target.value);
+                }}
+                id="pass"
+                type="text"
+                class="input"
+                data-type="text"
+              />
+            </div>
             </div>
             <br></br>
             <h2>Preferances 1:</h2>
@@ -366,66 +414,124 @@ const Formc = () => {
               <label for="lastname">Committee</label>
               <select
                 className="input"
-                name="Committee"
-                onChange={formik.handleChange}
+                type="text"
+                name="committee1"
+                value={committee1}
+                onChange={(e) => {
+                  setComittee1(e.target.value);
+                }}
                 onBlur={formik.handleBlur}
-                value={formik.values.Committee}
-              >
-                <option value="week-1">UNGA-DISEC</option>
-                <option value="week-2">UNGA_SPECPOL</option>
-                <option value="week-3">AIPPM</option>
+              > 
+                <option defaultValue={"Select"}>Select</option>
+                <option value="UNGA-DISEC">UNGA-DISEC</option>
+                <option value="UNGA-SPECPOL">UNGA_SPECPOL</option>
+                <option value="AIPPM">AIPPM</option>
               </select>
             </div>
+            
+            <div class="group" style={committee1==""? {display: "none"} : {display: "block"}}>
 
-            <div class="group">
-              <label for="lastname">Country</label>
+              <label for="lastname">
+                {committee1=="AIPPM"? "Personality": "Country" }
+              </label>
               <select
                 className="input"
-                name="Country"
-                onChange={formik.handleChange}
+                type="text"
+                name="preference1"
+                value={preference1}
+                onChange={(e) => {
+                  setPreferences1(e.target.value);
+                }}
                 onBlur={formik.handleBlur}
-                value={formik.values.Country}
               >
-                <option value="form-no">India</option>
-                <option value="form-yes">USA</option>
-                <option value="form-yes">China</option>
-                <option value="form-yes">UK</option>
-                <option value="form-yes">Germany</option>
-                <option value="form-yes">France</option>
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="China">China</option>
+                <option value="UK">UK</option>
+                <option value="Germany">Germany</option>
+                <option value="France">France</option>
               </select>
             </div>
             <br></br>
-            <h2>Preferances 1:</h2>
+            <h2>Preferances 2:</h2>
             <br></br>
             <div className="group">
               <label for="lastname">Committee</label>
               <select
                 className="input"
+                type="text"
                 name="committee2"
-                onChange={formik.handleChange}
+                value={committee2}
+                onChange={(e) => {
+                  setComittee2(e.target.value);
+                }}
                 onBlur={formik.handleBlur}
-                value={formik.values.committee2}
               >
-                <option value="week-1">UNGA-DISEC</option>
-                <option value="week-2">UNGA_SPECPOL</option>
-                <option value="week-3">AIPPM</option>
+                <option defaultValue={"Select"}>Select</option>
+                <option value="UNGA-DISEC" style={committee1=="UNGA-DISEC"? {display: "none"} : {display: "block"}}>UNGA-DISEC</option>
+                <option value="UNGA-SPECPOL" style={committee1=="UNGA-SPECPOL"? {display: "none"} : {display: "block"}}>UNGA_SPECPOL</option>
+                <option value="AIPPM" style={committee1=="AIPPM"? {display: "none"} : {display: "block"}}>AIPPM</option>
               </select>
             </div>
-            <div class="group">
-              <label for="lastname">Country</label>
+            <div class="group" style={committee1==""? {display: "none"} : {display: "block"}}>
+              <label for="lastname">{committee2=="AIPPM"? "Personality": "Country" }</label>
               <select
                 className="input"
-                name="country2"
-                onChange={formik.handleChange}
+                name="preference2"
+                type="text"
+                value={preference2}
+                onChange={(e) => {
+                  setPreferences2(e.target.value);
+                }}
                 onBlur={formik.handleBlur}
-                value={formik.values.Country}
               >
-                <option value="form-no">India</option>
-                <option value="form-yes">USA</option>
-                <option value="form-yes">China</option>
-                <option value="form-yes">UK</option>
-                <option value="form-yes">Germany</option>
-                <option value="form-yes">France</option>
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="China">China</option>
+                <option value="UK">UK</option>
+                <option value="Germany">Germany</option>
+                <option value="France">France</option>
+              </select>
+            </div>
+            <br></br>
+            <h2>Preferances 3:</h2>
+            <br></br>
+            <div className="group">
+              <label for="lastname">Committee</label>
+              <select
+                className="input"
+                type="text"
+                name="committee3"
+                value={committee3}
+                onChange={(e) => {
+                  setComittee3(e.target.value);
+                }}
+                onBlur={formik.handleBlur}
+              >
+                <option defaultValue={"Select"}>Select</option>
+                <option value="UNGA-DISEC" style={committee1=="UNGA-DISEC" || committee2=="UNGA-DISEC"? {display: "none"} : {display: "block"}}>UNGA-DISEC</option>
+                <option value="UNGA-SPECPOL" style={committee1=="UNGA-SPECPOL" || committee2=="UNGA-SPECPOL"? {display: "none"} : {display: "block"}}>UNGA_SPECPOL</option>
+                <option value="AIPPM" style={committee1=="AIPPM" || committee2=="AIPPM"? {display: "none"} : {display: "block"}}>AIPPM</option>
+              </select>
+            </div>
+            <div class="group" style={committee1==""? {display: "none"} : {display: "block"}}>
+              <label for="lastname">{committee1=="AIPPM"? "Personality": "Country" }</label>
+              <select
+                className="input"
+                name="preference2"
+                type="text"
+                value={preference3}
+                onChange={(e) => {
+                  setPreferences3(e.target.value);
+                }}
+                onBlur={formik.handleBlur}
+              >
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="China">China</option>
+                <option value="UK">UK</option>
+                <option value="Germany">Germany</option>
+                <option value="France">France</option>
               </select>
             </div>
             <div className="group">
@@ -435,15 +541,22 @@ const Formc = () => {
                 id="message"
                 type="text"
                 name="experience"
+                value={experience}
                 placeholder="Tell us about your experience"
-                onChange={formik.handleChange}
+                onChange={(e) => {
+                  setExperience(e.target.value);
+                }}
                 onBlur={formik.handleBlur}
-                value={formik.values.experience}
               ></textarea>
             </div>
 
             <div class="group">
-              <input type="submit" class="button" value="Sign Up" />
+              <input
+                type="submit"
+                class="button"
+                value="Register"
+                onClick={postData}
+              />
             </div>
           </form>
         </div>

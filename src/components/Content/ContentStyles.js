@@ -4,9 +4,9 @@ import { motion } from 'framer-motion';
 export const ContentSec = styled.div`
 	padding: 60px 0;
 
-	background: ${({ inverse }) => (inverse ? 'white' : '#5A5A5A')};
+	 background: ${({ inverse }) => (inverse ? '#D5CEA3' : '#D5CEA3')};
 `;
-
+// #3C2A21
 export const ContentRow = styled.div`
 	display: flex;
 	margin: 0 -15px -15px -15px;
@@ -60,8 +60,7 @@ export const TextWrapper = styled.div`
 
 export const ContentButton = styled(motion.button)`
 	height: 3rem;
-	padding right:5px;
-	padding: 16px 32px;
+	padding: 10px
 	font-weight: 700;
 	font-size: 0.8rem;
 	line-height: 18px;
@@ -69,7 +68,7 @@ export const ContentButton = styled(motion.button)`
 	text-transform: uppercase;
 	cursor: pointer;
 	background: none;
-	color: ${({ inverse }) => (inverse ? 'black' : 'white')};
+	color: ${({ inverse }) => (inverse ? '#3C2A21' : '#3C2A21')};
 	border-radius: 4px;
 	white-space: nowrap;
 	padding: ${({ big }) => (big ? '12px 64px' : '10px 20px')};
@@ -81,7 +80,50 @@ export const ContentButton = styled(motion.button)`
 	overflow: hidden;
 
 	&:before {
-		background: #808080;
+		background: #3C2A21;
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: -1;
+		transition: all 0.6s ease;
+		width: 0%;
+		height: 100%;
+	}
+
+	&:hover:before {
+		width: 200%;
+	}
+
+	&:hover {
+		color: ${({ inverse }) => (inverse ? 'white' : 'black')};
+	}
+`;
+export const ContentButton1 = styled(motion.button)`
+	height: 3rem;
+	padding: 10px;
+	margin: 4px;
+	font-weight: 700;
+	font-size: 0.8rem;
+	line-height: 18px;
+	letter-spacing: 1.54px;
+	text-transform: uppercase;
+	cursor: pointer;
+	background: none;
+	color: ${({ inverse }) => (inverse ? '#3C2A21' : '#3C2A21')};
+	border-radius: 4px;
+	white-space: nowrap;
+	padding: ${({ big }) => (big ? '12px 64px' : '10px 20px')};
+	font-size: ${({ fontBig }) => (fontBig ? '20px' : '16px')};
+	outline: none;
+	border: 2px solid #5A5A5A.;
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+
+	&:before {
+		background: #3C2A21;
 		content: '';
 		position: absolute;
 		top: 50%;
@@ -108,7 +150,7 @@ export const ImgWrapper = styled(motion.div)`
 	max-height: 700px;
 	justify-content: center;
 	position: relative;
-	background-color: #7393B3;
+	background-color: #3C2A21;
 	padding: 4px 0;
 	max-height: 40%;
 `;
@@ -139,11 +181,12 @@ export const Img = styled(motion.img)`
 `;
 
 export const ContentHeading = styled(motion.h2)`
+    padding: 10px
 	margin: 1rem 0 0.5rem;
 	font-size: clamp(1.3rem, 7vw, 3rem);
 	line-height: 1.1;
 	font-weight: 600;
-	color: ${({ inverse }) => (inverse ? 'black' : 'white')};
+	color: ${({ inverse }) => (inverse ? '#3C2A21' : '#3C2A21')};
 
 	@media screen and (max-width: 768px) {
 		text-align: center;
@@ -151,11 +194,12 @@ export const ContentHeading = styled(motion.h2)`
 `;
 
 export const Subtitle = styled(motion.p)`
-	max-width: 440px;
+	padding: 20px
+    max-width: 440px;
 	margin-top: ${({ mt }) => (mt ? '1.3rem' : '0')};
 	margin-bottom: 35px;
 	line-height: 24px;
-	color: ${({ inverse }) => (inverse ? '#6a6a6a' : 'white')};
+	color: ${({ inverse }) => (inverse ? '#3C2A21' : '#3C2A21')};
 	font-size: clamp(0.8rem, 2vw, 1rem);
 `;
 
