@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
 import { FaTimes } from "react-icons/fa";
 import { CgMenuRight } from "react-icons/cg";
 import { IconContext } from "react-icons";
@@ -17,7 +16,6 @@ import { animateScroll as scroll } from "react-scroll";
 import { websiteName } from "../../data/GlobalData";
 import { navbarData } from "../../data/NavbarData";
 import { useHistory } from "react-router-dom";
-import { MdImportantDevices } from "react-icons/md";
 
 const Navbar = ({ hide }) => {
   const [show, setShow] = useState(true);
@@ -46,7 +44,6 @@ const Navbar = ({ hide }) => {
               {navbarData.map((el, index) => (
                 <NavItem key={index}>
                   <NavLinks
-                    
                     spy={true}
                     duration={500}
                     smooth={true}
@@ -56,7 +53,7 @@ const Navbar = ({ hide }) => {
                       /*{ el.text } = "Gallery"? { gallery }  :*/ () =>
                         setShow(false)
                     }
-                    to="/aboutNitmun"
+                    to={el.to}
                   >
                     {el.text}
                   </NavLinks>

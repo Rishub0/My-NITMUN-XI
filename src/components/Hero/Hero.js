@@ -62,13 +62,13 @@ const Hero = () => {
     <>
       <HeroSection ref={ref} id="hero">
         <Container>
-          <Apps />
-          {/* {/* <Clock
+          {/* <Apps /> */}
+          <Clock
             timerDays={timerDays}
             timerHours={timerHours}
             timerMinutes={timerMinutes}
             timerSeconds={timerSeconds}
-          /> */}
+          />
           <HeroText>NITMUN XI</HeroText>
 
           <ButtonWrapper>

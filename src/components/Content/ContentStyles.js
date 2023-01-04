@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 export const ContentSec = styled.div`
 	padding: 60px 0;
 
-	background: ${({ inverse }) => (inverse ? 'white' : '#5A5A5A')};
+	background: ${({ inverse }) => (inverse ? 'white' : '#020305')};
 `;
 
 export const ContentRow = styled.div`
@@ -60,7 +60,6 @@ export const TextWrapper = styled.div`
 
 export const ContentButton = styled(motion.button)`
 	height: 3rem;
-	padding right:5px;
 	padding: 16px 32px;
 	font-weight: 700;
 	font-size: 0.8rem;
@@ -75,7 +74,7 @@ export const ContentButton = styled(motion.button)`
 	padding: ${({ big }) => (big ? '12px 64px' : '10px 20px')};
 	font-size: ${({ fontBig }) => (fontBig ? '20px' : '16px')};
 	outline: none;
-	border: 2px solid #5A5A5A.;
+	border: 2px solid #aa0000;
 	cursor: pointer;
 	position: relative;
 	overflow: hidden;
