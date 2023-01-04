@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useEffect, useState } from 'react';
+
 import { useFormik } from "formik";
 import * as Yup from "yup";
-//import axios from "axios";
+import axios from "axios";
 import "./Forrmc.css";
 
 const Formc = () => {
@@ -96,6 +97,10 @@ const Formc = () => {
                 id="Name"
                 type="text"
                 class="input"
+                value={name}
+                onChange={(e) => {
+                  setName(e.target.value);
+                }}
               />
               {formik.touched.Name && formik.errors.Name ? (
                 <div>{formik.errors.Name}</div>
@@ -106,9 +111,11 @@ const Formc = () => {
               <input
                 placeholder="Email"
                 name="email"
-                onChange={formik.handleChange}
+                onChange={(e) => {
+                  setEmail(e.target.value);
+                }}
                 onBlur={formik.handleBlur}
-                value={formik.values.email}
+                value={email}
               />
               {formik.touched.email && formik.errors.email ? (
                 <div>{formik.errors.email}</div>
@@ -119,9 +126,11 @@ const Formc = () => {
               <input
                 placeholder="Phone"
                 name="phone"
-                onChange={formik.handleChange}
+                onChange={(e) => {
+                  setPhoneNumber(e.target.value);
+                }}
                 onBlur={formik.handleBlur}
-                value={formik.values.phone}
+                value={phoneNumber}
               />
               {formik.touched.phone && formik.errors.phone ? (
                 <div>{formik.errors.phone}</div>
@@ -135,9 +144,11 @@ const Formc = () => {
                 type="text"
                 className="input"
                 name="institution"
-                onChange={formik.handleChange}
+                onChange={(e) => {
+                  setInstitute(e.target.value);
+                }}
                 onBlur={formik.handleBlur}
-                value={formik.values.institution}
+                value={institute}
               >
                 <option value="NIT DURGAPUR">NIT DURGAPUR</option>
                 <option value={other}>Other Institutions</option>
@@ -196,7 +207,7 @@ const Formc = () => {
                   setPreferences1(e.target.value);
                 }}
                 onBlur={formik.handleBlur}
-                value={formik.values.Country}
+                
               >
                 <option value="India">India</option>
                 <option value="USA">USA</option>

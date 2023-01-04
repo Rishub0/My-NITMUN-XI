@@ -95,13 +95,8 @@ const Content = ({
 										setShowModal(true);
 									}}
 								>
-<<<<<<< HEAD
-									{buttonLabel1}
-								</ContentButton1>
-=======
 									{buttonLabel}
-								</ContentButton>
->>>>>>> 26f6822c7426ab0e42b47645566db533fbc5ded9
+								</ContentButton1>
 								<ContentButton
 									initial={initial}
 									transition={{ ...transition, delay: 1 }}
