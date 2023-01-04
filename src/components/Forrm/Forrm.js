@@ -22,6 +22,7 @@ const Formc = () => {
   const postData = async (e) => {
     e.preventDefault();
     
+    
     await axios.post("http://localhost:5000/api/register", {
       
       // headers: {
@@ -111,6 +112,7 @@ const Formc = () => {
               <input
                 placeholder="Email"
                 name="email"
+                className='input'
                 onChange={(e) => {
                   setEmail(e.target.value);
                 }}
@@ -126,6 +128,7 @@ const Formc = () => {
               <input
                 placeholder="Phone"
                 name="phone"
+                className='input'
                 onChange={(e) => {
                   setPhoneNumber(e.target.value);
                 }}
@@ -157,7 +160,7 @@ const Formc = () => {
               <div class="group" style={institute=="NIT DURGAPUR"? {display: "none"} : {display: "block"}}>
               <label for="lastname">School/College</label>
               <input
-                placeholder="Email"
+                placeholder="School/College"
                 name="email"
                 value={other}
                 onChange={(e) => {
@@ -174,7 +177,7 @@ const Formc = () => {
             <h2>Preferences 1:</h2>
             <br></br>
 
-            <div class="form-item form-item3">
+            <div class="group">
               <label for="Committee">Committee</label>
               <select
                 className="input"
@@ -226,9 +229,11 @@ const Formc = () => {
                 className="input"
                 type="text"
                 name="committee2"
-                onChange={formik.handleChange}
+                onChange={(e) => {
+                  setComittee2(e.target.value);
+                }}
                 onBlur={formik.handleBlur}
-                value={formik.values.committee2}
+                value={committee2}
               >
                 <option defaultValue={"Select"}>Select</option>
                 <option value="UNGA-DISEC" style={committee1=="UNGA-DISEC"? {display: "none"} : {display: "block"}}>UNGA-DISEC</option>
@@ -305,9 +310,11 @@ const Formc = () => {
                 type="text"
                 name="experience"
                 placeholder="Tell us about your experience"
-                onChange={formik.handleChange}
+                onChange={(e) => {
+                  setExperience(e.target.value);
+                }}
                 onBlur={formik.handleBlur}
-                value={formik.values.experience}
+                value={experience}
               ></textarea>
             </div>
 

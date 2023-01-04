@@ -7,9 +7,9 @@ export const heroMain = {
 	},
 	headline: 'Find the best events',
 	description:
-		'Welcome New Year with Wondergarden on waterfront. Celebrate with world-class international acts, roaming performers, children’s performers and entertainment',
+		'',
 	buttonLabel: 'Study Guide',
-	buttonLabel: 'Study Guide',
+	buttonLabel1: 'Portfolio Matrix',
 	imgStart: 'start',
 	img: './assets/heromain1.jpg',
 	start: 'true',
@@ -26,7 +26,7 @@ const heroOne = {
 	description:
 		'Welcome New Year with Wondergarden on waterfront. Celebrate with world-class international acts, roaming performers, children’s performers and entertainment',
 	buttonLabel: 'Study Guide',
-	buttonLabel: 'Study Guide',
+	buttonLabel1: 'Portfolio Matrix',
 	imgStart: 'start',
 	img: './assets/hero1.jpg',
 	start: 'true',
@@ -43,7 +43,7 @@ const heroTwo = {
 	description:
 		'Full of fresh, original and ground-breaking music, the festival’s set in the urban playground on the center.',
 	buttonLabel: 'Study guide',
-	buttonLabel: 'Study Guide',
+	buttonLabel1: 'Portfolio Matrix',
 	imgStart: 'start',
 	img: './assets/hero6.jpg',
 	start: 'true',
@@ -60,8 +60,7 @@ const heroThree = {
 	description:
 		'This two-week festival brings together a chocka social calendar and array of events including theatre and cabaret, music, visual arts exhibitions and installations, film and literature',
 	buttonLabel: 'Study Guide',
-	buttonLabel: 'Study Guide',
-
+	buttonLabel1: 'Portfolio Matrix',
 	imgStart: '',
 	img: './assets/hero7.jpg',
 	start: 'true',
@@ -78,7 +77,7 @@ const heroFour = {
 	description:
 		'Try a selection of signature dishes from finest restaurants as you stroll through most glamorous food festival.',
 	buttonLabel: 'Study Guide',
-	buttonLabel: 'Study Guide',
+	
 	imgStart: '',
 	img: './assets/hero3.jpg',
 	start: 'true',
