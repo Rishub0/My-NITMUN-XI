@@ -1,9 +1,9 @@
 export const eventsData = [
 	{
-		img: './assets/masonry1.jpg',
+		img: '../asset/img/NITMUN1.jpg',
 	},
 	{
-		img: './assets/masonry2.jpg',
+		img: '../asset/img/NITMUN2.jpg',
 		class: 'tall',
 	},
 
