@@ -69,23 +69,6 @@ const EventsSection = () => {
             ))}
           </MasonryGrid>
 
-          <MasonryGrid ref={ref}>
-            {eventsData.map((item, index) => (
-              <EventImageWrapper
-                animate={animation}
-                initial={{
-                  opacity: 0,
-                  scale: 0.3,
-                }}
-                transition={{ duration: 0.8 }}
-                className={item.class}
-                key={index}
-                onClick={() => handleClick(index)}
-              >
-                <Image src={item.img}></Image>
-              </EventImageWrapper>
-            ))}
-          </MasonryGrid>
         </Container>
       </Section>
       <Modal show={showModal} onHide={() => setShowModal(false)}>

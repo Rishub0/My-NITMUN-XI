@@ -34,7 +34,7 @@ export const navbarData = [
     smooth: true,
     exact: "true",
     offset: -80,
-    // to: "event",
+     to: "/gallery",
   },
   {
     text: "About Us",

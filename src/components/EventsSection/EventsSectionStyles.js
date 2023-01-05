@@ -13,6 +13,7 @@ export const MasonryGrid = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 15vw;
 
     > a > img {
       max-height: 300px;

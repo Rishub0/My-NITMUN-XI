@@ -1,47 +1,61 @@
 export const eventsData = [
 	{
 		img: './assets/img/NITMUN1.jpg',
-		text: 'hello kaushal bhaia'
+		text: 'Kaushal is an all-time life saver.'
 	},
 	{
 		img: './assets/img/NITMUN2.jpg',
 		class: 'tall',
-		text: 'I am pulling all-nighter to create this'
+		text: 'I am pulling an all-nighter in his room to make this website.'
 	},
 
 	{
 		img: './assets/img/NITMUN3.jpg',
-	},
-	{
-		img: './assets/img/NITMUN4.jpg',
-		class: 'wide',
+		text: 'Aditya Bhaia gives good motivation.'
 	},
 	{
 		img: './assets/img/NITMUN5.jpg',
-		class: 'big',
+		class: 'wide',
+		text: 'Thank you for helping me in this.'
 	},
 	{
-		img: './assets/img/NITMUN6.jpg',
+		img: './assets/img/NITMUN12.jpg',
+		class: 'big',
+		text: 'also soumik, thanks for fucking up my code.'
 	},
 	{
 		img: './assets/img/NITMUN7.jpg',
 		class: 'tall',
+		text: 'without u guys, this website was just another dream.'
 	},
 	{
 		img: './assets/img/NITMUN8.jpg',
 		class: 'tall',
+		text: 'Even though its almost complete,'
 	},
 	{
 		img: './assets/img/NITMUN9.jpg',
+		text: 'one Senior would definitely reject it.'
 
 	},
 	{
 		img: './assets/img/NITMUN10.jpg',
+		text: 'she is quite brutal when it comes to design.'
 	},
 	{
 		img: './assets/img/NITMUN11.jpg',
+		text: 'But any how,'
 	},
 	{
-		img: './assets/img/NITMUN12.jpg',
+		img: './assets/img/NITMUN4.jpg',
+		text: 'we will make it a grand success'
+	},
+	{
+		img: './assets/img/NITMUN13.jpg',
+		text: 'because failure is never an option'
+	},
+	{
+		img: './assets/img/NITMUN14.jpg',
+		text: 'and who doesnt want to see a chalta firta rainbow in the campus of nitdgp?'
 	},
 ];
