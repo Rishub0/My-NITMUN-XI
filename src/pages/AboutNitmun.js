@@ -10,9 +10,14 @@ import Info from "../components/Info/Info";
 import Navbar from "../components/Navbar/Navbar";
 //import Timeline from "../components/Timeline/Timeline";
 import { heroData } from "../data/HeroData";
+import { motion } from 'framer-motion/dist/framer-motion';
+
 const AboutNitmun = () => {
   return (
-    <>
+    <motion.div 
+     initial={{width: 0}}
+     animate={{width: "100vw"}}
+     exit={{ x: window.innerWidth, transition: {duration: 0.2} }}>
       <Navbar />
       <About />
       {/* <Timeline /> */}
@@ -26,7 +31,7 @@ const AboutNitmun = () => {
         <Features />
       </div>
       <Footer />
-    </>
+    </motion.div>
   );
 };
 

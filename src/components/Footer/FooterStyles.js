@@ -3,13 +3,14 @@ import { Link } from 'react-router-dom';
 import { dark } from '../../data/GlobalData';
 
 export const FooterContainer = styled.div`
-    height: 100vh;
+    height: 50vh;
 	background-color: ${dark};
 	padding: 4rem 0 2rem 0;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	margin-top: 20rem
 `;
 
 export const FooterLinksContainer = styled.div`
@@ -27,7 +28,7 @@ export const FooterLinksWrapper = styled.div`
 	display: flex;
 	flex-wrap: wrap;
 	@media screen and (max-width: 820px) {
-		/* flex-direction: column; */
+		flex-direction: column;
 		justify-content: center;
 	}
 `;
@@ -36,7 +37,7 @@ export const FooterLinkItems = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	margin: 16px;
+	margin: 20px;
 	width: 160px;
 	box-sizing: border-box;
 	color: #fff;

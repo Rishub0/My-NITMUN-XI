@@ -47,7 +47,7 @@ function Footer() {
             <SocialIcon src="./assets/final white.png" />
             {websiteName}
           </SocialLogo>
-          <WebsiteRights>{websiteName} © 2021</WebsiteRights>
+          <WebsiteRights>{websiteName} © 2023</WebsiteRights>
           <SocialIcons>
             <SocialIconLink href="/" target="_blank" aria-label="Facebook">
               <FaFacebook />

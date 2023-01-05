@@ -22,7 +22,7 @@ const Navbar = ({ hide }) => {
 
   const navigate = useHistory;
   const gallery = () => {
-    navigate.push("/gallery");
+    navigate.push();
   };
 
   return (
@@ -51,9 +51,8 @@ const Navbar = ({ hide }) => {
                     offset={-79}
                     onClick={
                       /*{ el.text } = "Gallery"? { gallery }  :*/ () =>
-                        setShow(false)
-                    }
-                    to={el.to}
+                      setShow(false)}
+                      to={el.to}
                   >
                     {el.text}
                   </NavLinks>

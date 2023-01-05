@@ -46,16 +46,16 @@ export const Button = styled.button`
 	white-space: nowrap;
 	padding: ${({ big }) => (big ? '12px 64px' : '10px 20px')};
 	font-weight: 600;
-	color: #fff;
+	color: #B58B00;
 	font-size: ${({ fontBig }) => (fontBig ? '20px' : '16px')};
 	outline: none;
-	border: 2px solid #d12d2d;
+	border: 2px solid #B58B00;	;
 	cursor: pointer;
 	position: relative;
 	overflow: hidden;
 
 	&:before {
-		background: #d12d2d;
+		background: #B58B00;
 		content: '';
 		position: absolute;
 		top: 50%;

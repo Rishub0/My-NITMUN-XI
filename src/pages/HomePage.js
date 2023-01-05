@@ -10,10 +10,14 @@ import Modal from "../components/Modal/Modal";
 import { heroData } from "../data/HeroData";
 import sample from "../asset/Videos/sample.mp4";
 import LandVid from "../components/bgVideo/LandVid";
+import {motion} from "framer-motion/dist/framer-motion";
 
 const HomePage = () => {
   return (
-    <>
+     <motion.div className="home" 
+     initial={{width: 0}}
+     animate={{width: "100vw"}}
+     exit={{ x: window.innerWidth, transition: {duration: 0.2} }}>
       <Hero />
       {/* <Info id="about" /> */}
       {/* <Features id="programs" /> */}
@@ -26,7 +30,7 @@ const HomePage = () => {
 			</div> */}
       
       <Footer />
-    </>
+    </motion.div>
   );
 };
 
