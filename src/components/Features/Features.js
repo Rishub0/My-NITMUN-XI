@@ -16,7 +16,7 @@ import { featuresData } from '../../data/FeaturesData';
 import { useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
- const Sponsors= ({ id }) => {
+const Features = ({ id }) => {
 	const initial = {
 		scale: 0.2,
 		y: 40,
@@ -71,4 +71,4 @@ import { useInView } from 'react-intersection-observer';
 	);
 };
 
-// export default Sponsors;
+export default Features;

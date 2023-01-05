@@ -4,15 +4,18 @@ import About from "../components/About/About";
 import Carrds from "../components/Cards/Cards";
 import Content from "../components/Content/Content";
 import EventsSection from "../components/EventsSection/EventsSection";
+import Features from "../components/Features/Features";
 import Footer from "../components/Footer/Footer";
 import Info from "../components/Info/Info";
 import Navbar from "../components/Navbar/Navbar";
+//import Timeline from "../components/Timeline/Timeline";
 import { heroData } from "../data/HeroData";
 const AboutNitmun = () => {
   return (
     <>
       <Navbar />
       <About />
+      {/* <Timeline /> */}
       {/* <Info id="about" /> */}
       <div id="events">
         {heroData.map((contentData, index) => (
@@ -20,6 +23,7 @@ const AboutNitmun = () => {
         ))}
         <Carrds />
         {/* <EventsSection/> */}
+        <Features />
       </div>
       <Footer />
     </>

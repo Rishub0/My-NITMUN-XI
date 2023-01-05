@@ -25,6 +25,10 @@ export const Section = styled.div`
 	color: white;
 	padding: 160px;
 	background: ${({ inverse }) => (inverse ? light : dark)};
+	@media only screen and (max-width: 700px){
+		padding-left: 0;
+		padding-right: 0;
+	}
 `;
 
 export const MainHeading = styled.h1`

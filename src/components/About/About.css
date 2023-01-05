@@ -4,6 +4,7 @@
     flex-direction: column;
     box-sizing: border-box;
     padding: 20px;
+    height: 100vh;
     /*margin-bottom: 50px;*/
     /* background-color: #5A5A5A; */
     background: #000000;  /* fallback for old browsers */
@@ -15,14 +16,16 @@ background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, F
 .headings{
 
     font-size: 4rem;
-    color: aliceblue;
+    text-align: center;
+    color: #937047;
+    font-family:'Times New Roman', Times, serif;
 }
 #pic{
     display: flex;
 }
 #pic img{
-    width: 450px;
-    height: 300px;
+    width: 950px;
+    height: 430px;
     border-radius: 20px;
 }
 #intro{
@@ -36,11 +39,13 @@ background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, F
     margin-bottom: 20px;
 }
 #intro p{
-    font-size: 15px;
+    font-size: 19px;
+    /* padding-top: 20px; */
     padding-right: 10px;
-    padding-left: 10px;
+    padding-left: 20px;
     padding-bottom: 10px; 
-    color: aliceblue;
+    letter-spacing: normal;
+    color: #937047;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
@@ -57,5 +62,9 @@ background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, F
     }
     #intro h2{
         font-size: 1.3rem;
+    }
+    #intro p{
+        font-size: 10px;
+        padding-top: 10px;
     }
 }

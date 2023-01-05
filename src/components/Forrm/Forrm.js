@@ -416,7 +416,7 @@ const Formc = () => {
             </div>
             </div>
             <br></br>
-            <h2>Preferances 1:</h2>
+            <h2>Preferences 1:</h2>
             <br></br>
 
             <div className="group">
@@ -438,10 +438,10 @@ const Formc = () => {
               </select>
             </div>
             
-            <div class="group" style={committee1==""? {display: "none"} : {display: "block"}}>
+            <div class="group">
 
               <label for="lastname">
-                {committee1=="AIPPM"? "Personality": "Country" }
+                News Agency
               </label>
               <select
                 className="input"
@@ -462,7 +462,7 @@ const Formc = () => {
               </select>
             </div>
             <br></br>
-            <h2>Preferances 2:</h2>
+            <h2>Preferences 2:</h2>
             <br></br>
             <div className="group">
               <label for="lastname">Committee</label>
@@ -482,8 +482,8 @@ const Formc = () => {
                 <option value="AIPPM" style={committee1=="AIPPM"? {display: "none"} : {display: "block"}}>AIPPM</option>
               </select>
             </div>
-            <div class="group" style={committee1==""? {display: "none"} : {display: "block"}}>
-              <label for="lastname">{committee2=="AIPPM"? "Personality": "Country" }</label>
+            <div class="group">
+              <label for="lastname">News Agency</label>
               <select
                 className="input"
                 name="preference2"
@@ -503,7 +503,7 @@ const Formc = () => {
               </select>
             </div>
             <br></br>
-            <h2>Preferances 3:</h2>
+            <h2>Preferences 3:</h2>
             <br></br>
             <div className="group">
               <label for="lastname">Committee</label>
@@ -523,8 +523,8 @@ const Formc = () => {
                 <option value="AIPPM" style={committee1=="AIPPM" || committee2=="AIPPM"? {display: "none"} : {display: "block"}}>AIPPM</option>
               </select>
             </div>
-            <div class="group" style={committee1==""? {display: "none"} : {display: "block"}}>
-              <label for="lastname">{committee1=="AIPPM"? "Personality": "Country" }</label>
+            <div class="group">
+              <label for="lastname">News Agency</label>
               <select
                 className="input"
                 name="preference2"

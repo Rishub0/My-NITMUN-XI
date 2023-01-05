@@ -42,13 +42,15 @@ $color-box-6 : #9b1308;
 $color-box-7 : #3ede56;
 
 .card__collection {
-  top:0;
+  top: 0;
   height: 100%;
   width: 100%;
     position: relative;
     display: block;
     align-content: center;
-    background:#D5CEA3;
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000);
     padding-bottom: 30px;
     padding-left: 190px;
     font-family: 'Do Hyeon', sans-serif;
@@ -500,6 +502,6 @@ $color-box-7 : #3ede56;
 
   .card__collection{
     
-    padding: auto;
+    padding: 2px 40px;
   }
 }
