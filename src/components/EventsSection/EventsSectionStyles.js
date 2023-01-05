@@ -8,10 +8,11 @@ export const MasonryGrid = styled.div`
   grid-auto-rows: 200px;
   grid-auto-flow: dense;
   margin-top: 4rem;
-  @media screen and (max-width: 550px) {
+  @media screen and (max-width: 500px) {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 15vw;
 
     > a > img {
       max-height: 300px;
