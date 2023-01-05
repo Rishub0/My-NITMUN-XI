@@ -1,0 +1,145 @@
+/* 
+
+.timer{
+    background-color: rgb(92, 73, 48);
+    display: flex;
+    flex: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 7em;
+    padding-top: 2em;
+    width: 100%;
+    height: 100%;
+}
+.timer div:first-child{
+    text-align: center;
+}
+h2{
+    font-weight: 600;
+    margin-bottom: 0.5em;
+}
+.timer div:first-child p{
+    color:rgb(176, 166, 116) ;
+}
+.timer div:first-child {
+    border: 1px solid #fff;
+    border-radius: 3px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin-top: 3em;
+    padding: 3em;
+    text-align: center;
+}
+section p:first-child, .timer div:last-child span{
+    font-size: 3em;
+}
+
+@media screen and (max-width: 480px){
+    .timer div:last-child{
+        margin-left: 2em;
+        margin-right: 2em;
+        padding: 3em 1em;
+    }
+} */
+
+.timer-cointainer {
+    text-align: center;
+    height: 40vh;
+    margin-bottom: 0;
+    margin-top: 90px;
+    background-color: #261e1a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .timer-cointainer h1{
+    font-size: 3rem;
+    margin-bottom: 5px;
+    color: #795e3f;
+    font-family:'Times New Roman', Times, serif;
+  }
+.clock {
+    position: relative;
+    margin: auto
+    ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #261e1a;
+    height: 150px;
+    width: 400px;
+    color: #795e3f;
+    text-shadow: 0.1px 0.1px 0.1px;
+    border-radius: 15px;
+    /* border: 2px solid silver; */
+    box-shadow: 0 0 5px 5px;
+  }
+  
+  .clock section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+  .clock section p {
+    font-size: 3.3rem;
+    
+  }
+  .clock section small {
+    color:#795e3f;
+    text-shadow: none;
+    font-size:medium;
+    font-family:'Times New Roman', Times, serif;
+  }
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  
+  .App-header {
+    background-color: #261e1a;
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .App-link {
+    color: #61dafb;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  @media only screen and (max-width: 700px){
+    .clock{
+    width:270px;
+    height:120px;
+    
+    }
+    .clock section p {
+        font-size: 2rem;
+      }
+    .clock section{
+      padding: 0.5rem;
+    }
+    .timer-cointainer h1{
+      font-size: 2.5rem;
+    }
+  }

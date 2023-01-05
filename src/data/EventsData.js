@@ -40,18 +40,22 @@ export const eventsData = [
 	},
 	{
 		img: './assets/img/NITMUN10.jpg',
-		text: 'she is quite brutal when it comes to design'
+		text: 'she is quite brutal when it comes to design.'
 	},
 	{
 		img: './assets/img/NITMUN11.jpg',
+		text: 'But any how,'
 	},
 	{
 		img: './assets/img/NITMUN4.jpg',
+		text: 'we will make it a grand success'
 	},
 	{
 		img: './assets/img/NITMUN13.jpg',
+		text: 'because failure is never an option'
 	},
 	{
 		img: './assets/img/NITMUN14.jpg',
+		text: 'and who doesnt want to see a chalta firta rainbow in the campus of nitdgp?'
 	},
 ];

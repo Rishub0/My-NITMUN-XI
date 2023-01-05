@@ -187,6 +187,7 @@ export const ContentHeading = styled(motion.h2)`
 	font-size: clamp(1.3rem, 7vw, 3rem);
 	line-height: 1.1;
 	font-weight: 600;
+	font-family:'Times New Roman', Times, serif;
 	color: ${({ inverse }) => (inverse ? 'black' : 'white')};
 
 	@media screen and (max-width: 768px) {
