@@ -4,6 +4,8 @@ import { useFormik } from "formik";
 import * as Yup from "yup";
 import axios from "axios";
 import "./Forrmc.css";
+import Navbar from '../Navbar/Navbar';
+import Footer from '../Footer/Footer';
 
 const Formc = () => {
   const [name,setName]=useState("");
@@ -78,7 +80,10 @@ const Formc = () => {
   });
 
   return (
+    <div>
+      
     <div class="container">
+      
       <div class="login-container">
         <input id="item-1" type="radio" name="item" class="sign-in" checked />
         <label for="item-1" class="item">
@@ -565,6 +570,8 @@ const Formc = () => {
           </form>
         </div>
       </div>
+    </div>
+    <Footer />
     </div>
   );
 };
