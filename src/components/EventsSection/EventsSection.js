@@ -94,10 +94,10 @@ const EventsSection = () => {
           <Img src={eventsData[selectedImage].img} alt="image" />
         </ImgWrapper>
         <Subtitle mt inverse>
-          no unique text.
+          {eventsData[selectedImage].text}
         </Subtitle>
 
-        <ContentButton inverse>Buy Tickets</ContentButton>
+        {/* <ContentButton inverse>Buy Tickets</ContentButton> */}
       </Modal>
     </>
   );
