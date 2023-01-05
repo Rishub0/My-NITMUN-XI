@@ -8,6 +8,7 @@ export const MasonryGrid = styled.div`
   grid-auto-rows: 200px;
   grid-auto-flow: dense;
   margin-top: 4rem;
+  
   @media screen and (max-width: 550px) {
     display: flex;
     flex-direction: column;
@@ -63,13 +64,13 @@ export const EventImageWrapper = styled(motion.div)`
 `;
 
 export const EventHeading = styled(motion.h2)`
-  font-size: clamp(3rem, 8vw, 8rem);
+  font-size: clamp(3rem, 5vw, 8rem);
   margin-bottom: 2rem;
-  color: blue;
+  color: #795e3f;
   width: 100%;
-  -webkit-letter-spacing: 4px;
-  -moz-letter-spacing: 4px;
-  -ms-letter-spacing: 4px;
+  // -webkit-letter-spacing: 4px;
+  // -moz-letter-spacing: 4px;
+  // -ms-letter-spacing: 4px;
   letter-spacing: 4px;
   text-align: center;
   text-transform: capitalize;

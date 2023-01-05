@@ -40,7 +40,8 @@ const Time = () => {
     })
   return (
     <div>
-     <section className='timer-cointainer'>   
+     <section className='timer-cointainer'> 
+     <h1>NITMUN XI goes live in</h1>  
         
           <div className="clock">
             <section>

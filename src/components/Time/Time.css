@@ -46,14 +46,19 @@ section p:first-child, .timer div:last-child span{
     text-align: center;
     height: 40vh;
     margin-bottom: 0;
-    margin-top: 70px;
+    margin-top: 90px;
     background-color: #261e1a;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-
+  .timer-cointainer h1{
+    font-size: 3rem;
+    margin-bottom: 5px;
+    color: #795e3f;
+    font-family:'Times New Roman', Times, serif;
+  }
 .clock {
     position: relative;
     margin: auto
@@ -62,8 +67,8 @@ section p:first-child, .timer div:last-child span{
     justify-content: center;
     align-items: center;
     background: #261e1a;
-    height: 180px;
-    width: 360px;
+    height: 150px;
+    width: 400px;
     color: #795e3f;
     text-shadow: 0.1px 0.1px 0.1px;
     border-radius: 15px;
@@ -79,11 +84,14 @@ section p:first-child, .timer div:last-child span{
     padding: 1rem;
   }
   .clock section p {
-    font-size: 3rem;
+    font-size: 3.3rem;
+    
   }
   .clock section small {
-    color: silver;
+    color:#795e3f;
     text-shadow: none;
+    font-size:medium;
+    font-family:'Times New Roman', Times, serif;
   }
   .App-logo {
     height: 40vmin;
@@ -121,10 +129,17 @@ section p:first-child, .timer div:last-child span{
   }
   @media only screen and (max-width: 700px){
     .clock{
-    width:300px;
+    width:270px;
+    height:120px;
     
     }
     .clock section p {
         font-size: 2rem;
       }
+    .clock section{
+      padding: 0.5rem;
+    }
+    .timer-cointainer h1{
+      font-size: 2.5rem;
+    }
   }
