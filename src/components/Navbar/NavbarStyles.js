@@ -7,21 +7,23 @@ import { dark } from '../../data/GlobalData';
 export const Nav = styled.nav`
 	background: ${({ hide }) => (hide ? 'transparent' : dark)};
 	margin-top: -80px;
-	height: 80px;
+	height: 120px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	font-size: 1.2rem;
+	font-family: 'IM Fell DW Pica SC', serif;
 	position: sticky;
 	top: 0;
-	z-index: 50;
+	z-index: 55;
 	width: 100%;
+	background: transparent;
 `;
 
 export const NavbarContainer = styled(Container)`
 	display: flex;
 	justify-content: start;
-	height: 80px;
+	height: 120px;
 `;
 
 export const NavLogo = styled(Link)`
@@ -32,12 +34,12 @@ export const NavLogo = styled(Link)`
 	font-size: 2rem;
 	display: flex;
 	align-items: center;
-	z-index: 50;
+	z-index: 49;
 `;
 
 export const NavIcon = styled.img`
 	margin-right: 1rem;
-	width: 3rem;
+	width: 4.2rem;
 `;
 export const MobileIcon = styled.div`
 	display: none;

@@ -1,0 +1,119 @@
+.rrr{
+    /* background: linear-gradient(
+        to right,
+        var(--purple),
+        var(--violet),
+        var(--pink),
+        var(--purple)
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: nowrap; */
+}
+.belowrrr{
+    margin-top: 0;
+    vertical-align: center;
+    position: relative;
+    top: -65px;
+    padding-top: 70px;
+    z-index: 51;
+
+}
+.theme{
+    font-size: 120px;
+    margin-top: 2px;
+    text-align: center;
+    position: relative;
+    top: 25rem;
+    color: #d0bf51;
+
+}
+.belowrrr1{
+    margin-top: 90px;
+    font-size: 60px;
+    color: #bab96d;
+    text-align: center;
+}
+.welcome1{
+    margin-bottom: 0;
+    justify-content: center;
+
+}
+.welcome2{
+    font-size: 45px;
+    margin-top: 5px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 28px;
+}
+
+
+.belowrrr2{
+    justify-content: space-around;
+    width: 100%;
+    color: #bab96d;
+    
+}
+.date{
+    margin-top: 10px;
+    font-size: 23px;
+    text-align: center;
+    color: #bab96d;
+}
+.register{
+    top: -100px;
+}
+/* === removing default button style ===*/
+.button {
+    margin: 0;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    border: none;
+  }
+  
+  /* button styling */
+  .button {
+    top: -30px;
+    --border-right: 6px;
+    --text-stroke-color: rgba(208,191,81,0.6);
+    --animation-color: rgba(208,191,81);
+    --fs-size: 2em;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-family: "Arial";
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+  }
+  /* this is the text, when you hover on button */
+  .hover-text {
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--animation-color);
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right) solid var(--animation-color);
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-text-stroke: 1px var(--animation-color);
+  }
+  /* hover */
+  .button:hover .hover-text {
+    width: 100%;
+    filter: drop-shadow(0 0 1px var(--animation-color))
+  }
+  .vid{
+    position: absolute;
+  }
+  .timerrr{
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 250px;
+  }

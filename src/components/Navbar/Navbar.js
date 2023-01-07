@@ -28,13 +28,14 @@ const Navbar = ({ hide }) => {
   return (
     <Nav hide={hide}>
       <NavbarContainer>
-        <NavLogo to="/" onClick={scroll.scrollToTop}>
-          <NavIcon src="./assets/final white.png" alt="" />
-          {/* {websiteName} */}
-        </NavLogo>
+       
 
         {!hide && (
           <>
+           <NavLogo to="/" onClick={scroll.scrollToTop}>
+          <NavIcon src="./assets/final white.png" alt="" />
+          {/* {websiteName} */}
+           </NavLogo>
             <IconContext.Provider value={{ color: "white" }}>
               <MobileIcon onClick={() => setShow(!show)}>
                 {show ? <FaTimes /> : <CgMenuRight />}

@@ -49,7 +49,7 @@ body {
 .box {
   
   
-  border-right: solid 1px rgba(97, 50, 50, 0.932);
+  /* border-right: solid 1px rgba(97, 50, 50, 0.932); */
   border-radius: 5px;
   font-weight: 300;
   

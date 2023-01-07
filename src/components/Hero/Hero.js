@@ -8,6 +8,7 @@ import Clock from "../clock/Clock";
 import Apps from "../timer/timer"   
 import "./hero.css"
 import LandVid from "../bgVideo/LandVid";
+import Time from "../Time/Time";
 
 
 const Hero = () => {
@@ -63,9 +64,11 @@ const Hero = () => {
 
   return (
     <>
+    <Navbar  /> 
       <HeroSection ref={ref} id="hero">
+      
         {/* <Container> */}
-        <LandVid />
+        <div className="vid"><LandVid /></div>
           {/* <Apps /> */}
           {/* <Clock
             timerDays={timerDays}
@@ -75,16 +78,42 @@ const Hero = () => {
           /> */}
           {/* <HeroText>NIMTUN XI</HeroText> */}
 
-          <ButtonWrapper>
+          <div className="belowrrr">
+          <div className="belowrrr1">
+            <p className="welcome1">Welcome to NITMUN XI</p>
+          </div>
+          <div className="belowrrr2">
+            <p className="welcome2">Upset the convictions with the swords of Diplomacy.</p>
+          </div>
+          <div className="date">
+            20th Jan - 22nd Jan, 2023
+          </div>
+          </div>
+        {/* </Container> */}
+        {/* <ButtonWrapper>
             <Link to="sign-up">
               <Button big onClick={about} className="register">
                 Register
               </Button>
             </Link>
-          </ButtonWrapper> 
-        {/* </Container> */}
+      </ButtonWrapper>  */}
+      <Link to="sign-up">
+      <button data-text="Awesome" class="button" onClick={about}>
+    <span class="actual-text">&nbsp;Register&nbsp;</span>
+    <span class="hover-text" aria-hidden="true">&nbsp;Register&nbsp;</span>
+    </button>
+     </Link>
+
+     <div className="theme">
+          <span className="rrr">Rise. Reflect. Revolt.</span>
+          </div>
+          <div className="timerrr">
+            <Time/>
+          </div>
+          
       </HeroSection>
-      <Navbar hide={inView} /> 
+      
+      
     
     </>
   );
