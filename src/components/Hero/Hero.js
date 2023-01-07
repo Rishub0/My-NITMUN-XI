@@ -98,6 +98,7 @@ const Hero = () => {
             </Link>
       </ButtonWrapper>  */}
       <Link to="sign-up">
+        <div className="register"></div>
       <button data-text="Awesome" class="button" onClick={about}>
     <span class="actual-text">&nbsp;Register&nbsp;</span>
     <span class="hover-text" aria-hidden="true">&nbsp;Register&nbsp;</span>

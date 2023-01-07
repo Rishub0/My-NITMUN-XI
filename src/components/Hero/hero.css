@@ -15,7 +15,7 @@
     margin-top: 0;
     vertical-align: center;
     position: relative;
-    top: -65px;
+    top: 230px;
     padding-top: 70px;
     z-index: 51;
 
@@ -73,10 +73,12 @@
     padding: 0;
     border: none;
   }
-  
+  .register{
+    align-items: center;
+  }
   /* button styling */
   .button {
-    top: -30px;
+    top: 255px;
     --border-right: 6px;
     --text-stroke-color: rgba(208,191,81,0.6);
     --animation-color: rgba(208,191,81);
