@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 import { dark } from '../../data/GlobalData';
 
 export const FooterContainer = styled.div`
-    height: 50vh;
-	background-color: ${dark};
+    height: 10vh;
+	background-color: rgb(1,2,3);
 	padding: 4rem 0 2rem 0;
 	display: flex;
 	flex-direction: column;
@@ -69,6 +69,7 @@ export const FooterLink = styled(Link)`
 export const SocialMedia = styled.section`
 	max-width: 1000px;
 	width: 100%;
+	
 `;
 
 export const SocialMediaWrap = styled.div`
@@ -78,6 +79,9 @@ export const SocialMediaWrap = styled.div`
 	width: 90%;
 	max-width: 1000px;
 	margin: 40px auto 0 auto;
+	margin-bottom: 20px;
+    // justify-content: center;
+	// align-items: center;
 
 	@media screen and (max-width: 820px) {
 		flex-direction: column;

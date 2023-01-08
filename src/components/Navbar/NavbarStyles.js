@@ -17,7 +17,7 @@ export const Nav = styled.nav`
 	top: 0;
 	z-index: 55;
 	width: 100%;
-	background: transparent;
+	// background: transparent;
 `;
 
 export const NavbarContainer = styled(Container)`
