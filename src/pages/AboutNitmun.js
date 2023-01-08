@@ -14,11 +14,11 @@ import { motion } from 'framer-motion/dist/framer-motion';
 
 const AboutNitmun = () => {
   return (
-    <motion.div 
-     initial={{width: 0}}
-     animate={{width: "100vw"}}
-     exit={{ x: window.innerWidth, transition: {duration: 0.2} }}>
-      <Navbar />
+    // <motion.div 
+    //  initial={{width: 0}}
+    //  animate={{width: "100vw"}}
+    //  exit={{ x: window.innerWidth, transition: {duration: 0.2} }}>
+     <div> <Navbar />
       <About />
       {/* <Timeline /> */}
       {/* <Info id="about" /> */}
@@ -30,8 +30,8 @@ const AboutNitmun = () => {
         {/* <EventsSection/> */}
         <Features />
       </div>
-      <Footer />
-    </motion.div>
+      <Footer /></div>
+    // </motion.div>
   );
 };
 

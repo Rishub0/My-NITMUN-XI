@@ -18,7 +18,7 @@ import { navbarData } from "../../data/NavbarData";
 import { useHistory } from "react-router-dom";
 
 const Navbar = ({ hide }) => {
-  const [show, setShow] = useState(true);
+  const [show, setShow] = useState(false);
 
   const navigate = useHistory;
   const gallery = () => {

@@ -14,10 +14,11 @@ import {motion} from "framer-motion/dist/framer-motion";
 
 const HomePage = () => {
   return (
-     <motion.div className="home" 
-     initial={{width: 0}}
-     animate={{width: "100vw"}}
-     exit={{ x: window.innerWidth, transition: {duration: 0.2} }}>
+    //  <motion.div className="home" 
+    //  initial={{width: 0}}
+    //  animate={{width: "100vw"}}
+    //  exit={{ x: window.innerWidth, transition: {duration: 0.2} }}>
+    <div>
       <Hero />
       {/* <Info id="about" /> */}
       {/* <Features id="programs" /> */}
@@ -29,8 +30,8 @@ const HomePage = () => {
 				<EventsSection />
 			</div> */}
       
-      <Footer />
-    </motion.div>
+      <Footer /></div>
+    // </motion.div>
   );
 };
 
