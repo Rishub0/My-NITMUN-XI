@@ -5,13 +5,17 @@ import { dark } from '../../data/GlobalData';
 export const FooterContainer = styled.div`
     height: 10vh;
 	background-color: rgb(1,2,3);
-	padding: 4rem 0 2rem 0;
+	padding: 6rem 0 2rem 0;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: bottom;
 	align-items: center;
-	margin-top: 20rem
-`;
+	margin-top: 20rem;
+
+	@media screen and (max-width: 820px) {
+		padding-top: 32px;
+		// background-color: rgb(1,2,3);
+	}`;
 
 export const FooterLinksContainer = styled.div`
 	width: 100%;
@@ -29,7 +33,8 @@ export const FooterLinksWrapper = styled.div`
 	flex-wrap: wrap;
 	@media screen and (max-width: 820px) {
 		flex-direction: column;
-		justify-content: center;
+		justify-content: bottom;
+		position: relative;
 	}
 `;
 

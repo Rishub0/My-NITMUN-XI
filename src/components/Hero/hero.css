@@ -1,5 +1,5 @@
-.rrr{
-    /* background: linear-gradient(
+/* .rrr{
+     background: linear-gradient(
         to right,
         var(--purple),
         var(--violet),
@@ -9,8 +9,8 @@
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    white-space: nowrap; */
-}
+    white-space: nowrap;
+} */
 .belowrrr{
     margin-top: 0;
     vertical-align: center;
@@ -23,9 +23,10 @@
 .theme{
     font-size: 120px;
     margin-top: 2px;
+   
     text-align: center;
     position: relative;
-    top: 25rem;
+    top: 29rem;
     color: #d0bf51;
 
 }
@@ -78,7 +79,7 @@
   }
   /* button styling */
   .button {
-    top: 255px;
+    top: 430px;
     --border-right: 6px;
     --text-stroke-color: rgba(208,191,81,0.6);
     --animation-color: rgba(208,191,81);
@@ -117,5 +118,23 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    top: 250px;
+    bottom: -250px;
+    margin-top: 50px;
+  }
+  @media screen and (max-width: 600px) {
+    .timerrr{
+      top: 250px;
+    }
+    .theme{
+      font-size: 42px;
+      margin-top: 2px;
+      text-align: center;
+      position: relative;
+      top: 30rem;
+      color: #d0bf51;
+      margin-bottom: 5vh;
+    }
+    .button{
+      top: 354px;
+    }
   }

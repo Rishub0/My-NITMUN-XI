@@ -18,12 +18,24 @@ export const Nav = styled.nav`
 	z-index: 55;
 	width: 100%;
 	// background: transparent;
+	@media screen and (max-width: 960px){
+		width: 100vw;
+		overflow-x: hidden;
+		
+	}
+	
 `;
 
 export const NavbarContainer = styled(Container)`
 	display: flex;
 	justify-content: start;
 	height: 120px;
+
+	@media screen and (max-width: 960px){
+		width: 100vw;
+		overflow-x: hidden;
+		
+	}
 `;
 
 export const NavLogo = styled(Link)`
