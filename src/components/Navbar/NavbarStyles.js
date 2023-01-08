@@ -58,7 +58,7 @@ export const NavLogo = styled(Link)`
 
 export const NavIcon = styled.img`
 	margin-right: 1rem;
-	width: 4.2rem;
+	width: 3.2rem;
 
 	@media screen and (max-width: 960px){
 		width: 2.4rem;
@@ -71,14 +71,15 @@ export const MobileIcon = styled.div`
 	z-index: 50;
 
 	@media screen and (max-width: 960px) {
-		display: block;
-		position: absolute;
+		display: flex;
+		position: fixed;
+		vertical-align: top;
 		top: 0;
 		right: 0;
 		transform: translate(-100%, 60%);
 		font-size: 1.8rem;
 		cursor: pointer;
-		padding-bottom: 10px;
+		
 	}
 `;
 

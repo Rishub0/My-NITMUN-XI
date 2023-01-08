@@ -420,3 +420,9 @@
     padding: 2px 40px;
   }
 }/*# sourceMappingURL=Cards.css.map */
+.secratariat{
+  position: relative;
+  justify-content: center;
+  display: flex;
+  top: -30px;
+}

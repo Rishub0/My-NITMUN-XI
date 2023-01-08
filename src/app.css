@@ -1,0 +1,40 @@
+.navbar-title {
+    font-family: "Cinzel", serif;
+    font-size: 1.5rem;
+    padding-left: 0.5rem;
+  }
+  @media screen and (max-width: 1924px) {
+    .navbar-title {
+      font-size: 2.25rem;
+      margin-left: -5%;
+    }
+  }
+  
+  @media screen and (max-device-width: 768px) {
+    .navbar-title {
+      font-size: 1.7rem;
+      margin-left: -1rem;
+    }
+  }
+  
+  @media screen and (max-device-width: 425px) {
+    .navbar-title {
+      font-size: 1.2rem;
+      margin-left: -0.2rem;
+    }
+    .navbar-toggler-icon {
+      height: 1em;
+      width: 1em;
+    }
+  }
+  
+  .navbar {
+    background-color: #dfdccf;
+  }
+  
+  .navbar-content {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: black;
+  }
