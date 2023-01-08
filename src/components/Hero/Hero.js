@@ -9,6 +9,7 @@ import Apps from "../timer/timer";
 import "./hero.css";
 import LandVid from "../bgVideo/LandVid";
 import Time from "../Time/Time";
+import ResponsiveAppBar from "../AppBar/ResponsiveAppBar";
 
 const Hero = () => {
   const [timerDays, setTimerDays] = useState();
@@ -63,7 +64,8 @@ const Hero = () => {
 
   return (
     <>
-      <Navbar  /> 
+      {/* <Navbar  />  */}
+      <ResponsiveAppBar/>
       <HeroSection ref={ref} id="hero">
         {/* <Container> */}
         <div className="vid">

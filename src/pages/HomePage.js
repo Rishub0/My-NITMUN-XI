@@ -10,28 +10,30 @@ import Modal from "../components/Modal/Modal";
 import { heroData } from "../data/HeroData";
 import sample from "../asset/Videos/sample.mp4";
 import LandVid from "../components/bgVideo/LandVid";
-import {motion} from "framer-motion/dist/framer-motion";
+import { motion } from "framer-motion/dist/framer-motion";
+import Landing from "../Landing";
+import { useState } from "react";
+import { useEffect } from "react";
+import { RingLoader } from "react-spinners";
 
 const HomePage = () => {
+  const [loading, setLoading] = useState(false);
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 10000);
+  }, []);
   return (
-    //  <motion.div className="home" 
-    //  initial={{width: 0}}
-    //  animate={{width: "100vw"}}
-    //  exit={{ x: window.innerWidth, transition: {duration: 0.2} }}>
-    <div>
-      <Hero />
-      {/* <Info id="about" /> */}
-      {/* <Features id="programs" /> */}
-
-      {/* <div id="events">
-				{heroData.map((contentData, index) => (
-					<Content {...contentData} key={index} />
-				))}
-				<EventsSection />
-			</div> */}
-      
-      <Footer /></div>
-    // </motion.div>
+    <div className="App">
+      {loading ? (
+        <div className="ring-style">
+          <RingLoader color="#ffffff" loading={loading} size={150} />
+        </div>
+      ) : (
+        <Landing />
+      )}
+    </div>
   );
 };
 

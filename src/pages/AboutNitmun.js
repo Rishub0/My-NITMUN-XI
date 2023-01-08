@@ -18,7 +18,7 @@ const AboutNitmun = () => {
     //  initial={{width: 0}}
     //  animate={{width: "100vw"}}
     //  exit={{ x: window.innerWidth, transition: {duration: 0.2} }}>
-     <div> <Navbar />
+      <div><Navbar />
       <About />
       {/* <Timeline /> */}
       {/* <Info id="about" /> */}
@@ -30,8 +30,9 @@ const AboutNitmun = () => {
         {/* <EventsSection/> */}
         <Features />
       </div>
-      <Footer /></div>
-    // </motion.div>
+      <Footer />
+      </div>
+    //  </motion.div>
   );
 };
 

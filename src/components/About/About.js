@@ -16,8 +16,7 @@ const About = () => {
               for discussion and analysis of global issues. It seeks to bring
               out motivated delegates from all over the country for
               brainstorming and discussing over significant international
-              issues.<br></br><br></br> Organised by the Literary Circle, NITMUN promises a
-              challenging yet a very entertaining time to all delegates. Our
+              issues.<br></br><br></br>NITMUN promises a challenging yet a very entertaining time to all delegates. Our
               greatest goal is to make sure that each delegate learns how to
               tackle world issues better at the end of the conference as the
               world is in dire need of young leaders now.<br></br><br></br>Currently in its 11th
