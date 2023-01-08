@@ -23,20 +23,7 @@ const Formc = () => {
   const [roll, setRoll] = useState("");
   const [year, setYear] = useState("");
 
-  const [name1, setName1] = useState("");
-  const [email1, setEmail1] = useState("");
-  const [phoneNumber1, setPhoneNumber1] = useState("");
-  const [institute1, setInstitute1] = useState("NIT DURGAPUR");
-  const [committee11, setComittee11] = useState("");
-  const [preference11, setPreferences11] = useState("");
-  const [committee21, setComittee21] = useState("");
-  const [preference21, setPreferences21] = useState("");
-  const [committee31, setComittee31] = useState("");
-  const [preference31, setPreferences31] = useState("");
-  const [experience1, setExperience1] = useState("");
-  const [other1, setOther1] = useState("");
-  const [roll1, setRoll1] = useState("");
-  const [year1, setYear1] = useState("");
+  
 
   const postData = async (e) => {
     e.preventDefault();
@@ -58,7 +45,7 @@ const Formc = () => {
       preference3: preference3,
       experience: experience,
       year: year,
-      roll: roll
+      roll: roll,
     });
 
     // const data= await res.json();
@@ -469,7 +456,8 @@ const Formc = () => {
                   value="Register"
                   onClick={postData}
                 />
-              </div>
+               </div>
+              
             </form>
             <form class="sign-up-htm" onSubmit={formik.handleSubmit}>
               <div class="group">
@@ -480,9 +468,9 @@ const Formc = () => {
                   id="Name"
                   type="text"
                   class="input"
-                  value={name1}
+                  value={name}
                   onChange={(e) => {
-                    setName1(e.target.value);
+                    setName(e.target.value);
                   }}
                 />
                 {formik.touched.Name && formik.errors.Name ? (
@@ -496,10 +484,10 @@ const Formc = () => {
                   name="email"
                   className="input"
                   onChange={(e) => {
-                    setEmail1(e.target.value);
+                    setEmail(e.target.value);
                   }}
                   onBlur={formik.handleBlur}
-                  value={email1}
+                  value={email}
                 />
                 {formik.touched.email && formik.errors.email ? (
                   <div>{formik.errors.email}</div>
@@ -512,10 +500,10 @@ const Formc = () => {
                   name="phone"
                   className="input"
                   onChange={(e) => {
-                    setPhoneNumber1(e.target.value);
+                    setPhoneNumber(e.target.value);
                   }}
                   onBlur={formik.handleBlur}
-                  value={phoneNumber1}
+                  value={phoneNumber}
                 />
                 {formik.touched.phone && formik.errors.phone ? (
                   <div>{formik.errors.phone}</div>
@@ -530,10 +518,10 @@ const Formc = () => {
                   className="input"
                   name="institution"
                   onChange={(e) => {
-                    setInstitute1(e.target.value);
+                    setInstitute(e.target.value);
                   }}
                   onBlur={formik.handleBlur}
-                  value={institute1}
+                  value={institute}
                 >
                   <option value="NIT DURGAPUR">NIT DURGAPUR</option>
                   <option value={other}>Other Institutions</option>
@@ -551,9 +539,9 @@ const Formc = () => {
                 <input
                   placeholder="School/College"
                   name="email"
-                  value={institute1}
+                  value={institute}
                   onChange={(e) => {
-                    setInstitute1(e.target.value);
+                    setInstitute(e.target.value);
                   }}
                   id="pass"
                   type="text"
@@ -573,9 +561,9 @@ const Formc = () => {
                 <input
                   placeholder="Roll Number"
                   name="email"
-                  value={roll1}
+                  value={roll}
                   onChange={(e) => {
-                    setRoll1(e.target.value);
+                    setRoll(e.target.value);
                   }}
                   id="pass"
                   type="text"
@@ -599,10 +587,10 @@ const Formc = () => {
                   className="input"
                   name="institution"
                   onChange={(e) => {
-                    setYear1(e.target.value);
+                    setYear(e.target.value);
                   }}
                   onBlur={formik.handleBlur}
-                  value={year1}
+                  value={year}
                 >
                   <option value="2023">2023</option>
                   <option value="other">other</option>
@@ -619,9 +607,9 @@ const Formc = () => {
                   className="input"
                   type="text"
                   name="committee1"
-                  value={committee11}
+                  value={committee1}
                   onChange={(e) => {
-                    setComittee11(e.target.value);
+                    setComittee1(e.target.value);
                   }}
                   onBlur={formik.handleBlur}
                 >
@@ -645,9 +633,9 @@ const Formc = () => {
                   className="input"
                   type="text"
                   name="preference1"
-                  value={preference11}
+                  value={preference1}
                   onChange={(e) => {
-                    setPreferences11(e.target.value);
+                    setPreferences1(e.target.value);
                   }}
                   onBlur={formik.handleBlur}
                 >
@@ -669,16 +657,16 @@ const Formc = () => {
                   type="text"
                   name="committee2"
                   onChange={(e) => {
-                    setComittee21(e.target.value);
+                    setComittee2(e.target.value);
                   }}
                   onBlur={formik.handleBlur}
-                  value={committee21}
+                  value={committee2}
                 >
                   <option defaultValue={"Select"}>Select</option>
                   <option
                     value="UNGA-DISEC"
                     style={
-                      committee11 == "UNGA-DISEC"
+                      committee1 == "UNGA-DISEC"
                         ? { display: "none" }
                         : { display: "block" }
                     }
@@ -758,7 +746,7 @@ const Formc = () => {
                         : { display: "block" }
                     }
                   >
-                    UNGA-DISEC
+                    IP UNGA-DISEC
                   </option>
                   <option
                     value="UNGA-SPECPOL"
@@ -769,7 +757,7 @@ const Formc = () => {
                         : { display: "block" }
                     }
                   >
-                    UNGA_SPECPOL
+                    IP UNGA_SPECPOL
                   </option>
                   <option
                     value="AIPPM"
@@ -779,7 +767,7 @@ const Formc = () => {
                         : { display: "block" }
                     }
                   >
-                    AIPPM
+                    IP AIPPM
                   </option>
                 </select>
               </div>
