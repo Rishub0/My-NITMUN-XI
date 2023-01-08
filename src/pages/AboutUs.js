@@ -11,17 +11,21 @@ import { heroData } from "../data/HeroData";
 import About from "../components/About/About";
 import Apps from "../components/timer/timer";
 import Time from "../components/Time/Time";
+import { motion } from 'framer-motion/dist/framer-motion';
 // import About from "../components/About/About";
 const AboutUs = () => {
   
   return (
-    <>
+    <motion.div 
+    initial={{width: 0}}
+    animate={{width: "100vw"}}
+    exit={{ x: window.innerWidth, transition: {duration: 0.2} }}>
       <Navbar />
         
         <About />
 
       <Footer />
-    </>
+    </motion.div>
   );
 };
 

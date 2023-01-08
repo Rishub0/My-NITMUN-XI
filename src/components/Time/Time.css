@@ -47,33 +47,32 @@ section p:first-child, .timer div:last-child span{
     height: 40vh;
     margin-bottom: 0;
     margin-top: 90px;
-    background-color: #261e1a;
+    /* background-color: #261e1a; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .timer-cointainer h1{
+  /* .timer-cointainer h1{
     font-size: 3rem;
     margin-bottom: 5px;
     color: #795e3f;
     font-family:'Times New Roman', Times, serif;
-  }
+  } */
 .clock {
     position: relative;
-    margin: auto
-    ;
+    margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #261e1a;
+    /* background: #261e1a; */
     height: 150px;
     width: 400px;
     color: #795e3f;
     text-shadow: 0.1px 0.1px 0.1px;
-    border-radius: 15px;
+    /* border-radius: 15px; */
     /* border: 2px solid silver; */
-    box-shadow: 0 0 5px 5px;
+    /* box-shadow: 0px 0px 0px; */
   }
   
   .clock section {
@@ -88,7 +87,7 @@ section p:first-child, .timer div:last-child span{
     
   }
   .clock section small {
-    color:#795e3f;
+    /* color:#795e3f; */
     text-shadow: none;
     font-size:medium;
     font-family:'Times New Roman', Times, serif;
@@ -105,7 +104,7 @@ section p:first-child, .timer div:last-child span{
   }
   
   .App-header {
-    background-color: #261e1a;
+    /* background-color: #261e1a; */
     min-height: 40vh;
     display: flex;
     flex-direction: column;

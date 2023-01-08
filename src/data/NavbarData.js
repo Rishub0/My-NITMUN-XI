@@ -1,5 +1,14 @@
 export const navbarData = [
   {
+    text: "Home",
+    spy: true,
+    duration: 500,
+    smooth: true,
+    exact: "true",
+    offset: -80,
+    to: "/",
+  },
+  {
     text: "About NITMUN",
     id: "about",
     spy: true,
@@ -7,7 +16,7 @@ export const navbarData = [
     smooth: true,
     exact: "true",
     offset: -80,
-    to: "about",
+    to: "/aboutNitmun",
   },
   {
     text: "Register",
@@ -16,16 +25,7 @@ export const navbarData = [
     smooth: true,
     exact: "true",
     offset: -80,
-    to: "programs",
-  },
-  {
-    text: "Sponsors",
-    spy: true,
-    duration: 500,
-    smooth: true,
-    exact: "true",
-    offset: -80,
-    to: "events",
+    to: "/register",
   },
   {
     text: "Gallery",
@@ -43,6 +43,6 @@ export const navbarData = [
     smooth: true,
     exact: "true",
     offset: -80,
-    // to: "event",
+     to: "/aboutUs",
   },
 ];

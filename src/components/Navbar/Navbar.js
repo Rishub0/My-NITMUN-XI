@@ -22,19 +22,20 @@ const Navbar = ({ hide }) => {
 
   const navigate = useHistory;
   const gallery = () => {
-    navigate.push("/gallery");
+    navigate.push();
   };
 
   return (
     <Nav hide={hide}>
       <NavbarContainer>
-        <NavLogo to="/" onClick={scroll.scrollToTop}>
-          <NavIcon src="./assets/final white.png" alt="" />
-          {/* {websiteName} */}
-        </NavLogo>
+       
 
         {!hide && (
           <>
+           <NavLogo to="/" onClick={scroll.scrollToTop}>
+          <NavIcon src="./assets/final white.png" alt="" />
+          {/* {websiteName} */}
+           </NavLogo>
             <IconContext.Provider value={{ color: "white" }}>
               <MobileIcon onClick={() => setShow(!show)}>
                 {show ? <FaTimes /> : <CgMenuRight />}
@@ -51,9 +52,8 @@ const Navbar = ({ hide }) => {
                     offset={-79}
                     onClick={
                       /*{ el.text } = "Gallery"? { gallery }  :*/ () =>
-                        setShow(false)
-                    }
-                    to={el.to}
+                      setShow(false)}
+                      to={el.to}
                   >
                     {el.text}
                   </NavLinks>

@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const HeroSection = styled.section`
   height: 100vh;
   // background: url("./assets/bgw.jpg");
+  backgriund-color: #171210;
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
@@ -30,4 +31,5 @@ export const ButtonWrapper = styled.div`
   justify-content: center;
   flex-flow: wrap;
   gap: 0.5rem;
+  top: -15px;
 `;
