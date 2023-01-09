@@ -138,7 +138,7 @@ const Carrds = () => {
         </div>
         <div class="cards cards--two">
           <img
-            src="https://images.unsplash.com/photo-1504703395950-b89145a5425b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d702cb99ca804bffcfa8820c46483264&auto=format&fit=crop&w=651&q=80"
+            src="../assets/faria.jpeg"
             class="img-responsive"
             alt="Cards Image"
           />
@@ -213,7 +213,7 @@ const Carrds = () => {
         </div>
         <div class="cards cards--two">
           <img
-            src="https://images.unsplash.com/photo-1504703395950-b89145a5425b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d702cb99ca804bffcfa8820c46483264&auto=format&fit=crop&w=651&q=80"
+            src="../assets/sakshi.jpeg"
             class="img-responsive"
             alt="Cards Image"
           />
@@ -238,7 +238,7 @@ const Carrds = () => {
         </div>
         <div class="cards cards--two">
           <img
-            src="https://images.unsplash.com/photo-1504703395950-b89145a5425b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d702cb99ca804bffcfa8820c46483264&auto=format&fit=crop&w=651&q=80"
+            src="../assets/DIYA.jpeg"
             class="img-responsive"
             alt="Cards Image"
           />

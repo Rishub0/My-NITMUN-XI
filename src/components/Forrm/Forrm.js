@@ -4,11 +4,12 @@ import { useFormik } from "formik";
 import * as Yup from "yup";
 import axios from "axios";
 import "./Forrmc.css";
-// import { ToastContainer, toast } from "react-toastify";
-// import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 import { Button } from "react-scroll";
+import { CgWindows } from "react-icons/cg";
 
 const Formc = () => {
   const [name, setName] = useState("");
@@ -29,38 +30,40 @@ const Formc = () => {
   const postData = async (e) => {
     e.preventDefault();
 
-    await axios
-      .post("http://localhost:5000/api/register", {
-        // headers: {
-        //   'Content-Type': 'application/json'
-        // },
+    await axios.post("http://localhost:5000/api/register", {
+      // headers: {
+      //   'Content-Type': 'application/json'
+      // },
 
-        name: name,
-        email: email,
-        phoneNumber: phoneNumber,
-        institute: institute,
-        committee1: committee1,
-        preference1: preference1,
-        committee2: committee2,
-        preference2: preference2,
-        committee3: committee3,
-        preference3: preference3,
-        experience: experience,
-        year: year,
-        roll: roll,
-      })
-      .then(() => {
-        // const { success, token, status } = JSON.stringify();
-        // console.log(success);
+      name: name,
+      email: email,
+      phoneNumber: phoneNumber,
+      institute: institute,
+      committee1: committee1,
+      preference1: preference1,
+      committee2: committee2,
+      preference2: preference2,
+      committee3: committee3,
+      preference3: preference3,
+      experience: experience,
+      year: year,
+      roll: roll,
+    })
+    .then((res) => {
+      console.log(res);
+      console.log("submit");
+      toast.success("Submitted.");
+      window.location("/")
+             //window.location.replace = "/";
+    })
 
-        // console.log(res);
-      })
-      .catch((err) => {
-        console.log(err);
-        // toast.error("Invalid Credentials.")
-      });
+    .catch((err) => {
+     console.log("hello")
+     console.log(err)});
+     toast.error("Please enter correct credentials")
+  
 
-    // const data = await res.json();
+    
   };
 
   const phoneRegExp =
@@ -93,7 +96,7 @@ const Formc = () => {
     },
   });
   const [checkI, setCheckI] = useState(true);
-
+  
   //   const checkl = async (e)=>{
   //       setCheckI(true),
   //       setCheckII(false)
@@ -210,7 +213,7 @@ const Formc = () => {
                 <input
                   placeholder="School/College"
                   name="email"
-                  value={other}
+                  value={institute}
                   onChange={(e) => {
                     setInstitute(e.target.value);
                   }}
@@ -491,14 +494,14 @@ const Formc = () => {
                   class="buttons"
                   value="Register"
                   onClick={postData}
-                >
-                  <span> Register</span>
-                </button>
+                ><span> Register
+                </span></button>
               </div>
+              
             </form>
             <form class="sign-up-htm" onSubmit={formik.handleSubmit}>
-              <div class="group">
-                <label for="firstname">Name</label>
+            <div class="group">
+                <label for="firstname">Name11</label>
                 <input
                   placeholder="Name"
                   name="Name"
@@ -629,7 +632,7 @@ const Formc = () => {
                   onBlur={formik.handleBlur}
                   value={year}
                 >
-                  <option value="2023">2023</option>
+                  <option value="2023">First</option>
                   <option value="other">other</option>
                 </select>
               </div>
@@ -651,9 +654,9 @@ const Formc = () => {
                   onBlur={formik.handleBlur}
                 >
                   <option defaultValue={"Select"}>Select</option>
-                  <option value="IP UNGA-DISEC">IP UNGA-DISEC</option>
-                  <option value="IP UNGA-SPECPOL">IP UNGA_SPECPOL</option>
-                  <option value="IP AIPPM">IP AIPPM</option>
+                  <option value="UNGA-DISEC-IP">UNGA-DISEC</option>
+                  <option value="UNGA-SPECPOL-IP">UNGA_SPECPOL</option>
+                  <option value="AIPPM-IP">AIPPM</option>
                 </select>
               </div>
 
@@ -664,7 +667,7 @@ const Formc = () => {
                 }
               >
                 <label for="lastname">
-                  {committee1 == "IP AIPPM" ? "Personality" : "Country"}
+                  News Agency
                 </label>
                 <select
                   className="input"
@@ -701,34 +704,30 @@ const Formc = () => {
                 >
                   <option defaultValue={"Select"}>Select</option>
                   <option
-                    value="IP UNGA-DISEC"
-                    style={
-                      committee1 == "IP UNGA-DISEC"
-                        ? { display: "none" }
-                        : { display: "block" }
-                    }
+                    value="UNGA-DISEC-IP"
+                    
                   >
-                    IP UNGA-DISEC
+                    UNGA-DISEC-IP
                   </option>
                   <option
-                    value="IP UNGA-SPECPOL"
+                    value="UNGA-SPECPOL-IP"
                     style={
-                      committee1 == "IP UNGA-SPECPOL"
+                      committee1 == "UNGA-SPECPOL-IP"
                         ? { display: "none" }
                         : { display: "block" }
                     }
                   >
-                    IP UNGA_SPECPOL
+                    UNGA-SPECPOL-IP
                   </option>
                   <option
-                    value="IP AIPPM"
+                    value="AIPPM-IP"
                     style={
-                      committee1 == "IP AIPPM"
+                      committee1 == "AIPPM-IP"
                         ? { display: "none" }
                         : { display: "block" }
                     }
                   >
-                    AIPPM
+                    AIPPM-IP
                   </option>
                 </select>
               </div>
@@ -739,7 +738,7 @@ const Formc = () => {
                 }
               >
                 <label for="lastname">
-                  {committee2 == "IP AIPPM" ? "Personality" : "Country"}
+                  News Agency
                 </label>
                 <select
                   className="input"
@@ -776,47 +775,39 @@ const Formc = () => {
                 >
                   <option defaultValue={"Select"}>Select</option>
                   <option
-                    value="IP UNGA-DISEC"
+                    value="UNGA-DISEC-IP"
                     style={
-                      committee1 == "IP UNGA-DISEC" ||
-                      committee2 == "IP UNGA-DISEC"
+                      committee1 == "UNGA-DISEC-IP" || committee2 == "UNGA-DISEC"
                         ? { display: "none" }
                         : { display: "block" }
                     }
                   >
-                    IP UNGA-DISEC
+                    UNGA-DISEC-IP
                   </option>
                   <option
-                    value="IP UNGA-SPECPOL"
+                    value="UNGA-SPECPOL-IP"
                     style={
-                      committee1 == "IP UNGA-SPECPOL" ||
-                      committee2 == "IP UNGA-SPECPOL"
+                      committee1 == "UNGA-SPECPOL-IP" ||
+                      committee2 == "UNGA-SPECPOL-IP"
                         ? { display: "none" }
                         : { display: "block" }
                     }
                   >
-                    IP UNGA_SPECPOL
+                    UNGA-SPECPOL-IP
                   </option>
                   <option
-                    value="IP AIPPM"
-                    style={
-                      committee1 == "IP AIPPM" || committee2 == "IP AIPPM"
-                        ? { display: "none" }
-                        : { display: "block" }
-                    }
+                    value="AIPPM-IP"
                   >
-                    IP AIPPM
+                    AIPPM
                   </option>
                 </select>
               </div>
               <div
                 class="group"
-                style={
-                  committee1 == "" ? { display: "none" } : { display: "block" }
-                }
+                
               >
                 <label for="lastname">
-                  {committee1 == "IP AIPPM" ? "Personality" : "Country"}
+                  News Agency
                 </label>
                 <select
                   className="input"
@@ -853,18 +844,20 @@ const Formc = () => {
               </div>
 
               <div class="group">
-                <input
+                <button
                   type="submit"
                   class="buttons"
                   value="Register"
                   onClick={postData}
-                />
+                ><span> Register
+                </span></button>
               </div>
-              {/* <ToastContainer /> */}
+              
             </form>
           </div>
         </div>
       </div>
+      <ToastContainer position="top-right" />
       <Footer />
     </div>
   );

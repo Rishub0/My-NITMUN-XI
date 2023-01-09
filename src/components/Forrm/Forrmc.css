@@ -230,10 +230,11 @@ a {
     margin: auto;
     margin-top: 5%;
     max-width: 825px;
-    min-height: 1570px;
+    min-height: 1630px;
     position: relative;
-    box-shadow: 0 12px 15px 0 rgba(0, 0, 0, .24), 0 17px 50px 0 rgba(0, 0, 0, .19);
-}
+    border-radius: 5px;
+    /* box-shadow: 0 12px 15px 0 rgb(114, 59, 59), 0 17px 50px 0 rgb(124, 70, 70);*/
+} 
 
 .login-container {
     width: 100%;
@@ -241,6 +242,7 @@ a {
     position: absolute;
     padding: 90px 70px 50px 70px;
     background: #261e1a;
+    
 }
 .sign-in, .item{
     margin-right: 50px;
@@ -309,11 +311,13 @@ a {
     display: block;
 }
 .login-form .group .buttons{
-align-content: center;
+align-items: center;
+justify-content: center;
     width: 50%;
     color: #12110d;
     display: flex;
 flex-wrap: wrap;
+margin: auto;
 }
 
 .buttons {
@@ -359,7 +363,7 @@ flex-wrap: wrap;
     width: 150px;
     height: 50px;
     border-radius: 10px;
-    border: 1px solid #03045e;
+    border: 1px solid #656e4c;
     position: relative;
     overflow: hidden;
     transition: all 0.5s ease-in;
@@ -381,12 +385,12 @@ flex-wrap: wrap;
    
    .buttons::before {
     left: -10px;
-    background: #240046;
+    background: #795e3f;
    }
    
    .buttons::after {
     right: -10px;
-    background: #5a189a;
+    background: #261e1a;
    }
    
    .buttons:hover::before,
@@ -395,18 +399,20 @@ flex-wrap: wrap;
    }
    
    .buttons:hover span {
-    color: #e0aaff;
+    color: #D5CEA3;
     transition: 0.3s;
    }
    
    .buttons span {
-    color: #03045e;
+    color: #D5CEA3;
     font-size: 18px;
     transition: all 0.3s ease-in;
    }
 
 
-
+  .ToastContainer{
+    margin-top: 2px;
+  }
 
 /* button {
     border: none;
