@@ -79,7 +79,7 @@ const heroFour = {
   buttonLabel1: "Portfolio Matrix",
 
   imgStart: "",
-  img: "./assets/hero3.jpg",
+  img: "./assets/ip.png",
   start: "true",
 };
 
