@@ -1,3 +1,14 @@
+#about1{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    min-height: max-content;
+    background-color: #000000;
+}
+
+
 #about{
     margin-top: 80px;
     display: flex;
