@@ -38,6 +38,7 @@ body {
   text-align: center;
   width: 400px;
   border-radius: 15px;
+  
 }
 
 .col-4 {
@@ -74,6 +75,7 @@ body {
   
   text-align: center;
   font-size: 14px;
+  font-family: 'IM Fell French Canon SC', serif;
   
 }
 .content-center h1 span{
@@ -81,4 +83,7 @@ body {
 }
 .NIT h1 span{
   color: #eb0028;
+}
+.clock p{
+  font-family: 'IM Fell French Canon SC', serif;
 }
