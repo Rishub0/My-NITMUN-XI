@@ -33,7 +33,7 @@ const Formc = () => {
     e.preventDefault();
 
     await axios
-      .post("http://localhost:5000/api/register", {
+      .post("https://nitmunbackend.lcnitd.co.in/api/register", {
         // headers: {
         //   'Content-Type': 'application/json'
         // },

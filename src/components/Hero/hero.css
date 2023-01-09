@@ -65,6 +65,7 @@
 }
 .register{
     top: -100px;
+    bottom: 30vh;
 }
 /* === removing default button style ===*/
 .button {
@@ -73,13 +74,14 @@
     background: transparent;
     padding: 0;
     border: none;
+    
   }
   .register{
     align-items: center;
   }
   /* button styling */
   .button {
-    top: 1000px;
+    top: 140vh;
     --border-right: 6px;
     --text-stroke-color: rgba(121,94,63,0.9);
     --animation-color: rgba(121,94,63);
@@ -136,7 +138,8 @@
       margin-bottom: 5vh;
     }
     .button{
-      top: 1050px;
+      top: 145vh;
+      margin-bottom: 10vh;
     }
 
     .belowrrr1{

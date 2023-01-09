@@ -10,7 +10,7 @@ const Landing = () => {
       
       <div>
       <Hero />
-      <Footer /></div>
+      </div><Footer/>
       
     </div>
   );
