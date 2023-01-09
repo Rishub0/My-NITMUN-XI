@@ -202,6 +202,6 @@ export const Subtitle = styled(motion.p)`
 	margin-bottom: 35px;
 	line-height: 24px;
 	color: ${({ inverse }) => (inverse ? 'black' : 'white')};
-	font-size: clamp(0.8rem, 2vw, 1rem);
+	font-size: clamp(0.8rem, 2vw, 1.4rem);
 `;
 
