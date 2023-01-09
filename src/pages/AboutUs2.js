@@ -4,7 +4,7 @@ import { CgInfo } from "react-icons/cg";
 import Content from "../components/Content/Content";
 import EventsSection from "../components/EventsSection/EventsSection";
 import Features from "../components/Features/Features";
-import Footer from "../components/Footer/Footer";
+import OtherFooter from "../components/Footer/OtherFooter";
 import Info from "../components/Info/Info";
 import Navbar from "../components/Navbar/Navbar";
 import { heroData } from "../data/HeroData";
@@ -24,7 +24,7 @@ const AboutUs2 = () => {
         
          <About />
 
-      <Footer /></div>
+      <OtherFooter /></div>
     // </motion.div>
   );
 };

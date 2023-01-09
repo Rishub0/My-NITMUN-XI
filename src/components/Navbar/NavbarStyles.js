@@ -7,7 +7,7 @@ import { dark } from '../../data/GlobalData';
 export const Nav = styled.nav`
 	background: ${({ hide }) => (hide ? 'transparent' : dark)};
 	margin-top: -80px;
-	height: 100px;
+	height: 80px;
 	display: flex;
 	justify-content: center;
 	align-items: center;

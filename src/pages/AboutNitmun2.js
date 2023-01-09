@@ -5,7 +5,7 @@ import Carrds from "../components/Cards/Cards";
 import Content from "../components/Content/Content";
 import EventsSection from "../components/EventsSection/EventsSection";
 import Features from "../components/Features/Features";
-import Footer from "../components/Footer/Footer";
+import OtherFooter from "../components/Footer/OtherFooter";
 import Info from "../components/Info/Info";
 import Navbar from "../components/Navbar/Navbar";
 //import Timeline from "../components/Timeline/Timeline";
@@ -30,7 +30,7 @@ const AboutNitmun2 = () => {
         {/* <EventsSection/> */}
         {/* <Features /> */}
       </div>
-      <Footer />
+      <OtherFooter />
       </div>
     //  </motion.div>
   );

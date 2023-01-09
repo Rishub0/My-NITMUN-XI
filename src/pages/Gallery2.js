@@ -1,6 +1,6 @@
 import React from "react";
 import EventsSection from "../components/EventsSection/EventsSection";
-import Footer from "../components/Footer/Footer";
+import OtherFooter from "../components/Footer/OtherFooter";
 import Navbar from "../components/Navbar/Navbar";
 import { motion } from 'framer-motion/dist/framer-motion';
 
@@ -12,7 +12,7 @@ const Gallery = () => {
     // exit={{ x: window.innerWidth, transition: {duration: 0.2} }}>
       <div><Navbar />
       <EventsSection />
-      <Footer /></div>
+      <OtherFooter /></div>
     //</motion.div>
   );
 };

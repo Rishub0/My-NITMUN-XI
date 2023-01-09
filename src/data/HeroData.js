@@ -27,7 +27,7 @@ const heroOne = {
   buttonLabel: "Study Guide",
   buttonLabel1: "Portfolio Matrix",
   imgStart: "start",
-  img: "./assets/DISEC.png",
+  img: "./assets/DISEC.jpg",
   start: "true",
 };
 
@@ -44,7 +44,7 @@ const heroTwo = {
   buttonLabel: "Study guide",
   buttonLabel1: "Portfolio Matrix",
   imgStart: "start",
-  img: "./assets/SPECPOL.png",
+  img: "./assets/SPECPOL.jpg",
   start: "true",
 };
 
@@ -79,7 +79,7 @@ const heroFour = {
   buttonLabel1: "Portfolio Matrix",
 
   imgStart: "",
-  img: "./assets/ip.png",
+  img: "./assets/ip.jpg",
   start: "true",
 };
 
