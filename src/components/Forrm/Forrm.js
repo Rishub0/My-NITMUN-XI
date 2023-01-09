@@ -136,7 +136,7 @@ const Formc = () => {
           <div class="login-form">
             <form class="sign-in-htm" onSubmit={formik.handleSubmit}>
               <div class="group">
-                <label for="firstname">Name11</label>
+                <label for="firstname">Name</label>
                 <input
                   placeholder="Name"
                   name="Name"
@@ -1432,32 +1432,19 @@ const Formc = () => {
                   <option defaultValue={"Select"}>Select</option>
                   <option
                     value="UNGA-DISEC"
-                    style={
-                      committee1 == "UNGA-DISEC" || committee2 == "UNGA-DISEC"
-                        ? { display: "none" }
-                        : { display: "block" }
-                    }
+                    
                   >
                     UNGA-DISEC
                   </option>
                   <option
                     value="UNGA-SPECPOL"
-                    style={
-                      committee1 == "UNGA-SPECPOL" ||
-                      committee2 == "UNGA-SPECPOL"
-                        ? { display: "none" }
-                        : { display: "block" }
-                    }
+                    
                   >
                     UNGA_SPECPOL
                   </option>
                   <option
                     value="AIPPM"
-                    style={
-                      committee1 == "AIPPM" || committee2 == "AIPPM"
-                        ? { display: "none" }
-                        : { display: "block" }
-                    }
+                    
                   >
                     AIPPM
                   </option>
@@ -2027,7 +2014,7 @@ const Formc = () => {
             </form>
             <form class="sign-up-htm" onSubmit={formik.handleSubmit}>
               <div class="group">
-                <label for="firstname">Name11</label>
+                <label for="firstname">Name</label>
                 <input
                   placeholder="Name"
                   name="Name"
@@ -2232,21 +2219,11 @@ const Formc = () => {
                   <option value="UNGA-DISEC-IP">UNGA-DISEC-IP</option>
                   <option
                     value="UNGA-SPECPOL-IP"
-                    style={
-                      committee1 == "UNGA-SPECPOL-IP"
-                        ? { display: "none" }
-                        : { display: "block" }
-                    }
                   >
                     UNGA-SPECPOL-IP
                   </option>
                   <option
                     value="AIPPM-IP"
-                    style={
-                      committee1 == "AIPPM-IP"
-                        ? { display: "none" }
-                        : { display: "block" }
-                    }
                   >
                     AIPPM-IP
                   </option>
@@ -2297,23 +2274,12 @@ const Formc = () => {
                   <option defaultValue={"Select"}>Select</option>
                   <option
                     value="UNGA-DISEC-IP"
-                    style={
-                      committee1 == "UNGA-DISEC-IP" ||
-                      committee2 == "UNGA-DISEC"
-                        ? { display: "none" }
-                        : { display: "block" }
-                    }
+                    
                   >
                     UNGA-DISEC-IP
                   </option>
                   <option
                     value="UNGA-SPECPOL-IP"
-                    style={
-                      committee1 == "UNGA-SPECPOL-IP" ||
-                      committee2 == "UNGA-SPECPOL-IP"
-                        ? { display: "none" }
-                        : { display: "block" }
-                    }
                   >
                     UNGA-SPECPOL-IP
                   </option>
