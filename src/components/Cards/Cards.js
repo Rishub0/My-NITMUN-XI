@@ -6,7 +6,7 @@ const Carrds = () => {
   return (
     <div>
       <div className="secre">
-      <p className="secratariat">The Secratariat</p></div>
+      <p className="secratariat">The Secretariat</p></div>
       <div class="card__collection clear-fix">
       
        

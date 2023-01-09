@@ -196,7 +196,7 @@
 
   body {
     margin: 0;
-    color: rgb(53, 32, 15);
+    color: #D5CEA3;
     /* #D5CEA3 */
     /* background: #261e1a; */
     background: rgb(1,2,3);
@@ -293,7 +293,7 @@ a {
 
 .login-container .sign-in:checked+.item,
 .login-container .sign-up:checked+.item {
-    color: #D5CEA3;
+    color: rgb(124, 80, 42);
     border-color: #c79e7d;
 }
 
