@@ -32,6 +32,7 @@ background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, F
     display: flex;
     flex-direction: column;
     text-align: justify;
+    padding-top: 35px;
     /* padding: 10px; */
 }
 #intro h2{
@@ -39,14 +40,15 @@ background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, F
     margin-bottom: 20px;
 }
 #intro p{
-    font-size: 19px;
+    font-size: 23.5px;
+    font-family: 'IM Fell DW Pica SC', serif;
     /* padding-top: 20px; */
     padding-right: 10px;
     padding-left: 20px;
     padding-bottom: 10px; 
     letter-spacing: normal;
     color: #937047;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
 
 }
 
