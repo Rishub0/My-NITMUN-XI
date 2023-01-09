@@ -891,21 +891,13 @@ const Formc = () => {
                   </option>
                   <option
                     value="UNGA-SPECPOL"
-                    style={
-                      committee1 == "UNGA-SPECPOL"
-                        ? { display: "none" }
-                        : { display: "block" }
-                    }
+                    
                   >
                     UNGA-SPECPOL
                   </option>
                   <option
                     value="AIPPM"
-                    style={
-                      committee1 == "AIPPM"
-                        ? { display: "none" }
-                        : { display: "block" }
-                    }
+                    
                   >
                     AIPPM
                   </option>

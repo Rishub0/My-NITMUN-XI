@@ -8,7 +8,7 @@ const About = () => {
         <h1 className="headings">ABOUT NITMUN</h1>
         <br></br>
         <div id="pic">
-          <img src="./assets/nitmunimg.jpeg" alt="" />
+          <img src="./assets/nitmun11-logo-min.png" alt="" />
           <div id="intro">
 
             <p className="para-style">
