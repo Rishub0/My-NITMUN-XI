@@ -17,7 +17,7 @@ background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, F
 
     font-size: 4rem;
     text-align: center;
-    color: #937047;
+    color: #ebd6c3;
     font-family: 'IM Fell DW Pica SC',serif;
 }
 #pic{
@@ -47,11 +47,19 @@ background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, F
     padding-left: 20px;
     padding-bottom: 10px; 
     letter-spacing: normal;
-    color: #937047;
+    color: #ebd6c3;
     /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
 
 }
-
+.para-style{
+    padding-top: 20px;
+    margin-right: 35px;
+    margin-left: 25px;
+}
+#pic{
+    margin-left: 30px;
+    padding-top: 30px;
+}
 @media only screen and (max-width: 700px){
 
     #pic{

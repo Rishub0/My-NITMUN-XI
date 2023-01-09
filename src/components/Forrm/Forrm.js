@@ -4,8 +4,8 @@ import { useFormik } from "formik";
 import * as Yup from "yup";
 import axios from "axios";
 import "./Forrmc.css";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+// import { ToastContainer, toast } from "react-toastify";
+// import "react-toastify/dist/ReactToastify.css";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 import { Button } from "react-scroll";
@@ -29,35 +29,38 @@ const Formc = () => {
   const postData = async (e) => {
     e.preventDefault();
 
-    await axios.post("http://localhost:5000/api/register", {
-      // headers: {
-      //   'Content-Type': 'application/json'
-      // },
+    await axios
+      .post("http://localhost:5000/api/register", {
+        // headers: {
+        //   'Content-Type': 'application/json'
+        // },
 
-      name: name,
-      email: email,
-      phoneNumber: phoneNumber,
-      institute: institute,
-      committee1: committee1,
-      preference1: preference1,
-      committee2: committee2,
-      preference2: preference2,
-      committee3: committee3,
-      preference3: preference3,
-      experience: experience,
-      year: year,
-      roll: roll,
-    }).then(() => {
-      // const { success, token, status } = JSON.stringify();
-       console.log(success);
+        name: name,
+        email: email,
+        phoneNumber: phoneNumber,
+        institute: institute,
+        committee1: committee1,
+        preference1: preference1,
+        committee2: committee2,
+        preference2: preference2,
+        committee3: committee3,
+        preference3: preference3,
+        experience: experience,
+        year: year,
+        roll: roll,
+      })
+      .then(() => {
+        // const { success, token, status } = JSON.stringify();
+        // console.log(success);
 
-      // console.log(res);
-    }).catch((err) => {
-      console.log(err);
-      toast.error("Invalid Credentials.")
-     });
+        // console.log(res);
+      })
+      .catch((err) => {
+        console.log(err);
+        // toast.error("Invalid Credentials.")
+      });
 
-    const data= await res.json();
+    // const data = await res.json();
   };
 
   const phoneRegExp =
@@ -90,7 +93,7 @@ const Formc = () => {
     },
   });
   const [checkI, setCheckI] = useState(true);
-  
+
   //   const checkl = async (e)=>{
   //       setCheckI(true),
   //       setCheckII(false)
@@ -488,10 +491,10 @@ const Formc = () => {
                   class="buttons"
                   value="Register"
                   onClick={postData}
-                ><span> Register
-                </span></button>
+                >
+                  <span> Register</span>
+                </button>
               </div>
-              
             </form>
             <form class="sign-up-htm" onSubmit={formik.handleSubmit}>
               <div class="group">
@@ -857,7 +860,7 @@ const Formc = () => {
                   onClick={postData}
                 />
               </div>
-              <ToastContainer />
+              {/* <ToastContainer /> */}
             </form>
           </div>
         </div>

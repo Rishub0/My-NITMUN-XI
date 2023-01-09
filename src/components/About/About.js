@@ -5,26 +5,24 @@ const About = () => {
   return (
     <div>
       <section id="about">
-        <h1 class="headings">ABOUT NITMUN</h1>
+        <h1 className="headings">ABOUT US</h1>
         <br></br>
         <div id="pic">
-          <img src="./assets/bgw.jpg" alt="" />
+          <img src="./assets/bestlc.jpg" alt="" />
           <div id="intro">
 
-            <p>
-              NITMUN is a forum convened by the members of the Literary Circle
-              for discussion and analysis of global issues. It seeks to bring
-              out motivated delegates from all over the country for
-              brainstorming and discussing over significant international
-              issues.<br></br><br></br>NITMUN promises a challenging yet a very entertaining time to all delegates. Our
-              greatest goal is to make sure that each delegate learns how to
-              tackle world issues better at the end of the conference as the
-              world is in dire need of young leaders now.<br></br><br></br>Currently in its 11th
-              edition, NITMUN has been extremely successful in providing the
-              perfect experience to each delegate. Over the years, we have
-              entertained more than 1000 delegates in total. Delegates arrive
-              from all corners of India for an experience they will never
-              forget.
+            <p className="para-style">
+              Literary Circle is the club in NIT Durgapur, which gives the college an extra
+									dimension of creative expression in the
+									midst of technical unilateralism and gives the students of the college an
+									opportunity to transcend the ordinary and
+									mundane. The Literary Circle conducts various events throughout the year.<br/><br/>
+									The club is known to be highly selective in its admission of new
+									members, with only about 10-15 students
+									inducted out of the entire batch of 900 each year. Great believers of the phrase
+									‘quality over quantity’, the members
+									selected every year are the best of the best in the field of expression and
+									creativity.
             </p>
           </div>
         </div>

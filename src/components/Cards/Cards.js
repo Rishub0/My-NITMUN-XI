@@ -1,25 +1,126 @@
 import React from "react";
 import "./Cards.scss";
+import "../Cards/Cards.css";
 
 const Carrds = () => {
   return (
     <div>
-      <span className="secratariat">The Secratariat</span>
+      <p className="secratariat">The Secratariat</p>
       <div class="card__collection clear-fix">
       
        
         <div class="cards cards--two">
           <img
-            src="https://images.unsplash.com/photo-1504703395950-b89145a5425b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d702cb99ca804bffcfa8820c46483264&auto=format&fit=crop&w=651&q=80"
+            src="../assets/Aditya.jpg"
             class="img-responsive"
             alt="Cards Image"
           />
           <span class="cards--two__rect">
           </span>
           
-          <p>Lucy Grace</p>
+          <p>Aditya Mitra</p>
           
-          <p className="two">General Secretary</p>
+          <p className="two">Director General</p>
+          <ul class="cards__list">
+            <li>
+              <i class="fab fa-facebook-f"></i>
+            </li>
+            <li>
+              <i class="fab fa-twitter"></i>
+            </li>
+            <li>
+              <i class="fab fa-instagram"></i>
+            </li>
+            <li>
+              <i class="fab fa-linkedin-in"></i>
+            </li>
+          </ul>
+        </div>
+        <div class="cards cards--two">
+          <img
+            src="../assets/Rohan.jpg"
+            class="img-responsive"
+            alt="Cards Image"
+          />
+          <span class="cards--two__rect"></span>
+          
+          <p>V. Rohan Rao</p>
+          <p className="two">Secretary General</p>
+          <ul class="cards__list">
+            <li>
+              <i class="fab fa-facebook-f"></i>
+            </li>
+            <li>
+              <i class="fab fa-twitter"></i>
+            </li>
+            <li>
+              <i class="fab fa-instagram"></i>
+            </li>
+            <li>
+              <i class="fab fa-linkedin-in"></i>
+            </li>
+          </ul>
+        </div>
+        <div class="cards cards--two">
+          <img
+            src="../assets/Sebontika.jpg"
+            class="img-responsive"
+            alt="Cards Image"
+          />
+          <span class="cards--two__rect"></span>
+          
+          <p>Sebontika Bose</p>
+          <p className="two">IP Head</p>
+          <ul class="cards__list">
+            <li>
+              <i class="fab fa-facebook-f"></i>
+            </li>
+            <li>
+              <i class="fab fa-twitter"></i>
+            </li>
+            <li>
+              <i class="fab fa-instagram"></i>
+            </li>
+            <li>
+              <i class="fab fa-linkedin-in"></i>
+            </li>
+          </ul>
+        </div>
+        <div class="cards cards--two">
+          <img
+            src="../assets/ayush.jpeg"
+            class="img-responsive"
+            alt="Cards Image"
+          />
+          <span class="cards--two__rect"></span>
+          
+          <p>Ayush Tiwary</p>
+          <p className="two">Head of Organisinf Committee</p>
+          <ul class="cards__list">
+            <li>
+              <i class="fab fa-facebook-f"></i>
+            </li>
+            <li>
+              <i class="fab fa-twitter"></i>
+            </li>
+            <li>
+              <i class="fab fa-instagram"></i>
+            </li>
+            <li>
+              <i class="fab fa-linkedin-in"></i>
+            </li>
+          </ul>
+        </div>
+        <div class="cards cards--two">
+          <img
+            src="./assets/epshita.jpeg"
+            class="img-responsive"
+            alt="Cards Image"
+          />
+          <span class="cards--two__rect"></span>
+          
+          <p>Epshita Chakravarty</p>
+          <p className="two">Under Secretary General</p>
           <ul class="cards__list">
             <li>
               <i class="fab fa-facebook-f"></i>
@@ -43,8 +144,58 @@ const Carrds = () => {
           />
           <span class="cards--two__rect"></span>
           
-          <p>Lucy Grace</p>
-          <p className="two">General Secretary</p>
+          <p>Faria Tariq</p>
+          <p className="two">Under Secretary General</p>
+          <ul class="cards__list">
+            <li>
+              <i class="fab fa-facebook-f"></i>
+            </li>
+            <li>
+              <i class="fab fa-twitter"></i>
+            </li>
+            <li>
+              <i class="fab fa-instagram"></i>
+            </li>
+            <li>
+              <i class="fab fa-linkedin-in"></i>
+            </li>
+          </ul>
+        </div>
+        <div class="cards cards--two">
+          <img
+            src="../assets/archit.jpeg"
+            class="img-responsive"
+            alt="Cards Image"
+          />
+          <span class="cards--two__rect"></span>
+          
+          <p>Archit Lall</p>
+          <p className="two">Under Secretary General</p>
+          <ul class="cards__list">
+            <li>
+              <i class="fab fa-facebook-f"></i>
+            </li>
+            <li>
+              <i class="fab fa-twitter"></i>
+            </li>
+            <li>
+              <i class="fab fa-instagram"></i>
+            </li>
+            <li>
+              <i class="fab fa-linkedin-in"></i>
+            </li>
+          </ul>
+        </div>
+        <div class="cards cards--two">
+          <img
+            src="../assets/pushpal.jpeg"
+            class="img-responsive"
+            alt="Cards Image"
+          />
+          <span class="cards--two__rect"></span>
+          
+          <p>Pushpal Ghodaskar</p>
+          <p className="two">Deputy Director General</p>
           <ul class="cards__list">
             <li>
               <i class="fab fa-facebook-f"></i>
@@ -68,8 +219,8 @@ const Carrds = () => {
           />
           <span class="cards--two__rect"></span>
           
-          <p>Lucy Grace</p>
-          <p className="two">General Secretary</p>
+          <p>Sakshi</p>
+          <p className="two">Editor-in-Chief</p>
           <ul class="cards__list">
             <li>
               <i class="fab fa-facebook-f"></i>
@@ -93,133 +244,8 @@ const Carrds = () => {
           />
           <span class="cards--two__rect"></span>
           
-          <p>Lucy Grace</p>
-          <p className="two">General Secretary</p>
-          <ul class="cards__list">
-            <li>
-              <i class="fab fa-facebook-f"></i>
-            </li>
-            <li>
-              <i class="fab fa-twitter"></i>
-            </li>
-            <li>
-              <i class="fab fa-instagram"></i>
-            </li>
-            <li>
-              <i class="fab fa-linkedin-in"></i>
-            </li>
-          </ul>
-        </div>
-        <div class="cards cards--two">
-          <img
-            src="https://images.unsplash.com/photo-1504703395950-b89145a5425b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d702cb99ca804bffcfa8820c46483264&auto=format&fit=crop&w=651&q=80"
-            class="img-responsive"
-            alt="Cards Image"
-          />
-          <span class="cards--two__rect"></span>
-          
-          <p>Lucy Grace</p>
-          <p className="two">General Secretary</p>
-          <ul class="cards__list">
-            <li>
-              <i class="fab fa-facebook-f"></i>
-            </li>
-            <li>
-              <i class="fab fa-twitter"></i>
-            </li>
-            <li>
-              <i class="fab fa-instagram"></i>
-            </li>
-            <li>
-              <i class="fab fa-linkedin-in"></i>
-            </li>
-          </ul>
-        </div>
-        <div class="cards cards--two">
-          <img
-            src="https://images.unsplash.com/photo-1504703395950-b89145a5425b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d702cb99ca804bffcfa8820c46483264&auto=format&fit=crop&w=651&q=80"
-            class="img-responsive"
-            alt="Cards Image"
-          />
-          <span class="cards--two__rect"></span>
-          
-          <p>Lucy Grace</p>
-          <p className="two">General Secretary</p>
-          <ul class="cards__list">
-            <li>
-              <i class="fab fa-facebook-f"></i>
-            </li>
-            <li>
-              <i class="fab fa-twitter"></i>
-            </li>
-            <li>
-              <i class="fab fa-instagram"></i>
-            </li>
-            <li>
-              <i class="fab fa-linkedin-in"></i>
-            </li>
-          </ul>
-        </div>
-        <div class="cards cards--two">
-          <img
-            src="https://images.unsplash.com/photo-1504703395950-b89145a5425b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d702cb99ca804bffcfa8820c46483264&auto=format&fit=crop&w=651&q=80"
-            class="img-responsive"
-            alt="Cards Image"
-          />
-          <span class="cards--two__rect"></span>
-          
-          <p>Lucy Grace</p>
-          <p className="two">General Secretary</p>
-          <ul class="cards__list">
-            <li>
-              <i class="fab fa-facebook-f"></i>
-            </li>
-            <li>
-              <i class="fab fa-twitter"></i>
-            </li>
-            <li>
-              <i class="fab fa-instagram"></i>
-            </li>
-            <li>
-              <i class="fab fa-linkedin-in"></i>
-            </li>
-          </ul>
-        </div>
-        <div class="cards cards--two">
-          <img
-            src="https://images.unsplash.com/photo-1504703395950-b89145a5425b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d702cb99ca804bffcfa8820c46483264&auto=format&fit=crop&w=651&q=80"
-            class="img-responsive"
-            alt="Cards Image"
-          />
-          <span class="cards--two__rect"></span>
-          
-          <p>Lucy Grace</p>
-          <p className="two">General Secretary</p>
-          <ul class="cards__list">
-            <li>
-              <i class="fab fa-facebook-f"></i>
-            </li>
-            <li>
-              <i class="fab fa-twitter"></i>
-            </li>
-            <li>
-              <i class="fab fa-instagram"></i>
-            </li>
-            <li>
-              <i class="fab fa-linkedin-in"></i>
-            </li>
-          </ul>
-        </div>
-        <div class="cards cards--two">
-          <img
-            src="https://images.unsplash.com/photo-1504703395950-b89145a5425b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d702cb99ca804bffcfa8820c46483264&auto=format&fit=crop&w=651&q=80"
-            class="img-responsive"
-            alt="Cards Image"
-          />
-          <span class="cards--two__rect"></span>
-          
-          <p>Lucy Grace</p>
-          <p className="two">General Secretary</p>
+          <p>Diya Sutar</p>
+          <p className="two">Editor-in-Chief</p>
           <ul class="cards__list">
             <li>
               <i class="fab fa-facebook-f"></i>
