@@ -1,31 +1,27 @@
 import React from "react";
-// import "./AboutUs.css"
-import { CgInfo } from "react-icons/cg";
-import Content from "../components/Content/Content";
-import EventsSection from "../components/EventsSection/EventsSection";
-import Features from "../components/Features/Features";
-import Footer from "../components/Footer/Footer";
-import Info from "../components/Info/Info";
-import Navbar from "../components/Navbar/Navbar";
-import { heroData } from "../data/HeroData";
-import About from "../components/About/About";
-import Apps from "../components/timer/timer";
-import Time from "../components/Time/Time";
-import { motion } from 'framer-motion/dist/framer-motion';
-// import About from "../components/About/About";
-const AboutUs = () => {
-  
-  return (
-    // <motion.div 
-    // initial={{width: 0}}
-    // animate={{width: "100vw"}}
-    // exit={{ x: window.innerWidth, transition: {duration: 0.2} }}>
-    <div> <Navbar />
-        
-         <About />
+import AboutUs2 from "./AboutUs2";
+import { useState } from "react";
+import { useEffect } from "react";
+import { RingLoader } from "react-spinners";
 
-      <Footer /></div>
-    // </motion.div>
+const AboutUs = () => {
+  const [loading, setLoading] = useState(false);
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 4000);
+  }, []);
+  return (
+    <div className="App">
+      {loading ? (
+        <div className="ring-style">
+          <RingLoader color="#ffffff" loading={loading} size={150} />
+        </div>
+      ) : (
+        <AboutUs2 />
+      )}
+    </div>
   );
 };
 

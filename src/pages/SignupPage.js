@@ -1,21 +1,28 @@
-import React from 'react';
-import Form from '../components/Form/Form';
-import Formc from '../components/Forrm/Forrm';
-import Navbar from '../components/Navbar/Navbar';
-import Time from '../components/Time/Time';
-import { motion } from 'framer-motion/dist/framer-motion'; 
+import React from "react";
+import SignupPage2 from "./SignupPage2";
+import { useState } from "react";
+import { useEffect } from "react";
+import { RingLoader } from "react-spinners";
+
 const SignupPage = () => {
-	return (
-		
-		// <motion.div
-		// initial={{width: 0}}
-		// animate={{width: "100vw"}}
-		// exit={{ x: window.innerWidth, transition: {duration: 0.2} }}>
-	   <div> <Navbar />
-		 {/* <Time/> */}
-		 <Formc /></div>
-		// </motion.div>
-	);
+  const [loading, setLoading] = useState(false);
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 4000);
+  }, []);
+  return (
+    <div className="App">
+      {loading ? (
+        <div className="ring-style">
+          <RingLoader color="#ffffff" loading={loading} size={150} />
+        </div>
+      ) : (
+        <SignupPage2 />
+      )}
+    </div>
+  );
 };
 
 export default SignupPage;

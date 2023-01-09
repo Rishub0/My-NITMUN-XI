@@ -22,7 +22,7 @@ const HomePage = () => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 8000);
+    }, 4000);
   }, []);
   return (
     <div className="App">

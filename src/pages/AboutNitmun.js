@@ -1,38 +1,27 @@
 import React from "react";
-import { CgInfo } from "react-icons/cg";
-import About1 from "../components/About/About1";
-import Carrds from "../components/Cards/Cards";
-import Content from "../components/Content/Content";
-import EventsSection from "../components/EventsSection/EventsSection";
-import Features from "../components/Features/Features";
-import Footer from "../components/Footer/Footer";
-import Info from "../components/Info/Info";
-import Navbar from "../components/Navbar/Navbar";
-//import Timeline from "../components/Timeline/Timeline";
-import { heroData } from "../data/HeroData";
-import { motion } from 'framer-motion/dist/framer-motion';
+import AboutNitmun2 from "./AboutNitmun2";
+import { useState } from "react";
+import { useEffect } from "react";
+import { RingLoader } from "react-spinners";
 
 const AboutNitmun = () => {
+  const [loading, setLoading] = useState(false);
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 4000);
+  }, []);
   return (
-    // <motion.div 
-    //  initial={{width: 0}}
-    //  animate={{width: "100vw"}}
-    //  exit={{ x: window.innerWidth, transition: {duration: 0.2} }}>
-      <div><Navbar />
-      <About1 />
-      {/* <Timeline /> */}
-      {/* <Info id="about" /> */}
-      <div id="events">
-        {heroData.map((contentData, index) => (
-          <Content {...contentData} key={index} />
-        ))}
-        <Carrds />
-        {/* <EventsSection/> */}
-        <Features />
-      </div>
-      <Footer />
-      </div>
-    //  </motion.div>
+    <div className="App">
+      {loading ? (
+        <div className="ring-style">
+          <RingLoader color="#ffffff" loading={loading} size={150} />
+        </div>
+      ) : (
+        <AboutNitmun2 />
+      )}
+    </div>
   );
 };
 

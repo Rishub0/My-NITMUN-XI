@@ -1,19 +1,27 @@
 import React from "react";
-import EventsSection from "../components/EventsSection/EventsSection";
-import Footer from "../components/Footer/Footer";
-import Navbar from "../components/Navbar/Navbar";
-import { motion } from 'framer-motion/dist/framer-motion';
+import Gallery2 from "./Gallery2";
+import { useState } from "react";
+import { useEffect } from "react";
+import { RingLoader } from "react-spinners";
 
 const Gallery = () => {
+  const [loading, setLoading] = useState(false);
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 4000);
+  }, []);
   return (
-    // <motion.div
-    // initial={{width: 0}}
-    // animate={{width: "100vw"}}
-    // exit={{ x: window.innerWidth, transition: {duration: 0.2} }}>
-      <div><Navbar />
-      <EventsSection />
-      <Footer /></div>
-    //</motion.div>
+    <div className="App">
+      {loading ? (
+        <div className="ring-style">
+          <RingLoader color="#ffffff" loading={loading} size={150} />
+        </div>
+      ) : (
+        <Gallery2 />
+      )}
+    </div>
   );
 };
 
