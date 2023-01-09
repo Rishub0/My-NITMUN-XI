@@ -1,0 +1,110 @@
+import React from 'react'
+
+const UNGA = () => {
+  return (
+    <div>
+        <option value="Islamic Emirate of Afghanistan">Islamic Emirate of Afghanistan</option>
+<option value="Republic of Albania"></option>
+<option value="People's Democratic Republic of Algeria"></option>
+<option value="Republic of Angola"></option>
+<option value="Argentine Republic"></option>
+<option value="Republic of Armenia"></option>
+<option value="Commonwealth of Australia"></option>
+<option value="Republic of Austria"></option>
+<option value="Republic of Azerbaijan"></option>
+<option value="Kingdom of Bahrain"></option>
+<option value="People's Republic of Bangladesh"></option>
+<option value="Barbados"></option>
+<option value="Republic of Belarus"></option>
+<option value="Kingdom of Bhutan"></option>
+<option value="Federative Republic of Brazil"></option>
+<option value="Republic of Bulgaria"></option>
+<option value="Republic of Burundi"></option>
+<option value="Canada"></option>
+<option value="Republic of Chad"></option>
+<option value="Republic of Chile"></option>
+<option value="People's Republic of China (PRC)"></option>
+<option value="Republic of Colombia"></option>
+<option value="Republic of Côte d'Ivoire"></option>
+<option value="Republic of Cuba"></option>
+<option value="Republic of Cyprus"></option>
+<option value="Czech Republic"></option>
+<option value="Democratic People's Republic of Korea (DPRK)"></option>
+<option value="Democratic Republic of the Congo"></option>
+<option value="Republic of Djibouti"></option>
+<option value="Arab Republic of Egypt"></option>
+<option value="Republic of El Salvador"></option>
+<option value="State of Eritrea"></option>
+<option value="Kingdom of Eswatini"></option>
+<option value="Federal Democratic Republic of Ethiopia"></option>
+<option value="Republic of Fiji"></option>
+<option value="French Republic"></option>
+<option value="Georgia"></option>
+<option value="Federal Republic of Germany"></option>
+<option value="Hellenic Republic(Greece)"></option>
+<option value="Republic of Haiti"></option>
+<option value="Hungary"></option>
+<option value="Republic of India"></option>
+<option value="Republic of Indonesia"></option>
+<option value="Islamic Republic of Iran"></option>
+<option value="Republic of Iraq"></option>
+<option value="Republic of Ireland"></option>
+<option value="State of Israel"></option>
+<option value="Italian Republic"></option>
+<option value="Jamaica"></option>
+<option value="Japan"></option>
+<option value="Hashemite Kingdom of Jordan"></option>
+<option value="Republic of Kazakhstan"></option>
+<option value="State of Kuwait"></option>
+<option value="Kyrgyz Republic"></option>
+<option value="Republic of Latvia"></option>
+<option value="Republic of Lebanon"></option>
+<option value="State of Libya"></option>
+<option value="Republic of Madagascar"></option>
+<option value="Republic of Mauritius"></option>
+<option value="United Mexican States(Mexico)"></option>
+<option value="Mongolia"></option>
+<option value="Kingdom of Morocco"></option>
+<option value="Kingdom of the Netherlands"></option>
+<option value="Realm of New Zealand"></option>
+<option value="Federal Republic of Nigeria"></option>
+<option value="Kingdom of Norway"></option>
+<option value="Sultanate of Oman"></option>
+<option value="Islamic Republic of Pakistan"></option>
+<option value="Republic of Panama"></option>
+<option value="Republic of Peru"></option>
+<option value="Republic of the Philippines"></option>
+<option value="Republic of Poland"></option>
+<option value="Portuguese Republic"></option>
+<option value="State of Qatar"></option>
+<option value="Republic of Korea(ROK)"></option>
+<option value="Russian Federation"></option>
+<option value="Saint Lucia"></option>
+<option value="Independent State of Samoa"></option>
+<option value="Kingdom of Saudi Arabia (KSA)"></option>
+<option value="Republic of Senegal"></option>
+<option value="Republic of Seychelles"></option>
+<option value="Republic of Singapore"></option>
+<option value="Solomon Islands"></option>
+<option value="Federal Republic of Somalia"></option>
+<option value="Republic of South Africa (RSA)"></option>
+<option value="Kingdom of Spain"></option>
+<option value="Republic of the Sudan"></option>
+<option value="Swiss Confederation"></option>
+<option value="Syrian Arab Republic"></option>
+<option value="Republic of China (ROC)"></option>
+<option value="Kingdom of Thailand"></option>
+<option value="Republic of Türkiye"></option>
+<option value="Turkmenistan"></option>
+<option value="Ukraine"></option>
+<option value="United Arab Emirates"></option>
+<option value="United Kingdom of Great Britain and Northern Ireland"></option>
+<option value="United States of America"></option>
+<option value="Bolivarian Republic of Venezuela"></option>
+<option value="Socialist Republic of Vietnam"></option>
+<option value="Republic of Yemen"></option>
+    </div>
+  )
+}
+
+export default UNGA

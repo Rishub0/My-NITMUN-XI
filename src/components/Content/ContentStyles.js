@@ -141,7 +141,7 @@ export const ContentButton1 = styled(motion.button)`
 	}
 
 	&:hover {
-		color: ${({ inverse }) => (inverse ? 'white' : 'black')};
+		color: ${({ inverse }) => (inverse ? 'white' : '#ebd6c3')};
 	}
 `;
 
