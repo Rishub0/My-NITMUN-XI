@@ -7,7 +7,7 @@ import "./Forrmc.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Navbar from "../Navbar/Navbar";
-import Footer from "../Footer/Footer";
+import OtherFooter from "../Footer/OtherFooter";
 import { Button } from "react-scroll";
 import { CgWindows } from "react-icons/cg";
 import UNGA from "../../data/UNGA";
@@ -739,28 +739,46 @@ const Formc = () => {
                       <option value="B S Yeddurappa">B S Yeddurappa</option>
                       <option value="Anurag Thakur">Anurag Thakur</option>
                       <option value="LK Advani">LK Advani</option>
-                      <option value="Hemanth Biswas Sharma">Hemanth Biswas Sharma</option>
+                      <option value="Hemanth Biswas Sharma">
+                        Hemanth Biswas Sharma
+                      </option>
                       <option value="Amit Shah">Amit Shah</option>
-                      <option value="Devendra Fadnavis">Devendra Fadnavis</option>
+                      <option value="Devendra Fadnavis">
+                        Devendra Fadnavis
+                      </option>
                       <option value="Smruti Irani">Smruti Irani</option>
                       <option value="Narotam Mishra">Narotam Mishra</option>
-                      <option value="Jyotiraditya Scindhi">Jyotiraditya Scindhi</option>
+                      <option value="Jyotiraditya Scindhi">
+                        Jyotiraditya Scindhi
+                      </option>
                       <option value="Sibraj Singh">Sibraj Singh</option>
                       <option value="Kapil Mishra">Kapil Mishra</option>
-                      <option value="Dharmendra Pradhan">Dharmendra Pradhan</option>
+                      <option value="Dharmendra Pradhan">
+                        Dharmendra Pradhan
+                      </option>
                       <option value="Jp Nadda">Jp Nadda</option>
                       <option value="Yogi Adityanath">Yogi Adityanath</option>
-                      <option value="Ravi Shankar Prasad">Ravi Shankar Prasad</option>
+                      <option value="Ravi Shankar Prasad">
+                        Ravi Shankar Prasad
+                      </option>
                       <option value="Kiran Rijuju">Kiran Rijuju</option>
                       <option value="Gaurav Bhatia">Gaurav Bhatia</option>
                       <option value="Giriraj Singh">Giriraj Singh</option>
                       <option value="Nalin Kohli">Nalin Kohli</option>
                       <option value="Harsh Vardhan">Harsh Vardhan</option>
-                      <option value="Murli Manohar Joshi">Murli Manohar Joshi</option>
+                      <option value="Murli Manohar Joshi">
+                        Murli Manohar Joshi
+                      </option>
                       <option value="Rajnath Singh">Rajnath Singh</option>
-                      <option value="Rajyavardhan Singh Rathore">Rajyavardhan Singh Rathore</option>
-                      <option value="Shivraj Singh Chouhan">Shivraj Singh Chouhan</option>
-                      <option value="Subramanian Swamy">Subramanian Swamy</option>
+                      <option value="Rajyavardhan Singh Rathore">
+                        Rajyavardhan Singh Rathore
+                      </option>
+                      <option value="Shivraj Singh Chouhan">
+                        Shivraj Singh Chouhan
+                      </option>
+                      <option value="Subramanian Swamy">
+                        Subramanian Swamy
+                      </option>
                       <option value="Yashwant Sinha">Yashwant Sinha</option>
                       <option value="Piyush Goyal">Piyush Goyal</option>
                       <option value="Rajnath Singh">Rajnath Singh</option>
@@ -775,9 +793,14 @@ const Formc = () => {
                       <option value="Ashok Gehlot">Ashok Gehlot</option>
                       <option value="Sachin Pilot">Sachin Pilot</option>
                       <option value="Digvijay Singh">Digvijay Singh</option>
-                      <option value="Abhishek Manusinghvi">Abhishek Manusinghvi</option>
+                      <option value="Abhishek Manusinghvi">
+                        Abhishek Manusinghvi
+                      </option>
                       <option value="Sonia Gandhi">Sonia Gandhi</option>
-                      <option value="Bhupendra Singh Baghela"> Bhupendra Singh Baghela </option>
+                      <option value="Bhupendra Singh Baghela">
+                        {" "}
+                        Bhupendra Singh Baghela{" "}
+                      </option>
                       <option value="Kamal Nath">Kamal Nath</option>
                       <option value="Salman Khurshid">Salman Khurshid</option>
                       <option value="Supriya Srinet">Supriya Srinet</option>
@@ -792,12 +815,16 @@ const Formc = () => {
                       <option value="Uddhav Thackeray">Uddhav Thackeray</option>
                       <option value="Aditya Thackeray">Aditya Thackeray</option>
                       <option value="Mamta Bannerjee">Mamta Bannerjee</option>
-                      <option value="Abhishek Banerjee">Abhishek Banerjee</option>
+                      <option value="Abhishek Banerjee">
+                        Abhishek Banerjee
+                      </option>
                       <option value="Derek O'Brian">Derek O'Brian</option>
-                      <option value="SHARAD  PAWAR">SHARAD  PAWAR</option>
+                      <option value="SHARAD  PAWAR">SHARAD PAWAR</option>
                       <option value="Nitish Kumar">Nitish Kumar</option>
                       <option value="Akhilesh Yadav">Akhilesh Yadav</option>
-                      <option value="Mulayam Singh Yadav">Mulayam Singh Yadav</option>
+                      <option value="Mulayam Singh Yadav">
+                        Mulayam Singh Yadav
+                      </option>
                       <option value="Tejasvi Yadav">Tejasvi Yadav</option>
                       <option value="Arvind Kejriwal"></option>
                       <option value="Raghav Chadha">Raghav Chadha</option>
@@ -808,7 +835,9 @@ const Formc = () => {
                       <option value="O Panneerselvam">O Panneerselvam</option>
                       <option value="H D Beve Gowda">H D Beve Gowda</option>
                       <option value="HD Kumaraswamy">HD Kumaraswamy</option>
-                      <option value="N Chandrsbabu Naidu">N Chandrsbabu Naidu</option>
+                      <option value="N Chandrsbabu Naidu">
+                        N Chandrsbabu Naidu
+                      </option>
                       <option value="Pinarayi Vijayan">Pinarayi Vijayan</option>
                       <option value="Sitaram Yechury">Sitaram Yechury</option>
                       <option value="Raj Thackeray">Raj Thackeray</option>
@@ -817,13 +846,17 @@ const Formc = () => {
                       <option value="Mayawati"></option>
                       <option value="Nodeep Kaur">Nodeep Kaur</option>
                       <option value="Aruna Roy">Aruna Roy</option>
-                      <option value="Anannya Bhattacharjee">Anannya Bhattacharjee</option>
+                      <option value="Anannya Bhattacharjee">
+                        Anannya Bhattacharjee
+                      </option>
                       <option value="Shanta Sinha">Shanta Sinha</option>
                       <option value="Sunitha Krishnan">Sunitha Krishnan</option>
                       <option value="Nalini Jameela">Nalini Jameela</option>
                       <option value="Ruchira Gupta">Ruchira Gupta</option>
                       <option value="Ashok Row Kavi">Ashok Row Kavi</option>
-                      <option value="Gopi Shankar Madurai">Gopi Shankar Madurai</option>
+                      <option value="Gopi Shankar Madurai">
+                        Gopi Shankar Madurai
+                      </option>
                     </>
                   ) : (
                     <></>
@@ -1323,28 +1356,46 @@ const Formc = () => {
                       <option value="B S Yeddurappa">B S Yeddurappa</option>
                       <option value="Anurag Thakur">Anurag Thakur</option>
                       <option value="LK Advani">LK Advani</option>
-                      <option value="Hemanth Biswas Sharma">Hemanth Biswas Sharma</option>
+                      <option value="Hemanth Biswas Sharma">
+                        Hemanth Biswas Sharma
+                      </option>
                       <option value="Amit Shah">Amit Shah</option>
-                      <option value="Devendra Fadnavis">Devendra Fadnavis</option>
+                      <option value="Devendra Fadnavis">
+                        Devendra Fadnavis
+                      </option>
                       <option value="Smruti Irani">Smruti Irani</option>
                       <option value="Narotam Mishra">Narotam Mishra</option>
-                      <option value="Jyotiraditya Scindhi">Jyotiraditya Scindhi</option>
+                      <option value="Jyotiraditya Scindhi">
+                        Jyotiraditya Scindhi
+                      </option>
                       <option value="Sibraj Singh">Sibraj Singh</option>
                       <option value="Kapil Mishra">Kapil Mishra</option>
-                      <option value="Dharmendra Pradhan">Dharmendra Pradhan</option>
+                      <option value="Dharmendra Pradhan">
+                        Dharmendra Pradhan
+                      </option>
                       <option value="Jp Nadda">Jp Nadda</option>
                       <option value="Yogi Adityanath">Yogi Adityanath</option>
-                      <option value="Ravi Shankar Prasad">Ravi Shankar Prasad</option>
+                      <option value="Ravi Shankar Prasad">
+                        Ravi Shankar Prasad
+                      </option>
                       <option value="Kiran Rijuju">Kiran Rijuju</option>
                       <option value="Gaurav Bhatia">Gaurav Bhatia</option>
                       <option value="Giriraj Singh">Giriraj Singh</option>
                       <option value="Nalin Kohli">Nalin Kohli</option>
                       <option value="Harsh Vardhan">Harsh Vardhan</option>
-                      <option value="Murli Manohar Joshi">Murli Manohar Joshi</option>
+                      <option value="Murli Manohar Joshi">
+                        Murli Manohar Joshi
+                      </option>
                       <option value="Rajnath Singh">Rajnath Singh</option>
-                      <option value="Rajyavardhan Singh Rathore">Rajyavardhan Singh Rathore</option>
-                      <option value="Shivraj Singh Chouhan">Shivraj Singh Chouhan</option>
-                      <option value="Subramanian Swamy">Subramanian Swamy</option>
+                      <option value="Rajyavardhan Singh Rathore">
+                        Rajyavardhan Singh Rathore
+                      </option>
+                      <option value="Shivraj Singh Chouhan">
+                        Shivraj Singh Chouhan
+                      </option>
+                      <option value="Subramanian Swamy">
+                        Subramanian Swamy
+                      </option>
                       <option value="Yashwant Sinha">Yashwant Sinha</option>
                       <option value="Piyush Goyal">Piyush Goyal</option>
                       <option value="Rajnath Singh">Rajnath Singh</option>
@@ -1359,9 +1410,14 @@ const Formc = () => {
                       <option value="Ashok Gehlot">Ashok Gehlot</option>
                       <option value="Sachin Pilot">Sachin Pilot</option>
                       <option value="Digvijay Singh">Digvijay Singh</option>
-                      <option value="Abhishek Manusinghvi">Abhishek Manusinghvi</option>
+                      <option value="Abhishek Manusinghvi">
+                        Abhishek Manusinghvi
+                      </option>
                       <option value="Sonia Gandhi">Sonia Gandhi</option>
-                      <option value="Bhupendra Singh Baghela"> Bhupendra Singh Baghela </option>
+                      <option value="Bhupendra Singh Baghela">
+                        {" "}
+                        Bhupendra Singh Baghela{" "}
+                      </option>
                       <option value="Kamal Nath">Kamal Nath</option>
                       <option value="Salman Khurshid">Salman Khurshid</option>
                       <option value="Supriya Srinet">Supriya Srinet</option>
@@ -1376,12 +1432,16 @@ const Formc = () => {
                       <option value="Uddhav Thackeray">Uddhav Thackeray</option>
                       <option value="Aditya Thackeray">Aditya Thackeray</option>
                       <option value="Mamta Bannerjee">Mamta Bannerjee</option>
-                      <option value="Abhishek Banerjee">Abhishek Banerjee</option>
+                      <option value="Abhishek Banerjee">
+                        Abhishek Banerjee
+                      </option>
                       <option value="Derek O'Brian">Derek O'Brian</option>
-                      <option value="SHARAD  PAWAR">SHARAD  PAWAR</option>
+                      <option value="SHARAD  PAWAR">SHARAD PAWAR</option>
                       <option value="Nitish Kumar">Nitish Kumar</option>
                       <option value="Akhilesh Yadav">Akhilesh Yadav</option>
-                      <option value="Mulayam Singh Yadav">Mulayam Singh Yadav</option>
+                      <option value="Mulayam Singh Yadav">
+                        Mulayam Singh Yadav
+                      </option>
                       <option value="Tejasvi Yadav">Tejasvi Yadav</option>
                       <option value="Arvind Kejriwal"></option>
                       <option value="Raghav Chadha">Raghav Chadha</option>
@@ -1392,7 +1452,9 @@ const Formc = () => {
                       <option value="O Panneerselvam">O Panneerselvam</option>
                       <option value="H D Beve Gowda">H D Beve Gowda</option>
                       <option value="HD Kumaraswamy">HD Kumaraswamy</option>
-                      <option value="N Chandrsbabu Naidu">N Chandrsbabu Naidu</option>
+                      <option value="N Chandrsbabu Naidu">
+                        N Chandrsbabu Naidu
+                      </option>
                       <option value="Pinarayi Vijayan">Pinarayi Vijayan</option>
                       <option value="Sitaram Yechury">Sitaram Yechury</option>
                       <option value="Raj Thackeray">Raj Thackeray</option>
@@ -1401,13 +1463,17 @@ const Formc = () => {
                       <option value="Mayawati"></option>
                       <option value="Nodeep Kaur">Nodeep Kaur</option>
                       <option value="Aruna Roy">Aruna Roy</option>
-                      <option value="Anannya Bhattacharjee">Anannya Bhattacharjee</option>
+                      <option value="Anannya Bhattacharjee">
+                        Anannya Bhattacharjee
+                      </option>
                       <option value="Shanta Sinha">Shanta Sinha</option>
                       <option value="Sunitha Krishnan">Sunitha Krishnan</option>
                       <option value="Nalini Jameela">Nalini Jameela</option>
                       <option value="Ruchira Gupta">Ruchira Gupta</option>
                       <option value="Ashok Row Kavi">Ashok Row Kavi</option>
-                      <option value="Gopi Shankar Madurai">Gopi Shankar Madurai</option>
+                      <option value="Gopi Shankar Madurai">
+                        Gopi Shankar Madurai
+                      </option>
                     </>
                   ) : (
                     <></>
@@ -1430,24 +1496,9 @@ const Formc = () => {
                   onBlur={formik.handleBlur}
                 >
                   <option defaultValue={"Select"}>Select</option>
-                  <option
-                    value="UNGA-DISEC"
-                    
-                  >
-                    UNGA-DISEC
-                  </option>
-                  <option
-                    value="UNGA-SPECPOL"
-                    
-                  >
-                    UNGA_SPECPOL
-                  </option>
-                  <option
-                    value="AIPPM"
-                    
-                  >
-                    AIPPM
-                  </option>
+                  <option value="UNGA-DISEC">UNGA-DISEC</option>
+                  <option value="UNGA-SPECPOL">UNGA_SPECPOL</option>
+                  <option value="AIPPM">AIPPM</option>
                 </select>
               </div>
               <div
@@ -1894,28 +1945,46 @@ const Formc = () => {
                       <option value="B S Yeddurappa">B S Yeddurappa</option>
                       <option value="Anurag Thakur">Anurag Thakur</option>
                       <option value="LK Advani">LK Advani</option>
-                      <option value="Hemanth Biswas Sharma">Hemanth Biswas Sharma</option>
+                      <option value="Hemanth Biswas Sharma">
+                        Hemanth Biswas Sharma
+                      </option>
                       <option value="Amit Shah">Amit Shah</option>
-                      <option value="Devendra Fadnavis">Devendra Fadnavis</option>
+                      <option value="Devendra Fadnavis">
+                        Devendra Fadnavis
+                      </option>
                       <option value="Smruti Irani">Smruti Irani</option>
                       <option value="Narotam Mishra">Narotam Mishra</option>
-                      <option value="Jyotiraditya Scindhi">Jyotiraditya Scindhi</option>
+                      <option value="Jyotiraditya Scindhi">
+                        Jyotiraditya Scindhi
+                      </option>
                       <option value="Sibraj Singh">Sibraj Singh</option>
                       <option value="Kapil Mishra">Kapil Mishra</option>
-                      <option value="Dharmendra Pradhan">Dharmendra Pradhan</option>
+                      <option value="Dharmendra Pradhan">
+                        Dharmendra Pradhan
+                      </option>
                       <option value="Jp Nadda">Jp Nadda</option>
                       <option value="Yogi Adityanath">Yogi Adityanath</option>
-                      <option value="Ravi Shankar Prasad">Ravi Shankar Prasad</option>
+                      <option value="Ravi Shankar Prasad">
+                        Ravi Shankar Prasad
+                      </option>
                       <option value="Kiran Rijuju">Kiran Rijuju</option>
                       <option value="Gaurav Bhatia">Gaurav Bhatia</option>
                       <option value="Giriraj Singh">Giriraj Singh</option>
                       <option value="Nalin Kohli">Nalin Kohli</option>
                       <option value="Harsh Vardhan">Harsh Vardhan</option>
-                      <option value="Murli Manohar Joshi">Murli Manohar Joshi</option>
+                      <option value="Murli Manohar Joshi">
+                        Murli Manohar Joshi
+                      </option>
                       <option value="Rajnath Singh">Rajnath Singh</option>
-                      <option value="Rajyavardhan Singh Rathore">Rajyavardhan Singh Rathore</option>
-                      <option value="Shivraj Singh Chouhan">Shivraj Singh Chouhan</option>
-                      <option value="Subramanian Swamy">Subramanian Swamy</option>
+                      <option value="Rajyavardhan Singh Rathore">
+                        Rajyavardhan Singh Rathore
+                      </option>
+                      <option value="Shivraj Singh Chouhan">
+                        Shivraj Singh Chouhan
+                      </option>
+                      <option value="Subramanian Swamy">
+                        Subramanian Swamy
+                      </option>
                       <option value="Yashwant Sinha">Yashwant Sinha</option>
                       <option value="Piyush Goyal">Piyush Goyal</option>
                       <option value="Rajnath Singh">Rajnath Singh</option>
@@ -1930,9 +1999,14 @@ const Formc = () => {
                       <option value="Ashok Gehlot">Ashok Gehlot</option>
                       <option value="Sachin Pilot">Sachin Pilot</option>
                       <option value="Digvijay Singh">Digvijay Singh</option>
-                      <option value="Abhishek Manusinghvi">Abhishek Manusinghvi</option>
+                      <option value="Abhishek Manusinghvi">
+                        Abhishek Manusinghvi
+                      </option>
                       <option value="Sonia Gandhi">Sonia Gandhi</option>
-                      <option value="Bhupendra Singh Baghela"> Bhupendra Singh Baghela </option>
+                      <option value="Bhupendra Singh Baghela">
+                        {" "}
+                        Bhupendra Singh Baghela{" "}
+                      </option>
                       <option value="Kamal Nath">Kamal Nath</option>
                       <option value="Salman Khurshid">Salman Khurshid</option>
                       <option value="Supriya Srinet">Supriya Srinet</option>
@@ -1947,12 +2021,16 @@ const Formc = () => {
                       <option value="Uddhav Thackeray">Uddhav Thackeray</option>
                       <option value="Aditya Thackeray">Aditya Thackeray</option>
                       <option value="Mamta Bannerjee">Mamta Bannerjee</option>
-                      <option value="Abhishek Banerjee">Abhishek Banerjee</option>
+                      <option value="Abhishek Banerjee">
+                        Abhishek Banerjee
+                      </option>
                       <option value="Derek O'Brian">Derek O'Brian</option>
-                      <option value="SHARAD  PAWAR">SHARAD  PAWAR</option>
+                      <option value="SHARAD  PAWAR">SHARAD PAWAR</option>
                       <option value="Nitish Kumar">Nitish Kumar</option>
                       <option value="Akhilesh Yadav">Akhilesh Yadav</option>
-                      <option value="Mulayam Singh Yadav">Mulayam Singh Yadav</option>
+                      <option value="Mulayam Singh Yadav">
+                        Mulayam Singh Yadav
+                      </option>
                       <option value="Tejasvi Yadav">Tejasvi Yadav</option>
                       <option value="Arvind Kejriwal"></option>
                       <option value="Raghav Chadha">Raghav Chadha</option>
@@ -1963,7 +2041,9 @@ const Formc = () => {
                       <option value="O Panneerselvam">O Panneerselvam</option>
                       <option value="H D Beve Gowda">H D Beve Gowda</option>
                       <option value="HD Kumaraswamy">HD Kumaraswamy</option>
-                      <option value="N Chandrsbabu Naidu">N Chandrsbabu Naidu</option>
+                      <option value="N Chandrsbabu Naidu">
+                        N Chandrsbabu Naidu
+                      </option>
                       <option value="Pinarayi Vijayan">Pinarayi Vijayan</option>
                       <option value="Sitaram Yechury">Sitaram Yechury</option>
                       <option value="Raj Thackeray">Raj Thackeray</option>
@@ -1972,13 +2052,17 @@ const Formc = () => {
                       <option value="Mayawati"></option>
                       <option value="Nodeep Kaur">Nodeep Kaur</option>
                       <option value="Aruna Roy">Aruna Roy</option>
-                      <option value="Anannya Bhattacharjee">Anannya Bhattacharjee</option>
+                      <option value="Anannya Bhattacharjee">
+                        Anannya Bhattacharjee
+                      </option>
                       <option value="Shanta Sinha">Shanta Sinha</option>
                       <option value="Sunitha Krishnan">Sunitha Krishnan</option>
                       <option value="Nalini Jameela">Nalini Jameela</option>
                       <option value="Ruchira Gupta">Ruchira Gupta</option>
                       <option value="Ashok Row Kavi">Ashok Row Kavi</option>
-                      <option value="Gopi Shankar Madurai">Gopi Shankar Madurai</option>
+                      <option value="Gopi Shankar Madurai">
+                        Gopi Shankar Madurai
+                      </option>
                     </>
                   ) : (
                     <></>
@@ -2190,14 +2274,18 @@ const Formc = () => {
                   }}
                   onBlur={formik.handleBlur}
                 >
-                  {(committee1=="AIPPM-IP")?<>
-                  <option value="Hindustan Times">Hindustan Times</option>
-                  <option value="Times Of India">Times Of India</option>
-                  <option value="The Hindu">The Hindu</option>
-                  </>:<>
-                  <option value="UP">UP</option>
-                  <option value="Reuters">Reuters</option>
-                  </>}
+                  {committee1 == "AIPPM-IP" ? (
+                    <>
+                      <option value="Hindustan Times">Hindustan Times</option>
+                      <option value="Times Of India">Times Of India</option>
+                      <option value="The Hindu">The Hindu</option>
+                    </>
+                  ) : (
+                    <>
+                      <option value="UP">UP</option>
+                      <option value="Reuters">Reuters</option>
+                    </>
+                  )}
                 </select>
               </div>
               <br></br>
@@ -2217,16 +2305,8 @@ const Formc = () => {
                 >
                   <option defaultValue={"Select"}>Select</option>
                   <option value="UNGA-DISEC-IP">UNGA-DISEC-IP</option>
-                  <option
-                    value="UNGA-SPECPOL-IP"
-                  >
-                    UNGA-SPECPOL-IP
-                  </option>
-                  <option
-                    value="AIPPM-IP"
-                  >
-                    AIPPM-IP
-                  </option>
+                  <option value="UNGA-SPECPOL-IP">UNGA-SPECPOL-IP</option>
+                  <option value="AIPPM-IP">AIPPM-IP</option>
                 </select>
               </div>
               <div
@@ -2246,14 +2326,18 @@ const Formc = () => {
                   }}
                   onBlur={formik.handleBlur}
                 >
-                 {(committee1=="AIPPM-IP")?<>
-                  <option value="Hindustan Times">Hindustan Times</option>
-                  <option value="Times Of India">Times Of India</option>
-                  <option value="The Hindu">The Hindu</option>
-                  </>:<>
-                  <option value="UP">UP</option>
-                  <option value="Reuters">Reuters</option>
-                  </>} 
+                  {committee1 == "AIPPM-IP" ? (
+                    <>
+                      <option value="Hindustan Times">Hindustan Times</option>
+                      <option value="Times Of India">Times Of India</option>
+                      <option value="The Hindu">The Hindu</option>
+                    </>
+                  ) : (
+                    <>
+                      <option value="UP">UP</option>
+                      <option value="Reuters">Reuters</option>
+                    </>
+                  )}
                 </select>
               </div>
               <br></br>
@@ -2272,17 +2356,8 @@ const Formc = () => {
                   onBlur={formik.handleBlur}
                 >
                   <option defaultValue={"Select"}>Select</option>
-                  <option
-                    value="UNGA-DISEC-IP"
-                    
-                  >
-                    UNGA-DISEC-IP
-                  </option>
-                  <option
-                    value="UNGA-SPECPOL-IP"
-                  >
-                    UNGA-SPECPOL-IP
-                  </option>
+                  <option value="UNGA-DISEC-IP">UNGA-DISEC-IP</option>
+                  <option value="UNGA-SPECPOL-IP">UNGA-SPECPOL-IP</option>
                   <option value="AIPPM-IP">AIPPM</option>
                 </select>
               </div>
@@ -2298,14 +2373,18 @@ const Formc = () => {
                   }}
                   onBlur={formik.handleBlur}
                 >
-                  {(committee1=="AIPPM-IP")?<>
-                  <option value="Hindustan Times">Hindustan Times</option>
-                  <option value="Times Of India">Times Of India</option>
-                  <option value="The Hindu">The Hindu</option>
-                  </>:<>
-                  <option value="UP">UP</option>
-                  <option value="Reuters">Reuters</option>
-                  </>}
+                  {committee1 == "AIPPM-IP" ? (
+                    <>
+                      <option value="Hindustan Times">Hindustan Times</option>
+                      <option value="Times Of India">Times Of India</option>
+                      <option value="The Hindu">The Hindu</option>
+                    </>
+                  ) : (
+                    <>
+                      <option value="UP">UP</option>
+                      <option value="Reuters">Reuters</option>
+                    </>
+                  )}
                 </select>
               </div>
               <div className="group">
@@ -2339,7 +2418,7 @@ const Formc = () => {
         </div>
       </div>
       <ToastContainer position="top-right" />
-      <Footer />
+      <OtherFooter />
     </div>
   );
 };
