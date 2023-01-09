@@ -15,6 +15,7 @@ import Landing from "../Landing";
 import { useState } from "react";
 import { useEffect } from "react";
 import { RingLoader } from "react-spinners";
+import "./loader.css";
 
 const HomePage = () => {
   const [loading, setLoading] = useState(false);

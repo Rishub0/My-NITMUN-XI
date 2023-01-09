@@ -3,6 +3,7 @@ import SignupPage2 from "./SignupPage2";
 import { useState } from "react";
 import { useEffect } from "react";
 import { RingLoader } from "react-spinners";
+import "./loader.css";
 
 const SignupPage = () => {
   const [loading, setLoading] = useState(false);

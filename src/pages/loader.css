@@ -1,0 +1,52 @@
+.ring-style{
+    position: fixed;
+    left: 20%;
+    top: 35%;
+    
+  }
+  
+  @media screen and (min-width:1024px) {
+    .ring-style {
+      position: fixed;
+      left: 45%;
+      top: 305;
+  
+    }
+  }
+  
+  @media screen and (max-width:770px) {
+    .ring-style {
+      position: fixed;
+      left: 40%;
+      top: 35%;
+  
+    }
+  }
+  
+  @media screen and (max-width:430px) {
+    .ring-style {
+      position: fixed;
+      left: 30%;
+      top: 35%;
+  
+    }
+  }
+  
+  @media screen and (max-width:380px) {
+    .ring-style {
+      position: fixed;
+      left: 30%;
+      top: 35%;
+  
+    }
+  }
+  
+  @media screen and (max-device-width: 330px) {
+    .ring-style {
+      position: fixed;
+      left: 25%;
+      top: 35%;
+  
+    }
+  }
+  

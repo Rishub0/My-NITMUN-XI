@@ -10,16 +10,6 @@ const Landing = () => {
       
       <div>
       <Hero />
-      {/* <Info id="about" /> */}
-      {/* <Features id="programs" /> */}
-
-      {/* <div id="events">
-				{heroData.map((contentData, index) => (
-					<Content {...contentData} key={index} />
-				))}
-				<EventsSection />
-			</div> */}
-      
       <Footer /></div>
       
     </div>

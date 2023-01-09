@@ -28,7 +28,7 @@ const AboutNitmun2 = () => {
         ))}
         <Carrds />
         {/* <EventsSection/> */}
-        <Features />
+        {/* <Features /> */}
       </div>
       <Footer />
       </div>
