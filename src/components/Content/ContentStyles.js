@@ -148,12 +148,12 @@ export const ContentButton1 = styled(motion.button)`
 export const ImgWrapper = styled(motion.div)`
 	display: flex;
 	justify-content: ${({ imgStart }) => (imgStart ? 'flex-start' : 'flex-end')};
-	max-height: 700px;
+	max-height: 70vh;
 	justify-content: center;
 	position: relative;
 	background-color: #3C2A21;
 	padding: 4px 0;
-	max-height: 40%;
+	max-width: max-content;
 `;
 
 export const TopLine = styled(motion.span)`
@@ -172,11 +172,11 @@ export const TopLine = styled(motion.span)`
 export const Img = styled(motion.img)`
 	padding-right: 0;
 	border: 0;
+	height: 70vh;
 	max-width: 100%;
 	vertical-align: middle;
 	display: inline-block;
 	object-fit: cover;
-	/* height: 400px; */
 	max-height: 700px;
 	z-index: 1;
 `;

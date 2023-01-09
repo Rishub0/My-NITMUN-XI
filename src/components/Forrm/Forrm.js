@@ -4,8 +4,11 @@ import { useFormik } from "formik";
 import * as Yup from "yup";
 import axios from "axios";
 import "./Forrmc.css";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
+import { Button } from "react-scroll";
 
 const Formc = () => {
   const [name, setName] = useState("");
@@ -22,8 +25,6 @@ const Formc = () => {
   const [other, setOther] = useState("");
   const [roll, setRoll] = useState("");
   const [year, setYear] = useState("");
-
-  
 
   const postData = async (e) => {
     e.preventDefault();
@@ -46,9 +47,17 @@ const Formc = () => {
       experience: experience,
       year: year,
       roll: roll,
-    });
+    }).then(() => {
+      // const { success, token, status } = JSON.stringify();
+       console.log(success);
 
-    // const data= await res.json();
+      // console.log(res);
+    }).catch((err) => {
+      console.log(err);
+      toast.error("Invalid Credentials.")
+     });
+
+    const data= await res.json();
   };
 
   const phoneRegExp =
@@ -80,23 +89,47 @@ const Formc = () => {
       alert(JSON.stringify(values, null, 2));
     },
   });
+  const [checkI, setCheckI] = useState(true);
+  
+  //   const checkl = async (e)=>{
+  //       setCheckI(true),
+  //       setCheckII(false)
+  //   }
+  //   const checkl2 = async (e)=>{
+  //     setCheckII(true),
+  //     setCheckI(false)
+  // }
 
   return (
     <div>
       <div class="container">
         <div class="login-container">
-          <input id="item-1" type="radio" name="item" class="sign-in" checked />
+          <input
+            id="item-1"
+            type="radio"
+            name="item"
+            class="sign-in"
+            checked={checkI}
+            onClick={() => setCheckI(true)}
+          />
           <label for="item-1" class="item">
             Delegate
           </label>
-          <input id="item-2" type="radio" name="item" class="sign-up" />
+          <input
+            id="item-2"
+            type="radio"
+            name="item"
+            class="sign-up"
+            checked={!checkI}
+            onClick={() => setCheckI(false)}
+          />
           <label for="item-2" class="item">
             IP
           </label>
           <div class="login-form">
             <form class="sign-in-htm" onSubmit={formik.handleSubmit}>
               <div class="group">
-                <label for="firstname">Name</label>
+                <label for="firstname">Name11</label>
                 <input
                   placeholder="Name"
                   name="Name"
@@ -450,13 +483,14 @@ const Formc = () => {
               </div>
 
               <div class="group">
-                <input
+                <button
                   type="submit"
-                  class="button"
+                  class="buttons"
                   value="Register"
                   onClick={postData}
-                />
-               </div>
+                ><span> Register
+                </span></button>
+              </div>
               
             </form>
             <form class="sign-up-htm" onSubmit={formik.handleSubmit}>
@@ -614,9 +648,9 @@ const Formc = () => {
                   onBlur={formik.handleBlur}
                 >
                   <option defaultValue={"Select"}>Select</option>
-                  <option value="UNGA-DISEC">UNGA-DISEC</option>
-                  <option value="UNGA-SPECPOL">UNGA_SPECPOL</option>
-                  <option value="AIPPM">AIPPM</option>
+                  <option value="IP UNGA-DISEC">IP UNGA-DISEC</option>
+                  <option value="IP UNGA-SPECPOL">IP UNGA_SPECPOL</option>
+                  <option value="IP AIPPM">IP AIPPM</option>
                 </select>
               </div>
 
@@ -627,7 +661,7 @@ const Formc = () => {
                 }
               >
                 <label for="lastname">
-                  {committee1 == "AIPPM" ? "Personality" : "Country"}
+                  {committee1 == "IP AIPPM" ? "Personality" : "Country"}
                 </label>
                 <select
                   className="input"
@@ -664,29 +698,29 @@ const Formc = () => {
                 >
                   <option defaultValue={"Select"}>Select</option>
                   <option
-                    value="UNGA-DISEC"
+                    value="IP UNGA-DISEC"
                     style={
-                      committee1 == "UNGA-DISEC"
+                      committee1 == "IP UNGA-DISEC"
                         ? { display: "none" }
                         : { display: "block" }
                     }
                   >
-                    UNGA-DISEC
+                    IP UNGA-DISEC
                   </option>
                   <option
-                    value="UNGA-SPECPOL"
+                    value="IP UNGA-SPECPOL"
                     style={
-                      committee1 == "UNGA-SPECPOL"
+                      committee1 == "IP UNGA-SPECPOL"
                         ? { display: "none" }
                         : { display: "block" }
                     }
                   >
-                    UNGA_SPECPOL
+                    IP UNGA_SPECPOL
                   </option>
                   <option
-                    value="AIPPM"
+                    value="IP AIPPM"
                     style={
-                      committee1 == "AIPPM"
+                      committee1 == "IP AIPPM"
                         ? { display: "none" }
                         : { display: "block" }
                     }
@@ -702,7 +736,7 @@ const Formc = () => {
                 }
               >
                 <label for="lastname">
-                  {committee2 == "AIPPM" ? "Personality" : "Country"}
+                  {committee2 == "IP AIPPM" ? "Personality" : "Country"}
                 </label>
                 <select
                   className="input"
@@ -739,9 +773,10 @@ const Formc = () => {
                 >
                   <option defaultValue={"Select"}>Select</option>
                   <option
-                    value="UNGA-DISEC"
+                    value="IP UNGA-DISEC"
                     style={
-                      committee1 == "UNGA-DISEC" || committee2 == "UNGA-DISEC"
+                      committee1 == "IP UNGA-DISEC" ||
+                      committee2 == "IP UNGA-DISEC"
                         ? { display: "none" }
                         : { display: "block" }
                     }
@@ -749,10 +784,10 @@ const Formc = () => {
                     IP UNGA-DISEC
                   </option>
                   <option
-                    value="UNGA-SPECPOL"
+                    value="IP UNGA-SPECPOL"
                     style={
-                      committee1 == "UNGA-SPECPOL" ||
-                      committee2 == "UNGA-SPECPOL"
+                      committee1 == "IP UNGA-SPECPOL" ||
+                      committee2 == "IP UNGA-SPECPOL"
                         ? { display: "none" }
                         : { display: "block" }
                     }
@@ -760,9 +795,9 @@ const Formc = () => {
                     IP UNGA_SPECPOL
                   </option>
                   <option
-                    value="AIPPM"
+                    value="IP AIPPM"
                     style={
-                      committee1 == "AIPPM" || committee2 == "AIPPM"
+                      committee1 == "IP AIPPM" || committee2 == "IP AIPPM"
                         ? { display: "none" }
                         : { display: "block" }
                     }
@@ -778,7 +813,7 @@ const Formc = () => {
                 }
               >
                 <label for="lastname">
-                  {committee1 == "AIPPM" ? "Personality" : "Country"}
+                  {committee1 == "IP AIPPM" ? "Personality" : "Country"}
                 </label>
                 <select
                   className="input"
@@ -817,11 +852,12 @@ const Formc = () => {
               <div class="group">
                 <input
                   type="submit"
-                  class="button"
+                  class="buttons"
                   value="Register"
                   onClick={postData}
                 />
               </div>
+              <ToastContainer />
             </form>
           </div>
         </div>

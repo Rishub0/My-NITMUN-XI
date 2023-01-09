@@ -212,7 +212,7 @@
 .clearfix:after,
 .clearfix:before {
     content: '';
-    display: itemle
+    display: block;
 }
 
 .clearfix:after {
@@ -269,8 +269,8 @@ a {
 }
 
 .login-container .item,
-.login-form .group .label,
-.login-form .group .button {
+.login-form .group .label
+{
     text-transform: uppercase;
 }
 
@@ -293,7 +293,7 @@ a {
 .login-form {
     min-height: 345px;
     position: relative;
-    perspective: 1000px;
+     perspective: 1000px;
     transform-style: preserve-3d;
 }
 
@@ -302,19 +302,26 @@ a {
 }
 
 .login-form .group .label,
-.login-form .group .input,
-.login-form .group .button {
+.login-form .group .input
+ {
     width: 100%;
     color: #D5CEA3;
     display: block;
 }
-
-.button {
-    cursor: pointer;
+.login-form .group .buttons{
+align-content: center;
+    width: 50%;
+    color: #12110d;
+    display: flex;
+flex-wrap: wrap;
 }
 
-.login-form .group .input,
-.login-form .group .button {
+.buttons {
+    cursor: pointer;
+}
+/* .login-form .group .buttons */
+.login-form .group .input
+ {
     border: none;
     padding: 15px 20px;
     border-radius: 10px;
@@ -331,9 +338,9 @@ a {
     font-size: 12px;
 }
 
-.login-form .group .button {
+/* .login-form .group .buttons {
     background:#D5CEA3;
-}
+} */
 
 .login-form .group .check:checked+label {
     color: #fff;
@@ -346,6 +353,60 @@ a {
 .login-container .sign-up:checked+.item+.login-form .sign-up-htm {
     transform: rotate(0);
 }
+
+.buttons {
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid #03045e;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease-in;
+    z-index: 1;
+   }
+   
+   .buttons::before,
+   .buttons::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 100%;
+    transform: skew(15deg);
+    transition: all 0.5s;
+    overflow: hidden;
+    z-index: -1;
+   }
+   
+   .buttons::before {
+    left: -10px;
+    background: #240046;
+   }
+   
+   .buttons::after {
+    right: -10px;
+    background: #5a189a;
+   }
+   
+   .buttons:hover::before,
+   .buttons:hover::after {
+    width: 58%;
+   }
+   
+   .buttons:hover span {
+    color: #e0aaff;
+    transition: 0.3s;
+   }
+   
+   .buttons span {
+    color: #03045e;
+    font-size: 18px;
+    transition: all 0.3s ease-in;
+   }
+
+
+
 
 /* button {
     border: none;
