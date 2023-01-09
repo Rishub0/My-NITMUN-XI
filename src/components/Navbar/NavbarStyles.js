@@ -102,7 +102,7 @@ export const NavMenu = styled.ul`
 		visibility: ${({ show }) => (show ? 'visible' : 'hidden')};
 		transform: translateY(${({ show }) => (show ? '0' : '-10px')});
 		transition: opacity 0.5s ease;
-		background-color: #071c2f;
+		background-color: black;
 	}
 
 	> li:first-child {

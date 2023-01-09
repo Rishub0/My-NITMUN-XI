@@ -124,7 +124,7 @@ export const ContentButton1 = styled(motion.button)`
 	overflow: hidden;
 
 	&:before {
-		background: #3C2A21;
+		background: ${({ inverse }) => (inverse ? '#3C2A21' : 'white')};
 		content: '';
 		position: absolute;
 		top: 50%;
@@ -151,7 +151,7 @@ export const ImgWrapper = styled(motion.div)`
 	max-height: 70vh;
 	justify-content: center;
 	position: relative;
-	background-color: #3C2A21;
+	background-color: ${({ inverse }) => (inverse ? '#3C2A21' : 'white')} ;
 	padding: 4px 0;
 	max-width: max-content;
 `;
