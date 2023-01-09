@@ -196,14 +196,18 @@
 
   body {
     margin: 0;
-    color: #D5CEA3;
+    color: rgb(105, 77, 55);
+    /* #D5CEA3 */
     /* background: #261e1a; */
     background: rgb(1,2,3);
     font-family: 'Montserrat', monospace;
     font-weight: bold;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
-
+body .label{
+    color:#D5CEA3;
+}
 *,
  :after,
  :before {
@@ -289,8 +293,8 @@ a {
 
 .login-container .sign-in:checked+.item,
 .login-container .sign-up:checked+.item {
-    color: rgb(175, 139, 110);
-    border-color: #DF00FF;
+    color: #D5CEA3;
+    border-color: #c79e7d;
 }
 
 .login-form {
