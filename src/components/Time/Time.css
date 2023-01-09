@@ -52,6 +52,7 @@ section p:first-child, .timer div:last-child span{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+   
   }
   /* .timer-cointainer h1{
     font-size: 3rem;
@@ -66,7 +67,7 @@ section p:first-child, .timer div:last-child span{
     justify-content: center;
     align-items: center;
     /* background: #261e1a; */
-    height: 150px;
+    height: 250px;
     width: 400px;
     color: #795e3f;
     text-shadow: 0.1px 0.1px 0.1px;
@@ -83,7 +84,7 @@ section p:first-child, .timer div:last-child span{
     padding: 1rem;
   }
   .clock section p {
-    font-size: 3.3rem;
+    font-size: 5.3rem;
     
   }
   .clock section small {
@@ -133,7 +134,7 @@ section p:first-child, .timer div:last-child span{
     
     }
     .clock section p {
-        font-size: 2rem;
+        font-size: 4rem;
       }
     .clock section{
       padding: 0.5rem;

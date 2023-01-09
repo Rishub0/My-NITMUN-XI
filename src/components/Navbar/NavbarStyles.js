@@ -7,7 +7,7 @@ import { dark } from '../../data/GlobalData';
 export const Nav = styled.nav`
 	background: ${({ hide }) => (hide ? 'transparent' : dark)};
 	margin-top: -80px;
-	height: 120px;
+	height: 100px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -21,6 +21,7 @@ export const Nav = styled.nav`
 	@media screen and (max-width: 960px){
 		width: 100vw;
 		overflow-x: hidden;
+		height: 60px;
 		
 	}
 	
@@ -29,7 +30,7 @@ export const Nav = styled.nav`
 export const NavbarContainer = styled(Container)`
 	display: flex;
 	justify-content: start;
-	height: 120px;
+	height: 60px;
 
 	@media screen and (max-width: 960px){
 		width: 100vw;
@@ -47,24 +48,38 @@ export const NavLogo = styled(Link)`
 	display: flex;
 	align-items: center;
 	z-index: 49;
+ 
+	@media screen and (max-width: 960px){
+		padding-bottom: 2px;
+		padding-left: 4px;
+	}
+	
 `;
 
 export const NavIcon = styled.img`
 	margin-right: 1rem;
-	width: 4.2rem;
+	width: 3.2rem;
+
+	@media screen and (max-width: 960px){
+		width: 2.4rem;
+	
+	}
+
 `;
 export const MobileIcon = styled.div`
 	display: none;
 	z-index: 50;
 
 	@media screen and (max-width: 960px) {
-		display: block;
-		position: absolute;
+		display: flex;
+		position: fixed;
+		vertical-align: top;
 		top: 0;
 		right: 0;
 		transform: translate(-100%, 60%);
 		font-size: 1.8rem;
 		cursor: pointer;
+		
 	}
 `;
 

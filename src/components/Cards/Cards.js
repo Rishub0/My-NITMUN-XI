@@ -4,8 +4,10 @@ import "./Cards.scss";
 const Carrds = () => {
   return (
     <div>
-      
+      <span className="secratariat">The Secratariat</span>
       <div class="card__collection clear-fix">
+      
+       
         <div class="cards cards--two">
           <img
             src="https://images.unsplash.com/photo-1504703395950-b89145a5425b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d702cb99ca804bffcfa8820c46483264&auto=format&fit=crop&w=651&q=80"

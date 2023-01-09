@@ -18,7 +18,7 @@ background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, F
     font-size: 4rem;
     text-align: center;
     color: #937047;
-    font-family:'Times New Roman', Times, serif;
+    font-family: 'IM Fell DW Pica SC',serif;
 }
 #pic{
     display: flex;

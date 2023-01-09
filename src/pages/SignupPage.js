@@ -7,14 +7,14 @@ import { motion } from 'framer-motion/dist/framer-motion';
 const SignupPage = () => {
 	return (
 		
-		<motion.div
-		initial={{width: 0}}
-		animate={{width: "100vw"}}
-		exit={{ x: window.innerWidth, transition: {duration: 0.2} }}>
-	    <Navbar />
-		<Time/>
-		<Formc />
-		</motion.div>
+		// <motion.div
+		// initial={{width: 0}}
+		// animate={{width: "100vw"}}
+		// exit={{ x: window.innerWidth, transition: {duration: 0.2} }}>
+	   <div> <Navbar />
+		 {/* <Time/> */}
+		 <Formc /></div>
+		// </motion.div>
 	);
 };
 

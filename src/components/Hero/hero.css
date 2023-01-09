@@ -15,18 +15,18 @@
     margin-top: 0;
     vertical-align: center;
     position: relative;
-    top: 230px;
+    top: 270px;
     padding-top: 70px;
     z-index: 51;
 
 }
 .theme{
-    font-size: 120px;
+    font-size: 100px;
     margin-top: 2px;
-   
+   margin-bottom: 15px;
     text-align: center;
     position: relative;
-    top: 29rem;
+    top: 27.6rem;
     color: #d0bf51;
 
 }
@@ -47,7 +47,7 @@
     align-items: center;
     text-align: center;
     justify-content: center;
-    font-size: 28px;
+    font-size: 30px;
 }
 
 
@@ -79,7 +79,7 @@
   }
   /* button styling */
   .button {
-    top: 430px;
+    top: 850px;
     --border-right: 6px;
     --text-stroke-color: rgba(208,191,81,0.6);
     --animation-color: rgba(208,191,81);
@@ -113,28 +113,36 @@
   }
   .vid{
     position: absolute;
+    width: 100%;
   }
   .timerrr{
     justify-content: center;
     align-items: center;
     position: relative;
-    bottom: -250px;
+    bottom: -240px;
     margin-top: 50px;
   }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 960px) {
     .timerrr{
-      top: 250px;
+      top: 270px;
     }
     .theme{
       font-size: 42px;
       margin-top: 2px;
       text-align: center;
       position: relative;
-      top: 30rem;
+      top: 530px;
       color: #d0bf51;
       margin-bottom: 5vh;
     }
     .button{
-      top: 354px;
+      top: 860px;
+    }
+
+    .belowrrr1{
+      font-size: 30px;
+    }
+    .belowrrr2{
+      font-size: 2px;
     }
   }

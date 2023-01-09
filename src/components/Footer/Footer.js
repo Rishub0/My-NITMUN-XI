@@ -53,10 +53,10 @@ function Footer() {
             <SocialIconLink href="https://www.facebook.com/lcnitdgp" target="_blank" aria-label="Facebook">
               <FaFacebook />
             </SocialIconLink>
-            <SocialIconLink href="/https://www.instagram.com/lcnitd/" target="_blank" aria-label="Instagram">
+            <SocialIconLink href="https://www.instagram.com/lcnitd/" target="_blank" aria-label="Instagram">
               <FaInstagram />
             </SocialIconLink>
-            <SocialIconLink href={"https://www.youtube.com/@TheLiteraryCircle"} target="_blank" aria-label="Youtube">
+            <SocialIconLink href="https://www.youtube.com/@TheLiteraryCircle" target="_blank" aria-label="Youtube">
               <FaYoutube />
             </SocialIconLink>
             <SocialIconLink href="http://lcnitd.co.in/" target="_blank" aria-label="Website">

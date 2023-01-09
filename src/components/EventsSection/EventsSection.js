@@ -72,7 +72,7 @@ const EventsSection = () => {
         </Container>
       </Section>
       <Modal show={showModal} onHide={() => setShowModal(false)}>
-        <ContentHeading inverse>Title</ContentHeading>
+        <ContentHeading inverse>NITMUN Stories</ContentHeading>
         <ImgWrapper>
           <Img src={eventsData[selectedImage].img} alt="image" />
         </ImgWrapper>

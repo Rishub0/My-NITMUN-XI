@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, useHistory } from "react-router-dom";
 import { Button, Container, MainHeading } from "../../globalStyles";
-import Navbar from "../Navbar/Navbar";
+import Navbard from "../Navbar/Navbar";
 import { HeroSection, HeroText, ButtonWrapper } from "./HeroStyles";
 import { useInView } from "react-intersection-observer";
 import Clock from "../clock/Clock";
@@ -9,6 +9,7 @@ import Apps from "../timer/timer";
 import "./hero.css";
 import LandVid from "../bgVideo/LandVid";
 import Time from "../Time/Time";
+import Navbar from "../Navbar/Navbar";
 
 const Hero = () => {
   const [timerDays, setTimerDays] = useState();
@@ -64,6 +65,7 @@ const Hero = () => {
   return (
     <>
       <Navbar  /> 
+      {/* <Navbard /> */}
       <HeroSection ref={ref} id="hero">
         {/* <Container> */}
         <div className="vid">
@@ -98,7 +100,6 @@ const Hero = () => {
             </Link>
       </ButtonWrapper>  */}
         <Link to="register">
-          <div className="register"></div>
           <button data-text="Awesome" class="button" onClick={about}>
             <span class="actual-text">&nbsp;Register&nbsp;</span>
             <span class="hover-text" aria-hidden="true">
