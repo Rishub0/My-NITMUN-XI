@@ -10,15 +10,16 @@ import Info from "../components/Info/Info";
 import Navbar from "../components/Navbar/Navbar";
 //import Timeline from "../components/Timeline/Timeline";
 import { heroData } from "../data/HeroData";
-import { motion } from 'framer-motion/dist/framer-motion';
+import { motion } from "framer-motion/dist/framer-motion";
 
 const AboutNitmun2 = () => {
   return (
-    // <motion.div 
+    // <motion.div
     //  initial={{width: 0}}
     //  animate={{width: "100vw"}}
     //  exit={{ x: window.innerWidth, transition: {duration: 0.2} }}>
-      <div><Navbar />
+    <div>
+      <Navbar />
       <About1 />
       {/* <Timeline /> */}
       {/* <Info id="about" /> */}
@@ -31,7 +32,7 @@ const AboutNitmun2 = () => {
         {/* <Features /> */}
       </div>
       <OtherFooter />
-      </div>
+    </div>
     //  </motion.div>
   );
 };
