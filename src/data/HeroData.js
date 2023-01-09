@@ -26,6 +26,10 @@ const heroOne = {
     " Deliberation upon the conflict in the Syrian region along with its impact on the socio-political conditions and western relations, with special emphasis on seeking ways to de-escalate the situation.",
   buttonLabel: "Study Guide",
   buttonLabel1: "Portfolio Matrix",
+  href1:"./assets/UNGA-DISEC.pdf",
+  download1:"UNGA-DISEC Study Guide.pdf",
+  href:"./assets/UNGA-DISEC_PORTFOLIO.pdf",
+  download:"UNGA-DISEC_PORTFOLIO.pdf",
   imgStart: "start",
   img: "./assets/DISEC.jpg",
   start: "true",
@@ -66,6 +70,7 @@ const heroThree = {
 };
 
 const heroFour = {
+  
   reverse: false,
   inverse: false,
   topLine: {
@@ -77,6 +82,7 @@ const heroFour = {
     "Presenting to you an independent body, comprising of fearless reporters who with their thorough research, well-placed questions and detailed reports, uncover the hidden truth.",
   buttonLabel: "Study Guide",
   buttonLabel1: "Portfolio Matrix",
+  
 
   imgStart: "",
   img: "./assets/ip.jpg",

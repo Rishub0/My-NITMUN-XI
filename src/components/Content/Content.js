@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Container } from '../../globalStyles';
+import { saveAs } from 'file-saver';
 import {
 	ContentSec,
 	ContentRow,
@@ -24,12 +25,23 @@ const Content = ({
 	description,
 	buttonLabel,
 	buttonLabel1,
+	href1,
+	href,
+	download1,
+	download,
 	img,
 	alt,
 	inverse,
 	reverse,
 	bigImage,
 }) => {
+
+	function downloadFile(){
+		saveAs(href,download)
+	}
+	function downloadFile1(){
+		saveAs(href1,download1)
+	}
 	const [showModal, setShowModal] = useState(false);
 	const initial = { opacity: 0, scale: 0.3 };
 	const transition = { delay: 0.3, duration: 0.6 };
@@ -92,8 +104,10 @@ const Content = ({
 									animate={animation}
 									inverse={inverse}
 									primary={primary}
+									href={href1}
+									value={download1}
 									onClick={() => {
-										setShowModal(true);
+										downloadFile1();
 									}}
 								>
 									{buttonLabel}
@@ -104,8 +118,10 @@ const Content = ({
 									animate={animation}
 									inverse={inverse}
 									primary={primary}
+									href={href1}
+									value={download1}
 									onClick={() => {
-										setShowModal(true);
+										downloadFile();
 									}}
 								>
 									{buttonLabel1}
