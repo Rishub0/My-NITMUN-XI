@@ -11,7 +11,7 @@ export const heroMain = {
 	buttonLabel: 'Study Guide',
 	buttonLabel1: 'Portfolio Matrix',
 	imgStart: 'start',
-	img: './assets/heromain1.jpg',
+	img: './assets/DISEC.jpg',
 	start: 'true',
 };
 
@@ -28,7 +28,7 @@ const heroOne = {
 	buttonLabel: 'Study Guide',
 	buttonLabel1: 'Portfolio Matrix',
 	imgStart: 'start',
-	img: './assets/hero1.jpg',
+	img: './assets/DISEC.png',
 	start: 'true',
 };
 
@@ -45,7 +45,7 @@ const heroTwo = {
 	buttonLabel: 'Study guide',
 	buttonLabel1: 'Portfolio Matrix',
 	imgStart: 'start',
-	img: './assets/hero6.jpg',
+	img: './assets/SPECPOL.png',
 	start: 'true',
 };
 
@@ -62,7 +62,7 @@ const heroThree = {
 	buttonLabel: 'Study Guide',
 	buttonLabel1: 'Portfolio Matrix',
 	imgStart: '',
-	img: './assets/hero7.jpg',
+	img: './assets/AIPPM.jpg',
 	start: 'true',
 };
 
