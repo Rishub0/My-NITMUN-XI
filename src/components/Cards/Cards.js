@@ -5,7 +5,7 @@ import "../Cards/Cards.css";
 const Carrds = () => {
   return (
     <div>
-      <div>
+      <div className="secre">
       <p className="secratariat">The Secratariat</p></div>
       <div class="card__collection clear-fix">
       
