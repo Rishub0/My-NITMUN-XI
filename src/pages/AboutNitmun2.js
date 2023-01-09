@@ -1,6 +1,6 @@
 import React from "react";
 import { CgInfo } from "react-icons/cg";
-import About1 from "../components/About/About1";
+import About from "../components/About/About";
 import Carrds from "../components/Cards/Cards";
 import Content from "../components/Content/Content";
 import EventsSection from "../components/EventsSection/EventsSection";
@@ -19,7 +19,7 @@ const AboutNitmun2 = () => {
     //  animate={{width: "100vw"}}
     //  exit={{ x: window.innerWidth, transition: {duration: 0.2} }}>
       <div><Navbar />
-      <About1 />
+      <About />
       {/* <Timeline /> */}
       {/* <Info id="about" /> */}
       <div id="events">
