@@ -155,6 +155,11 @@ export const ImgWrapper = styled(motion.div)`
 	background-color: ${({ inverse }) => (inverse ? '#3C2A21' : 'white')} ;
 	padding: 4px 0;
 	max-width: max-content;
+	@media screen and (max-width: 768px) {
+		padding-left: 30px;
+		padding-right:30px;
+	}
+	
 `;
 
 export const TopLine = styled(motion.span)`
@@ -180,6 +185,8 @@ export const Img = styled(motion.img)`
 	object-fit: cover;
 	max-height: 700px;
 	z-index: 1;
+
+	
 `;
 
 export const ContentHeading = styled(motion.h2)`

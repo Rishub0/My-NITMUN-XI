@@ -906,7 +906,7 @@ const Formc = () => {
               <div
                 class="group"
                 style={
-                  committee1 == "" ? { display: "none" } : { display: "block" }
+                  committee2 == "" ? { display: "none" } : { display: "block" }
                 }
               >
                 <label for="lastname">
@@ -1496,7 +1496,7 @@ const Formc = () => {
               <div
                 class="group"
                 style={
-                  committee1 == "" ? { display: "none" } : { display: "block" }
+                  committee3 == "" ? { display: "none" } : { display: "block" }
                 }
               >
                 <label for="lastname">

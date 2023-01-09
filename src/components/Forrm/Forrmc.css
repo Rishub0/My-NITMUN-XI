@@ -297,6 +297,9 @@ a {
     border-color: #c79e7d;
 }
 
+.group button span{
+    color :#261e1a}
+
 .login-form {
     min-height: 345px;
     
