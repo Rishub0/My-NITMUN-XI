@@ -156,8 +156,10 @@ export const ImgWrapper = styled(motion.div)`
 	padding: 4px 0;
 	max-width: max-content;
 	@media screen and (max-width: 768px) {
+		height: 60vh;
 		padding-left: 10px;
 		padding-right:10px;
+		margin:auto;
 	}
 	
 `;
@@ -185,6 +187,10 @@ export const Img = styled(motion.img)`
 	object-fit: cover;
 	max-height: 700px;
 	z-index: 1;
+	@media screen and (max-width: 768px) {
+		height: 60vh;
+		
+	}
 
 	
 `;
