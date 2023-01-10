@@ -47,7 +47,7 @@ const heroTwo = {
     " Deliberation on the recent violence in the Israeli-Palestine conflict with special emphasis on violation of ceasefire and the state of Jerusalem.",
   buttonLabel: "Study guide",
   buttonLabel1: "Portfolio Matrix",
-  href1: "./assets/UNGA-SPECPOL.pdf",
+  href1: "./assets/UNGA - SPECPOL.pdf",
   download1: "UNGA_SPECPOL STUDY GUIDE",
   href: "./assets/UNGA-SPECPOL_PORTFOLIO.pdf",
   download: "UNGA_SPECPOL PORTFOLIO MATRIX",
