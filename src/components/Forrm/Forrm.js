@@ -17,7 +17,7 @@ const Formc = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
-  const [institute, setInstitute] = useState("NIT DURGAPUR");
+  const [institute, setInstitute] = useState("NIT Durgapur");
   const [committee1, setComittee1] = useState("");
   const [preference1, setPreferences1] = useState("");
   const [committee2, setComittee2] = useState("");
