@@ -156,8 +156,8 @@ export const ImgWrapper = styled(motion.div)`
 	padding: 4px 0;
 	max-width: max-content;
 	@media screen and (max-width: 768px) {
-		padding-left: 30px;
-		padding-right:30px;
+		padding-left: 10px;
+		padding-right:10px;
 	}
 	
 `;

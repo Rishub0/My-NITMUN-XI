@@ -267,13 +267,16 @@ const Formc = () => {
                   onBlur={formik.handleBlur}
                   value={year}
                 >
-                  <option value="2023">First</option>
-                  <option value="other">other</option>
+                  <option value="select">Select...</option>
+                  <option value="1st Year">1st Year</option>
+                  <option value="2nd Year">2nd Year</option>
+                  <option value="3rd Year">3rd Year</option>
+                  <option value="4th Year">4th Year</option>
                 </select>
               </div>
 
               <br></br>
-              <h2>Preferences 1:</h2>
+              <h2>Preference 1:</h2>
               <br></br>
 
               <div class="group">
@@ -290,7 +293,7 @@ const Formc = () => {
                 >
                   <option defaultValue="Select..">Select</option>
                   <option value="UNGA-DISEC">UNGA-DISEC</option>
-                  <option value="UNGA-SPECPOL">UNGA_SPECPOL</option>
+                  <option value="UNGA-SPECPOL">UNGA-SPECPOL</option>
                   <option value="AIPPM">AIPPM</option>
                 </select>
               </div>
@@ -565,12 +568,7 @@ const Formc = () => {
                         Republic of Yemen
                       </option>
                     </>
-                  ) : (
-                    <>
-                      <option value="select...">Select..</option>
-                    </>
-                  )}
-                  {committee1 == "UNGA-SPECPOL" ? (
+                  ) : (committee1 == "UNGA-SPECPOL") ? (
                     <>
                       <option value="State of Israel">State of Israel</option>
                       <option value="State of Palestine">
@@ -729,10 +727,7 @@ const Formc = () => {
                         Republic of Poland
                       </option>
                     </>
-                  ) : (
-                    <></>
-                  )}
-                  {committee1 == "AIPPM" ? (
+                  ) : ( committee1 == "AIPPM") ? (
                     <>
                       <option value="Narendra Modi">Narendra Modi</option>
                       <option value="Arun Jaitley">Arun Jaitley</option>
@@ -798,8 +793,8 @@ const Formc = () => {
                       </option>
                       <option value="Sonia Gandhi">Sonia Gandhi</option>
                       <option value="Bhupendra Singh Baghela">
-                        {" "}
-                        Bhupendra Singh Baghela{" "}
+                        
+                        Bhupendra Singh Baghela
                       </option>
                       <option value="Kamal Nath">Kamal Nath</option>
                       <option value="Salman Khurshid">Salman Khurshid</option>
@@ -826,7 +821,7 @@ const Formc = () => {
                         Mulayam Singh Yadav
                       </option>
                       <option value="Tejasvi Yadav">Tejasvi Yadav</option>
-                      <option value="Arvind Kejriwal"></option>
+                      <option value="Arvind Kejriwal">Arvind Kejriwal</option>
                       <option value="Raghav Chadha">Raghav Chadha</option>
                       <option value="Manish Sishodia">Manish Sishodia</option>
                       <option value="MK Stalin">MK Stalin</option>
@@ -843,7 +838,7 @@ const Formc = () => {
                       <option value="Raj Thackeray">Raj Thackeray</option>
                       <option value="Ram Vilas Paswan">Ram Vilas Paswan</option>
                       <option value="Chirag Paswan">Chirag Paswan</option>
-                      <option value="Mayawati"></option>
+                      <option value="Mayawati">Mayawati</option>
                       <option value="Nodeep Kaur">Nodeep Kaur</option>
                       <option value="Aruna Roy">Aruna Roy</option>
                       <option value="Anannya Bhattacharjee">
@@ -859,12 +854,12 @@ const Formc = () => {
                       </option>
                     </>
                   ) : (
-                    <></>
+                    <option value="select...">Select..</option>
                   )}
                 </select>
               </div>
               <br></br>
-              <h2>Preferences 2:</h2>
+              <h2>Preference 2:</h2>
               <br></br>
               <div className="group">
                 <label for="lastname">Committee</label>
@@ -881,11 +876,7 @@ const Formc = () => {
                   <option defaultValue={"Select"}>Select</option>
                   <option
                     value="UNGA-DISEC"
-                    style={
-                      committee1 == "UNGA-DISEC"
-                        ? { display: "none" }
-                        : { display: "block" }
-                    }
+                    
                   >
                     UNGA-DISEC
                   </option>
@@ -1173,13 +1164,7 @@ const Formc = () => {
                         Republic of Yemen
                       </option>
                     </>
-                  ) : (
-                    <>
-                      <option value="select...">Select..</option>
-                    </>
-                  )}
-
-                  {committee2 == "UNGA-SPECPOL" ? (
+                  ) : (committee2 == "UNGA-SPECPOL") ? (
                     <>
                       <option value="State of Israel">State of Israel</option>
                       <option value="State of Palestine">
@@ -1338,10 +1323,7 @@ const Formc = () => {
                         Republic of Poland
                       </option>
                     </>
-                  ) : (
-                    <></>
-                  )}
-                  {committee2 == "AIPPM" ? (
+                  ) : ( committee2 == "AIPPM") ? (
                     <>
                       <option value="Narendra Modi">Narendra Modi</option>
                       <option value="Arun Jaitley">Arun Jaitley</option>
@@ -1407,8 +1389,8 @@ const Formc = () => {
                       </option>
                       <option value="Sonia Gandhi">Sonia Gandhi</option>
                       <option value="Bhupendra Singh Baghela">
-                        {" "}
-                        Bhupendra Singh Baghela{" "}
+                        
+                        Bhupendra Singh Baghela
                       </option>
                       <option value="Kamal Nath">Kamal Nath</option>
                       <option value="Salman Khurshid">Salman Khurshid</option>
@@ -1435,7 +1417,7 @@ const Formc = () => {
                         Mulayam Singh Yadav
                       </option>
                       <option value="Tejasvi Yadav">Tejasvi Yadav</option>
-                      <option value="Arvind Kejriwal"></option>
+                      <option value="Arvind Kejriwal">Arvind Kejriwal</option>
                       <option value="Raghav Chadha">Raghav Chadha</option>
                       <option value="Manish Sishodia">Manish Sishodia</option>
                       <option value="MK Stalin">MK Stalin</option>
@@ -1452,7 +1434,7 @@ const Formc = () => {
                       <option value="Raj Thackeray">Raj Thackeray</option>
                       <option value="Ram Vilas Paswan">Ram Vilas Paswan</option>
                       <option value="Chirag Paswan">Chirag Paswan</option>
-                      <option value="Mayawati"></option>
+                      <option value="Mayawati">Mayawati</option>
                       <option value="Nodeep Kaur">Nodeep Kaur</option>
                       <option value="Aruna Roy">Aruna Roy</option>
                       <option value="Anannya Bhattacharjee">
@@ -1468,7 +1450,7 @@ const Formc = () => {
                       </option>
                     </>
                   ) : (
-                    <></>
+                    <option value="select...">Select..</option>
                   )}
                 </select>
               </div>
@@ -1487,9 +1469,9 @@ const Formc = () => {
                   }}
                   onBlur={formik.handleBlur}
                 >
-                  <option defaultValue={"Select"}>Select</option>
+                  <option defaultValue="">Select</option>
                   <option value="UNGA-DISEC">UNGA-DISEC</option>
-                  <option value="UNGA-SPECPOL">UNGA_SPECPOL</option>
+                  <option value="UNGA-SPECPOL">UNGA-SPECPOL</option>
                   <option value="AIPPM">AIPPM</option>
                 </select>
               </div>
@@ -1500,7 +1482,7 @@ const Formc = () => {
                 }
               >
                 <label for="lastname">
-                  {committee1 == "AIPPM" ? "Personality" : "Country"}
+                  {committee3 == "AIPPM" ? "Personality" : "Country"}
                 </label>
                 <select
                   className="input"
@@ -1763,12 +1745,7 @@ const Formc = () => {
                         Republic of Yemen
                       </option>
                     </>
-                  ) : (
-                    <>
-                      <option value="select...">Select..</option>
-                    </>
-                  )}
-                  {committee1 == "UNGA-SPECPOL" ? (
+                  ) : (committee3 == "UNGA-SPECPOL") ? (
                     <>
                       <option value="State of Israel">State of Israel</option>
                       <option value="State of Palestine">
@@ -1927,10 +1904,7 @@ const Formc = () => {
                         Republic of Poland
                       </option>
                     </>
-                  ) : (
-                    <></>
-                  )}
-                  {committee3 == "AIPPM" ? (
+                  ) : ( committee3 == "AIPPM") ? (
                     <>
                       <option value="Narendra Modi">Narendra Modi</option>
                       <option value="Arun Jaitley">Arun Jaitley</option>
@@ -1996,8 +1970,8 @@ const Formc = () => {
                       </option>
                       <option value="Sonia Gandhi">Sonia Gandhi</option>
                       <option value="Bhupendra Singh Baghela">
-                        {" "}
-                        Bhupendra Singh Baghela{" "}
+                        
+                        Bhupendra Singh Baghela
                       </option>
                       <option value="Kamal Nath">Kamal Nath</option>
                       <option value="Salman Khurshid">Salman Khurshid</option>
@@ -2024,7 +1998,7 @@ const Formc = () => {
                         Mulayam Singh Yadav
                       </option>
                       <option value="Tejasvi Yadav">Tejasvi Yadav</option>
-                      <option value="Arvind Kejriwal"></option>
+                      <option value="Arvind Kejriwal">Arvind Kejriwal</option>
                       <option value="Raghav Chadha">Raghav Chadha</option>
                       <option value="Manish Sishodia">Manish Sishodia</option>
                       <option value="MK Stalin">MK Stalin</option>
@@ -2041,7 +2015,7 @@ const Formc = () => {
                       <option value="Raj Thackeray">Raj Thackeray</option>
                       <option value="Ram Vilas Paswan">Ram Vilas Paswan</option>
                       <option value="Chirag Paswan">Chirag Paswan</option>
-                      <option value="Mayawati"></option>
+                      <option value="Mayawati">Mayawati</option>
                       <option value="Nodeep Kaur">Nodeep Kaur</option>
                       <option value="Aruna Roy">Aruna Roy</option>
                       <option value="Anannya Bhattacharjee">
@@ -2057,7 +2031,7 @@ const Formc = () => {
                       </option>
                     </>
                   ) : (
-                    <></>
+                    <option value="select...">Select..</option>
                   )}
                 </select>
               </div>
@@ -2221,8 +2195,11 @@ const Formc = () => {
                   onBlur={formik.handleBlur}
                   value={year}
                 >
-                  <option value="2023">First</option>
-                  <option value="other">other</option>
+                  <option value="select">Select...</option>
+                  <option value="1st Year">1st Year</option>
+                  <option value="2nd Year">2nd Year</option>
+                  <option value="3rd Year">3rd Year</option>
+                  <option value="4th Year">4th Year</option>
                 </select>
               </div>
 
@@ -2295,7 +2272,7 @@ const Formc = () => {
                   onBlur={formik.handleBlur}
                   value={committee2}
                 >
-                  <option defaultValue={"Select"}>Select</option>
+                  <option defaultValue="">Select</option>
                   <option value="UNGA-DISEC-IP">UNGA-DISEC-IP</option>
                   <option value="UNGA-SPECPOL-IP">UNGA-SPECPOL-IP</option>
                   <option value="AIPPM-IP">AIPPM-IP</option>
@@ -2318,7 +2295,7 @@ const Formc = () => {
                   }}
                   onBlur={formik.handleBlur}
                 >
-                  {committee1 == "AIPPM-IP" ? (
+                  {committee2 == "AIPPM-IP" ? (
                     <>
                       <option value="Hindustan Times">Hindustan Times</option>
                       <option value="Times Of India">Times Of India</option>
@@ -2347,7 +2324,7 @@ const Formc = () => {
                   }}
                   onBlur={formik.handleBlur}
                 >
-                  <option defaultValue={"Select"}>Select</option>
+                  <option defaultValue="">Select</option>
                   <option value="UNGA-DISEC-IP">UNGA-DISEC-IP</option>
                   <option value="UNGA-SPECPOL-IP">UNGA-SPECPOL-IP</option>
                   <option value="AIPPM-IP">AIPPM</option>
@@ -2365,14 +2342,16 @@ const Formc = () => {
                   }}
                   onBlur={formik.handleBlur}
                 >
-                  {committee1 == "AIPPM-IP" ? (
+                  {committee3 == "AIPPM-IP" ? (
                     <>
+                      
                       <option value="Hindustan Times">Hindustan Times</option>
                       <option value="Times Of India">Times Of India</option>
                       <option value="The Hindu">The Hindu</option>
                     </>
                   ) : (
                     <>
+                      
                       <option value="UP">UP</option>
                       <option value="Reuters">Reuters</option>
                     </>

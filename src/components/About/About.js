@@ -8,7 +8,7 @@ const About = () => {
         <h1 className="headings">ABOUT US</h1>
         <br></br>
         <div id="pic">
-          <img src="./assets/bestlc.jpg" alt="" />
+          <img src="./assets/bestlc.JPG" alt="" />
           <div id="intro">
 
             <p className="para-style">

@@ -67,7 +67,7 @@ export const EventImageWrapper = styled(motion.div)`
 export const EventHeading = styled(motion.h2)`
   font-size: clamp(3rem, 5vw, 8rem);
   margin-bottom: 2rem;
-  color: #795e3f;
+  color: white;
   width: 100%;
   // -webkit-letter-spacing: 4px;
   // -moz-letter-spacing: 4px;
