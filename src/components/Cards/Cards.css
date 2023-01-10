@@ -426,6 +426,9 @@ bottom: 55px
   .card__collection {
     padding: 2px 40px;
   }
+  .secratariat{
+    font-size: 4.5rem;
+    }
 }/*# sourceMappingURL=Cards.css.map */
 .secratariat{
   position: relative;
