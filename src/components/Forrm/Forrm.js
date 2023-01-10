@@ -1450,7 +1450,7 @@ const Formc = () => {
                 </select>
               </div>
               <br></br>
-              <h2>Preferences 3:</h2>
+              <h2>Preference 3:</h2>
               <br></br>
               <div className="group">
                 <label for="lastname">Committee</label>

@@ -139,7 +139,7 @@ const Carrds = () => {
         </div>
         <div class="cards cards--two">
           <img
-            src="../assets/Sakshisr.jpg"
+            src="../assets/Sakshisr.JPG"
             class="img-responsive"
             alt="Cards Image"
           />
