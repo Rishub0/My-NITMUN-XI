@@ -96,7 +96,7 @@ const Carrds = () => {
           <span class="cards--two__rect"></span>
           <p>Ayush Tiwary</p>
            
-          <p className="two">Director General</p>
+          <p className="two">Head of Organising Committee</p>
           <ul class="cards__list">
             <li>
               <i class="fab fa-facebook-f"></i>

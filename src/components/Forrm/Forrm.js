@@ -24,7 +24,7 @@ const Formc = () => {
   const [preference2, setPreferences2] = useState("");
   const [committee3, setComittee3] = useState("");
   const [preference3, setPreferences3] = useState("");
-  const [experience, setExperience] = useState("");
+  const [experience, setExperience] = useState("N/A");
   const [other, setOther] = useState("");
   const [roll, setRoll] = useState("");
   const [year, setYear] = useState("");
@@ -64,7 +64,6 @@ const Formc = () => {
         console.log("hello");
         console.log(err);
             toast.error("Please enter correct credentials");
-
       });
   };
 
@@ -290,7 +289,7 @@ const Formc = () => {
                   }}
                   onBlur={formik.handleBlur}
                 >
-                  <option defaultValue="Select..">Select</option>
+                  <option defaultValue="Select..">Select Committee</option>
                   <option value="UNGA-DISEC">UNGA-DISEC</option>
                   <option value="UNGA-SPECPOL">UNGA-SPECPOL</option>
                   <option value="AIPPM">AIPPM</option>
@@ -316,6 +315,7 @@ const Formc = () => {
                 >
                   {committee1 == "UNGA-DISEC" ? (
                     <>
+                      <option value="Select">Select Portfolio</option>
                       <option value="Islamic Emirate of Afghanistan">
                         Islamic Emirate of Afghanistan
                       </option>
@@ -567,6 +567,8 @@ const Formc = () => {
                     </>
                   ) : (committee1 == "UNGA-SPECPOL") ? (
                     <>
+                      <option value="Select">Select Portfolio</option>
+
                       <option value="State of Israel">State of Israel</option>
                       <option value="State of Palestine">
                         State of Palestine
@@ -726,6 +728,7 @@ const Formc = () => {
                     </>
                   ) : ( committee1 == "AIPPM") ? (
                     <>
+                      <option value="Select">Select Portfolio</option>
                       <option value="Narendra Modi">Narendra Modi</option>
                       <option value="Arun Jaitley">Arun Jaitley</option>
                       <option value="B S Yeddurappa">B S Yeddurappa</option>
@@ -870,7 +873,7 @@ const Formc = () => {
                   onBlur={formik.handleBlur}
                   value={committee2}
                 >
-                  <option defaultValue={"Select"}>Select</option>
+                  <option defaultValue={"Select"}>Select Committee</option>
                   <option
                     value="UNGA-DISEC"
                     
@@ -910,6 +913,7 @@ const Formc = () => {
                 >
                   {committee2 == "UNGA-DISEC" ? (
                     <>
+                      <option value="Select">Select Portfolio</option>
                       <option value="Islamic Emirate of Afghanistan">
                         Islamic Emirate of Afghanistan
                       </option>
@@ -1161,6 +1165,7 @@ const Formc = () => {
                     </>
                   ) : (committee2 == "UNGA-SPECPOL") ? (
                     <>
+                     <option value="Select">Select Portfolio</option>
                       <option value="State of Israel">State of Israel</option>
                       <option value="State of Palestine">
                         State of Palestine
@@ -1320,6 +1325,7 @@ const Formc = () => {
                     </>
                   ) : ( committee2 == "AIPPM") ? (
                     <>
+                      <option value="Select">Select Portfolio</option>
                       <option value="Narendra Modi">Narendra Modi</option>
                       <option value="Arun Jaitley">Arun Jaitley</option>
                       <option value="B S Yeddurappa">B S Yeddurappa</option>
@@ -1464,7 +1470,7 @@ const Formc = () => {
                   }}
                   onBlur={formik.handleBlur}
                 >
-                  <option defaultValue="">Select</option>
+                  <option defaultValue="">Select Committee</option>
                   <option value="UNGA-DISEC">UNGA-DISEC</option>
                   <option value="UNGA-SPECPOL">UNGA-SPECPOL</option>
                   <option value="AIPPM">AIPPM</option>
@@ -1489,6 +1495,7 @@ const Formc = () => {
                 >
                   {committee3 == "UNGA-DISEC" ? (
                     <>
+                      <option value="Select">Select Portfolio</option>
                       <option value="Islamic Emirate of Afghanistan">
                         Islamic Emirate of Afghanistan
                       </option>
@@ -1740,6 +1747,8 @@ const Formc = () => {
                     </>
                   ) : (committee3 == "UNGA-SPECPOL") ? (
                     <>
+                    <option value="Select">Select Portfolio</option>
+
                       <option value="State of Israel">State of Israel</option>
                       <option value="State of Palestine">
                         State of Palestine
@@ -1899,6 +1908,8 @@ const Formc = () => {
                     </>
                   ) : ( committee3 == "AIPPM") ? (
                     <>
+                      
+                      <option value="Select">Select Portfolio</option>
                       <option value="Narendra Modi">Narendra Modi</option>
                       <option value="Arun Jaitley">Arun Jaitley</option>
                       <option value="B S Yeddurappa">B S Yeddurappa</option>
@@ -2210,7 +2221,7 @@ const Formc = () => {
                   }}
                   onBlur={formik.handleBlur}
                 >
-                  <option defaultValue={"Select"}>Select</option>
+                  <option defaultValue="Select">Select Committee</option>
                   <option value="UNGA-DISEC-IP">UNGA-DISEC-IP</option>
                   <option value="UNGA-SPECPOL-IP">UNGA-SPECPOL-IP</option>
                   <option value="AIPPM-IP">AIPPM-IP</option>
@@ -2234,14 +2245,16 @@ const Formc = () => {
                 >
                   {committee1 == "AIPPM-IP" ? (
                     <>
+                      <option value="Select">Select Press</option>
                       <option value="Hindustan Times">Hindustan Times</option>
                       <option value="Times Of India">Times Of India</option>
                       <option value="The Hindu">The Hindu</option>
                     </>
                   ) : (
                     <>
-                      <option value="UP">UP</option>
-                      <option value="AP">AP</option>
+                      <option value="Select">Select Press</option>
+                      <option value="United Press International">United Press International</option>
+                      <option value="Associated Press">Associated Press</option>
                       <option value="Reuters">Reuters</option>
                     </>
                   )}
@@ -2262,7 +2275,7 @@ const Formc = () => {
                   onBlur={formik.handleBlur}
                   value={committee2}
                 >
-                  <option defaultValue="">Select</option>
+                  <option defaultValue="">Select Committee</option>
                   <option value="UNGA-DISEC-IP">UNGA-DISEC-IP</option>
                   <option value="UNGA-SPECPOL-IP">UNGA-SPECPOL-IP</option>
                   <option value="AIPPM-IP">AIPPM-IP</option>
@@ -2285,14 +2298,16 @@ const Formc = () => {
                 >
                   {committee2 == "AIPPM-IP" ? (
                     <>
+                      <option value="Select">Select Press</option>
                       <option value="Hindustan Times">Hindustan Times</option>
                       <option value="Times Of India">Times Of India</option>
                       <option value="The Hindu">The Hindu</option>
                     </>
                   ) : (
                     <>
-                      <option value="UP">UP</option>
-                      <option value="AP">AP</option>
+                      <option value="Select">Select Press</option>
+                      <option value="United Press International">United Press International</option>
+                      <option value="Associated Press">Associated Press</option>
                       <option value="Reuters">Reuters</option>
                     </>
                   )}
@@ -2334,6 +2349,7 @@ const Formc = () => {
                   {committee3 == "AIPPM-IP" ? (
                     <>
                       
+                      <option value="Select">Select Press</option>
                       <option value="Hindustan Times">Hindustan Times</option>
                       <option value="Times Of India">Times Of India</option>
                       <option value="The Hindu">The Hindu</option>
@@ -2341,8 +2357,9 @@ const Formc = () => {
                   ) : (
                     <>
                       
-                      <option value="UP">UP</option>
-                      <option value="AP">AP</option>
+                      <option value="Select">Select Press</option>
+                      <option value="United Press International">United Press International</option>
+                      <option value="Associated Press">Associated Press</option>
                       <option value="Reuters">Reuters</option>
                     </>
                   )}
