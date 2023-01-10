@@ -24,7 +24,7 @@ const Formc = () => {
   const [preference2, setPreferences2] = useState("");
   const [committee3, setComittee3] = useState("");
   const [preference3, setPreferences3] = useState("");
-  const [experience, setExperience] = useState("N/A");
+  const [experience, setExperience] = useState("");
   const [other, setOther] = useState("");
   const [roll, setRoll] = useState("");
   const [year, setYear] = useState("");
