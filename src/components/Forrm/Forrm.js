@@ -213,9 +213,9 @@ const Formc = () => {
                 <input
                   placeholder="School/College"
                   name="email"
-                  value={institute}
+                  value={other}
                   onChange={(e) => {
-                    setInstitute(e.target.value);
+                    setOther(e.target.value);
                   }}
                   id="pass"
                   type="text"
@@ -2133,9 +2133,9 @@ const Formc = () => {
                 <input
                   placeholder="School/College"
                   name="email"
-                  value={institute}
+                  value={other}
                   onChange={(e) => {
-                    setInstitute(e.target.value);
+                    setOther(e.target.value);
                   }}
                   id="pass"
                   type="text"
