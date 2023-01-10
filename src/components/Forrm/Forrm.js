@@ -2369,7 +2369,7 @@ const Formc = () => {
                   type="submit"
                   class="buttons"
                   value="Register"
-                  onClick={postData}
+                  onClick={(e)=>postData(e)}
                 >
                   <span> Register</span>
                 </button>

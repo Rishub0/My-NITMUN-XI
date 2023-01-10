@@ -95,8 +95,59 @@ const Carrds = () => {
           />
           <span class="cards--two__rect"></span>
           <p>Ayush Tiwary</p>
+           
+          <p className="two">Director General</p>
+          <ul class="cards__list">
+            <li>
+              <i class="fab fa-facebook-f"></i>
+            </li>
+            <li>
+              <i class="fab fa-twitter"></i>
+            </li>
+            <li>
+              <i class="fab fa-instagram"></i>
+            </li>
+            <li>
+              <i class="fab fa-linkedin-in"></i>
+            </li>
+          </ul>
+        </div>
+        <div class="cards cards--two">
+          <img
+            src="../assets/tilak.JPEG"
+            class="img-responsive"
+            alt="Cards Image"
+          />
+          <span class="cards--two__rect"></span>
+          <p>Tilak Raj</p>
+
+          <p className="two">Director of Committee Affairs</p>
+          <ul class="cards__list">
+            <li>
+              <i class="fab fa-facebook-f"></i>
+            </li>
+            <li>
+              <i class="fab fa-twitter"></i>
+            </li>
+            <li>
+              <i class="fab fa-instagram"></i>
+            </li>
+            <li>
+              <i class="fab fa-linkedin-in"></i>
+            </li>
+          </ul>
+        </div>
+        <div class="cards cards--two">
+          <img
+            src="../assets/Sakshisr.JPEG"
+            class="img-responsive"
+            alt="Cards Image"
+          />
+          <span class="cards--two__rect"></span>
+          <p>Sakshi</p>
+
           
-          <p className="two">Head of Organising Committee</p>
+          <p className="two">Director of Committee Affairs</p>
           <ul class="cards__list">
             <li>
               <i class="fab fa-facebook-f"></i>
