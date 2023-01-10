@@ -114,7 +114,7 @@ const Carrds = () => {
         </div>
         <div class="cards cards--two">
           <img
-            src="../assets/tilak.JPEG"
+            src="../assets/tilak.jpeg"
             class="img-responsive"
             alt="Cards Image"
           />
@@ -139,7 +139,7 @@ const Carrds = () => {
         </div>
         <div class="cards cards--two">
           <img
-            src="../assets/Sakshisr.JPEG"
+            src="../assets/Sakshisr.jpeg"
             class="img-responsive"
             alt="Cards Image"
           />
