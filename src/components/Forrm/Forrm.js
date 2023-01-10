@@ -198,14 +198,14 @@ const Formc = () => {
                   onBlur={formik.handleBlur}
                   value={institute}
                 >
-                  <option value="NIT DURGAPUR">NIT DURGAPUR</option>
+                  <option value="NIT Durgapur">NIT Durgapur</option>
                   <option value={other}>Other Institutions</option>
                 </select>
               </div>
               <div
                 class="group"
                 style={
-                  institute == "NIT DURGAPUR"
+                  institute == "NIT Durgapur"
                     ? { display: "none" }
                     : { display: "block" }
                 }
@@ -227,7 +227,7 @@ const Formc = () => {
               <div
                 class="group"
                 style={
-                  institute == "NIT DURGAPUR"
+                  institute == "NIT Durgapur"
                     ? { display: "block" }
                     : { display: "none" }
                 }
@@ -249,7 +249,7 @@ const Formc = () => {
               <div
                 className="group"
                 style={
-                  institute == "NIT DURGAPUR"
+                  institute == "NIT Durgapur"
                     ? { display: "block" }
                     : { display: "none" }
                 }
@@ -2126,14 +2126,14 @@ const Formc = () => {
                   onBlur={formik.handleBlur}
                   value={institute}
                 >
-                  <option value="NIT DURGAPUR">NIT DURGAPUR</option>
+                  <option value="NIT Durgapur">NIT Durgapur</option>
                   <option value={other}>Other Institutions</option>
                 </select>
               </div>
               <div
                 class="group"
                 style={
-                  institute == "NIT DURGAPUR"
+                  institute == "NIT Durgapur"
                     ? { display: "none" }
                     : { display: "block" }
                 }
@@ -2155,7 +2155,7 @@ const Formc = () => {
               <div
                 class="group"
                 style={
-                  institute == "NIT DURGAPUR"
+                  institute == "NIT Durgapur"
                     ? { display: "block" }
                     : { display: "none" }
                 }
@@ -2177,7 +2177,7 @@ const Formc = () => {
               <div
                 className="group"
                 style={
-                  institute == "NIT DURGAPUR"
+                  institute == "NIT Durgapur"
                     ? { display: "block" }
                     : { display: "none" }
                 }

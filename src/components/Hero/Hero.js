@@ -10,6 +10,7 @@ import "./hero.css";
 import LandVid from "../bgVideo/LandVid";
 import Time from "../Time/Time";
 import Navbar from "../Navbar/Navbar";
+import Footer from "../Footer/Footer";
 
 const Hero = () => {
   const [timerDays, setTimerDays] = useState();
@@ -114,6 +115,7 @@ const Hero = () => {
         <div className="timerrr">
           <Time />
         </div>
+        
       </HeroSection>
     </>
   );

@@ -82,7 +82,7 @@
   }
   /* button styling */
   .button {
-    top: 127vh;
+    top: 133vh;
     --border-right: 6px;
     --text-stroke-color: rgba(121,94,63,0.9);
     --animation-color: rgba(121,94,63);
@@ -122,7 +122,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    bottom: -240px;
+    bottom: -190px;
     margin-top: 50px;
   }
   @media screen and (max-width: 960px) {
@@ -148,5 +148,14 @@
     }
     .belowrrr2{
       font-size: 2px;
+    }
+  }
+
+  @media screen and (max-width: 425px){
+    .button{
+      top: 140vh;
+    }
+    .timerrr{
+      top: 265px;
     }
   }
