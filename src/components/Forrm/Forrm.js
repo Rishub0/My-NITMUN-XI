@@ -31,7 +31,7 @@ const Formc = () => {
 
   const postData = async (e) => {
     e.preventDefault();
-
+    console.log("yes")
     await axios
       .post("https://nitmunbackend.lcnitd.co.in/api/register", {
         // headers: {
@@ -56,15 +56,16 @@ const Formc = () => {
         console.log(res);
         console.log("submit");
         toast.success("Submitted.");
-        window.location("/");
+        // window.location("/");
         //window.location.replace = "/";
       })
 
       .catch((err) => {
         console.log("hello");
         console.log(err);
+            toast.error("Please enter correct credentials");
+
       });
-    toast.error("Please enter correct credentials");
   };
 
   const phoneRegExp =
@@ -164,9 +165,7 @@ const Formc = () => {
                   onBlur={formik.handleBlur}
                   value={email}
                 />
-                {formik.touched.email && formik.errors.email ? (
-                  <div>{formik.errors.email}</div>
-                ) : null}
+                
               </div>
               <div class="group">
                 <label for="lastname">Phone Number</label>
@@ -199,7 +198,7 @@ const Formc = () => {
                   value={institute}
                 >
                   <option value="NIT Durgapur">NIT Durgapur</option>
-                  <option value={other}>Other Institutions</option>
+                  <option value="Other Institutions">Other Institutions</option>
                 </select>
               </div>
               <div
@@ -300,9 +299,7 @@ const Formc = () => {
 
               <div
                 class="group"
-                style={
-                  committee1 == "" ? { display: "none" } : { display: "block" }
-                }
+                
               >
                 <label for="lastname">
                   {committee1 == "AIPPM" ? "Personality" : "Country"}
@@ -896,9 +893,7 @@ const Formc = () => {
               </div>
               <div
                 class="group"
-                style={
-                  committee2 == "" ? { display: "none" } : { display: "block" }
-                }
+                
               >
                 <label for="lastname">
                   {committee2 == "AIPPM" ? "Personality" : "Country"}
@@ -1477,9 +1472,7 @@ const Formc = () => {
               </div>
               <div
                 class="group"
-                style={
-                  committee3 == "" ? { display: "none" } : { display: "block" }
-                }
+                
               >
                 <label for="lastname">
                   {committee3 == "AIPPM" ? "Personality" : "Country"}
@@ -2056,7 +2049,7 @@ const Formc = () => {
                   type="submit"
                   class="buttons"
                   value="Register"
-                  onClick={postData}
+                  onClick={(e)=>postData(e)}
                 >
                   <span> Register</span>
                 </button>
@@ -2092,9 +2085,7 @@ const Formc = () => {
                   onBlur={formik.handleBlur}
                   value={email}
                 />
-                {formik.touched.email && formik.errors.email ? (
-                  <div>{formik.errors.email}</div>
-                ) : null}
+                
               </div>
               <div class="group">
                 <label for="lastname">Phone Number</label>
@@ -2228,9 +2219,7 @@ const Formc = () => {
 
               <div
                 class="group"
-                style={
-                  committee1 == "" ? { display: "none" } : { display: "block" }
-                }
+                
               >
                 <label for="lastname">News Agency</label>
                 <select
@@ -2281,9 +2270,7 @@ const Formc = () => {
               </div>
               <div
                 class="group"
-                style={
-                  committee1 == "" ? { display: "none" } : { display: "block" }
-                }
+                
               >
                 <label for="lastname">News Agency</label>
                 <select
