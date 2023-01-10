@@ -89,6 +89,10 @@ const heroFour = {
     "Presenting to you an independent body, comprising of fearless reporters who with their thorough research, well-placed questions and detailed reports, uncover the hidden truth.",
   buttonLabel: "Study Guide",
   buttonLabel1: "Portfolio Matrix",
+  href1: "./assets/IP Study_Guide.pdf",
+  download1: "IP-STUDY GUIDE",
+  href: "./assets/IP_PORTFOLIO.pdf",
+  download: "IP-PORTFOLIO",
 
   imgStart: "",
   img: "./assets/ip.jpg",

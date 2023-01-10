@@ -20,7 +20,7 @@ const Carrds = () => {
           </span>
           <p>Aditya Mitra</p>
           
-          <p className="two">Director General</p>
+          <p className="two">Secretary General</p>
           <ul class="cards__list">
             <li>
               <i class="fab fa-facebook-f"></i>
@@ -45,8 +45,8 @@ const Carrds = () => {
           <span class="cards--two__rect"></span>
           <p>V. Rohan Rao</p>
 
-
-          <p className="two">Secretary General</p>
+          
+          <p className="two">Director General</p>
           <ul class="cards__list">
             <li>
               <i class="fab fa-facebook-f"></i>

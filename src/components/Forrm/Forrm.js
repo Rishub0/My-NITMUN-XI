@@ -2252,6 +2252,7 @@ const Formc = () => {
                   ) : (
                     <>
                       <option value="UP">UP</option>
+                      <option value="AP">AP</option>
                       <option value="Reuters">Reuters</option>
                     </>
                   )}
@@ -2304,6 +2305,7 @@ const Formc = () => {
                   ) : (
                     <>
                       <option value="UP">UP</option>
+                      <option value="AP">AP</option>
                       <option value="Reuters">Reuters</option>
                     </>
                   )}
@@ -2353,6 +2355,7 @@ const Formc = () => {
                     <>
                       
                       <option value="UP">UP</option>
+                      <option value="AP">AP</option>
                       <option value="Reuters">Reuters</option>
                     </>
                   )}
