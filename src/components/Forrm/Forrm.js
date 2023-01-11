@@ -28,6 +28,7 @@ const Formc = () => {
   const [other, setOther] = useState("");
   const [roll, setRoll] = useState("");
   const [year, setYear] = useState("");
+  const [hall, setHall] = useState("");
 
   const postData = async (e) => {
     e.preventDefault();
@@ -51,6 +52,7 @@ const Formc = () => {
         experience: experience,
         year: year,
         roll: roll,
+        hall:hall
       })
       .then((res) => {
         console.log(res);
@@ -63,7 +65,7 @@ const Formc = () => {
       .catch((err) => {
         console.log("hello");
         console.log(err);
-            toast.error("Please enter correct credentials");
+        toast.error("Please enter correct credentials");
       });
   };
 
@@ -133,8 +135,9 @@ const Formc = () => {
           <label for="item-2" class="item">
             IP
           </label>
+          {/* onSubmit={formik.handleSubmit} */}
           <div class="login-form">
-            <form class="sign-in-htm" onSubmit={formik.handleSubmit}>
+            <form class="sign-in-htm" >
               <div class="group">
                 <label for="firstname">Name</label>
                 <input
@@ -164,7 +167,9 @@ const Formc = () => {
                   onBlur={formik.handleBlur}
                   value={email}
                 />
-                
+                {formik.touched.email && formik.errors.email ? (
+                  <div>{formik.errors.email}</div>
+                ) : null}
               </div>
               <div class="group">
                 <label for="lastname">Phone Number</label>
@@ -270,6 +275,32 @@ const Formc = () => {
                   <option value="2nd Year">2nd Year</option>
                   <option value="3rd Year">3rd Year</option>
                   <option value="4th Year">4th Year</option>
+                </select>
+              </div>
+              <div
+                className="group"
+                style={
+                  year == "1st Year"
+                    ? { display: "block" }
+                    : { display: "none" }
+                }
+              >
+                <label for="lastname">Hall</label>
+
+                <select
+                  placeholder="Institution"
+                  type="text"
+                  className="input"
+                  name="institution"
+                  onChange={(e) => {
+                    setHall(e.target.value);
+                  }}
+                  onBlur={formik.handleBlur}
+                  value={hall}
+                >
+                  <option value="select">Select...</option>
+                  <option value="Hall 14">Hall 14</option>
+                  <option value="Hall 10">Hall 10</option>
                 </select>
               </div>
 
@@ -2060,7 +2091,7 @@ const Formc = () => {
                   type="submit"
                   class="buttons"
                   value="Register"
-                  onClick={(e)=>postData(e)}
+                  onClick={postData}
                 >
                   <span> Register</span>
                 </button>
@@ -2202,6 +2233,32 @@ const Formc = () => {
                   <option value="2nd Year">2nd Year</option>
                   <option value="3rd Year">3rd Year</option>
                   <option value="4th Year">4th Year</option>
+                </select>
+              </div>
+              <div
+                className="group"
+                style={
+                  year == "1st Year"
+                    ? { display: "block" }
+                    : { display: "none" }
+                }
+              >
+                <label for="lastname">Hall</label>
+
+                <select
+                  placeholder="Institution"
+                  type="text"
+                  className="input"
+                  name="institution"
+                  onChange={(e) => {
+                    setHall(e.target.value);
+                  }}
+                  onBlur={formik.handleBlur}
+                  value={hall}
+                >
+                  <option value="select">Select...</option>
+                  <option value="Hall 14">Hall 14</option>
+                  <option value="Hall 10">Hall 10</option>
                 </select>
               </div>
 
@@ -2386,7 +2443,7 @@ const Formc = () => {
                   type="submit"
                   class="buttons"
                   value="Register"
-                  onClick={(e)=>postData(e)}
+                  onClick={postData}
                 >
                   <span> Register</span>
                 </button>
